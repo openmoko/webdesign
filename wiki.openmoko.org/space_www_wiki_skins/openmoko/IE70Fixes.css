@@ -4,25 +4,41 @@
 
 /* This bit is needed to make links clickable... WTF */
 #column-content #content {
-	margin-left: 12.2em;
-	margin-top: 3em;
+	margin-left: 14.2em;
+	margin-top: 0.62em;
 	height: 1%;
 }
 
 .rtl #column-one {
 	/* For some reason it tries to inherit the padding-top into every div,
 	 * and I can't figure out how to get it back off.
+	 * Margin works correctly for this use, though.
 	 */
 	padding-top: 0;
-}
-.rtl #column-one #p-navigation {
 	margin-top: 160px;
+}
+
+#column-one {
+	position: absolute;
+	top: 90px;
+}
+
+#p-logo {
+	left: 0em;
 }
 
 /* the tabs */
 
 #p-cactions {
 	z-index: 3;
+	top: -1.2em;
+}
+
+#p-personal {
+	position: relative;
+	top: -12em;
+	float: right;
+	padding-right:15px;
 }
 
 
@@ -38,8 +54,8 @@
 	display: inline-block !important;
 	vertical-align: top;
 	padding-bottom: 0;
-	border: solid #aaa;
-	border-width: 1px 1px 0;
+	/*border: solid #aaa;
+	border-width: 1px 1px 0;*/
 }
 #p-cactions li.selected a {
 	border-color: #fabd23;
@@ -67,3 +83,14 @@ div.tleft {
 	position: relative;
 }
 */
+
+
+#footer {
+	margin-left: 15.8em;
+	padding-top: 2.7em;
+}
+
+#footer li {
+	/* Work around bug with inline <li> tags with right margins and nowrap */
+	margin-right: 0;
+}

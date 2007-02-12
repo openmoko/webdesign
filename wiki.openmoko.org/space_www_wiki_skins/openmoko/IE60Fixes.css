@@ -7,19 +7,20 @@
 	height: 1%;
 }
 #column-content #content {
-	margin-left: 12.2em;
-	margin-top: 3em;
+	margin-left: 14.2em;
+	margin-top: 0.62em;
 	height: 1%;
 }
 #column-one {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 1.4em;
 	z-index: 4;
+	padding-top: 160px;
 }
 #footer {
-	margin-left: 13.6em;
-	border-left: 1px solid #fabd23;
+	margin-left: 15.7em;
+/*	border-left: 1px solid #fabd23;*/
 }
 
 /* the tabs */
@@ -39,8 +40,8 @@
 	display: inline-block !important;
 	vertical-align: top;
 	padding-bottom: 0;
-	border: solid #aaa;
-	border-width: 1px 1px 0;
+/*	border: solid #aaa;*/
+/*	border-width: 1px 1px 0;*/
 }
 #p-cactions li.selected a {
 	border-color: #fabd23;
@@ -49,6 +50,7 @@
 #p-cactions li a:hover {
 	padding-bottom: 0.17em;
 }
+
 #p-navigation a {
 	display: inline-block;
 	width: 100%;
@@ -82,3 +84,31 @@ div.tleft {
 }
 /*{ border:1px solid Red !important;}*/
 
+#p-logo {
+/*	top: 1.4em;*/
+	left: 0em;
+	display: none;
+}
+
+#p-logo a {
+}
+
+.portlet ul {
+	margin-left: 2em;
+}
+
+.portlet a {
+	margin-left: -5px;
+}
+
+
+#p-navigation  {
+	margin-top: 0;
+}
+
+#p-navigation,
+#p-search,
+#p-tb {
+	position: relative;
+	top: -4.85em;
+}
