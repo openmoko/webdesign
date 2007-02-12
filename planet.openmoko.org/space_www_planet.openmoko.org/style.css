@@ -1,13 +1,16 @@
+html {
+	background: #FFFFFF;
+}
+
 body,html {
 	margin: 0px;
 	padding: 0px;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Tahoma, Arial, Helvetica, sans-serif;
-	font-size: 0.9em;
-	 background:#FFFFFF;
+	font-size: 90%;
 }
 
 * html body {
-	font-size: 0.87em;
+	font-size: 87%;
 }
 
 img {
@@ -24,13 +27,15 @@ a:hover {
 
 #main_wrapper {
 	margin: 0px auto;
-	width: 950px;
-	padding: 35px 0px 0px 0px;
+/*	width: 950px;*/
+	width: 85%;
+	min-width: 600px;
+	padding: 0px 0px 0px 0px;
 }
 
 #footer {
 	border-top: 1px solid #cccccc;
-	background:#fafafa url(images/footer_bg.gif) no-repeat bottom left;
+	background:#fafafa url(images/footer_bg.png) no-repeat bottom left;
 	text-align: center;
 	color: #666666;
 	font-size: smaller;
@@ -56,12 +61,7 @@ a:hover {
 	padding-left: 13px;
 	padding-bottom: 20px;
 	float: left;
-	padding-top: 4px;
-}
-
-#planet_logo {
-	margin-bottom: 80px;
-	display:block;
+	padding-top: 33px;
 }
 
 .feed_list {
@@ -73,15 +73,15 @@ a:hover {
 
 .sidebox {
 	width: 239px;
-	background:#FFF url(images/feed_list_tile.gif) repeat-y top left;
+	background:#FFF url(images/feed_list_tile.png) repeat-y top left;
 }
 
 .sidebox_inner {
-	background:url(images/feed_list_top.gif) no-repeat top left;
+	background:url(images/feed_list_top.png) no-repeat top left;
 }
 
 .sidebox_inner2 {
-	background:url(images/feed_list_bottom.gif) no-repeat bottom left;
+	background:url(images/feed_list_bottom.png) no-repeat bottom left;
 	padding: 15px 17px 11px 17px;
 }
 
@@ -89,36 +89,27 @@ a:hover {
 	margin: 0px;
 	padding: 0px;
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 100%;
 	margin-bottom: 10px;
-}
-
-.feed_list .feed {
-	text-decoration: none;
-	white-space: nowrap;
-	background: url(images/feed_list_bullet.gif) no-repeat 0px 5px;
-	padding: 0px 0px 0px 10px;
 }
 
 .feed_list .feed_author {
 	text-decoration: none;
-	white-space: nowrap;
-	background: url(images/feed_list_bullet.gif) no-repeat 0px 5px;
+	background: url(images/feed_list_bullet.png) no-repeat 0px 5px;
 	padding: 0px 0px 0px 10px;
 }
 
 .feed_list li {
-	white-space: nowrap;
 	margin-bottom: 4px;
 }
 
 .feed_list .feed_author:hover {
-	background: url(images/feed_list_bullet_hover.gif) no-repeat 0px 5px;
+	background: url(images/feed_list_bullet_hover.png) no-repeat 0px 5px;
 }
 
 #right_column {
 	margin-left: 292px;
-	width: 650px;
+/*	width: 650px;*/
 	padding-bottom: 20px;
 }
 
@@ -149,7 +140,7 @@ a:hover {
 .post .author {
 	margin-top: 7px !important;
 	margin-bottom: 24px !important;
-	font-size: 0.9em;
+	font-size: 90%;
 }
 
 .post .author a {
@@ -163,7 +154,7 @@ a:hover {
 }
 
 * html .post .author{
-	font-size: 0.88em !important;
+	font-size: 88% !important;
 }
 
 .date_container {
@@ -183,7 +174,7 @@ a:hover {
 .top_link {
 	height: 11px;
 	display:block;
-	background:url(images/top_link.gif) no-repeat top left;
+	background:url(images/top_link.png) no-repeat top left;
 }
 
 .top_link:hover {
@@ -205,3 +196,84 @@ h3.sifr_headline {
 	margin: 0px;
 	padding: 2px 0px 2px 0px;
 }
+
+#header {
+	height: 90px;
+	position: relative;
+}
+
+#site_logo {
+	position: absolute;
+	top: 29px;
+	left: 10px;
+}
+
+#main_navigation {
+	float: right;
+	position: absolute;
+	top: 38px;
+	right: 5px;
+}
+
+#main_navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#main_navigation ul li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+
+#main_navigation a {
+	float: left;
+	display: block;
+	height: 11px;
+	background-position: 50% 0%;
+	background-repeat:no-repeat;
+}
+
+#main_navigation a:hover {
+	background-position: 50% 100%;
+}
+
+#main_navigation a span{
+	display: none;
+}
+
+#main_navigation .selected {
+	background-position: 50% 100%;
+}
+
+.nav_home {
+	background-image:url(images/navigation/home.png);
+	width: 58px;
+}
+
+.nav_wiki {
+	background-image:url(images/navigation/wiki.png);
+	width: 50px;
+}
+
+.nav_bugzilla {
+	background-image:url(images/navigation/bugzilla.png);
+	width: 79px;
+}
+
+.nav_planet {
+	background-image:url(images/navigation/planet.png);
+	width: 68px;
+}
+
+.nav_projects {
+	background-image:url(images/navigation/projects.png);
+	width: 81px;
+}
+
+.nav_lists {
+	background-image:url(images/navigation/lists.png);
+	width: 53px;
+} 
