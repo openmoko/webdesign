@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title><TMPL_VAR name></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="<TMPL_VAR generator ESCAPE="HTML">">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+<!--	<link href="./_sifr/sIFR-screen.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="./_sifr/sIFR-print.css" rel="stylesheet" type="text/css" media="print" />
+	
+	<script src="_sifr/sifr.js" type="text/javascript"></script> -->
+</head>
+
+<body>
+<div id="main_wrapper">
+	<div id="left_column">
+		<a href="#" id="planet_logo"><img src="images/planet_logo.gif" alt="planet openmoko" /></a>
+		
+		<div class="sidebox"><div class="sidebox_inner"><div class="sidebox_inner2">
+			<h3>Subscriptions</h3>
+			<ul class="feed_list">
+			<TMPL_LOOP Channels>
+				<li><a href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR title ESCAPE="HTML">"  class="feed_author"><TMPL_VAR name></a>, <a href="<TMPL_VAR url ESCAPE="HTML">"><img src="images/rss_feed_list.gif" alt="rss" /></a></li>
+			</TMPL_LOOP>
+			</ul>
+			<br />
+			<h3>Feeds</h3>
+			<ul class="feed_list">
+			<li><a href="rss10.xml" class="feed"><img src="images/rss10.png" width="80" height="15" alt="RSS 1.0 Feed"></a></li>
+			<li><a href="rss20.xml" class="feed"><img src="images/rss20.png" width="80" height="15" alt="RSS 2.0 Feed"></a></li>
+			<li><a href="foafroll.xml" class="feed"><img src="images/foaf.png" width="80" height="15" alt="FOAF Subscriptions"></a></li>
+			<li><a href="opml.xml" class="feed"><img src="images/opml.png" width="80" height="15" alt="OPML Subscriptions"></a></li>
+			</ul>
+			</p>
+
+		</div></div></div>
+	</div>
+	
+	<div id="right_column">
+	
+	<TMPL_LOOP Items>
+		<TMPL_IF new_date>
+		<div class="date_container">
+			<h2 class="sifr_headline"><TMPL_VAR new_date></h2>
+		</div>
+		</TMPL_IF>
+		
+		<div class="post">
+			<TMPL_IF title>
+			<h3 class="sifr_headline"><a href="<TMPL_VAR link ESCAPE="HTML">" target="_blank"><TMPL_VAR title></a></h3>
+			</TMPL_IF>
+			<h4 class="author"><a href="<TMPL_VAR link ESCAPE="HTML">">By <TMPL_VAR channel_name></a></h4>
+					
+			<TMPL_VAR content>
+		</div>
+		
+		</TMPL_LOOP>
+	</div>
+	
+	<script src="_sifr/init_sifr.js" type="text/javascript"></script>
+	
+	<div id="footer">
+		<p>Site design Copyright &copy; 2006 <a href="http://www.openmoko.org/">Openmoko, Inc</a>. All rights reserved.</p>
+		<p><a href="http://www.planetplanet.org/">Powered by Planet!</a></p>
+		<p class="last_updated">Last updated: <TMPL_VAR date></p>
+	</div>
+</div>
+</body>
+
+</html>
