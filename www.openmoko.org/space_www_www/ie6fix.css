@@ -1,0 +1,21 @@
+#middleblock_container {
+	height: 300px;
+}
+
+#middleblock_tabs {
+	bottom: 89px;
+}
+
+#middleblock_tabs li a {
+	position: relative;
+}
+
+#home_banner h2 {
+	top: 172px;
+}
+
+#home_container .column_container .column {
+	width: 171px;
+	margin-left: 1px;
+	margin-right:1px;
+}
