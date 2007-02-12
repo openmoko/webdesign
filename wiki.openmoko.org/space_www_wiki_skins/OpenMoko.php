@@ -22,13 +22,13 @@ require_once('includes/SkinTemplate.php');
  * @package MediaWiki
  * @subpackage Skins
  */
-class SkinMonoBook extends SkinTemplate {
-	/** Using monobook. */
+class SkinOpenMoko extends SkinTemplate {
+	/** Using openmoko. */
 	function initPage( &$out ) {
 		SkinTemplate::initPage( $out );
-		$this->skinname  = 'monobook';
-		$this->stylename = 'monobook';
-		$this->template  = 'MonoBookTemplate';
+		$this->skinname  = 'openmoko';
+		$this->stylename = 'openmoko';
+		$this->template  = 'OpenMokoTemplate';
 	}
 }
 
@@ -37,7 +37,7 @@ class SkinMonoBook extends SkinTemplate {
  * @package MediaWiki
  * @subpackage Skins
  */
-class MonoBookTemplate extends QuickTemplate {
+class OpenMokoTemplate extends QuickTemplate {
 	/**
 	 * Template filter callback for MonoBook skin.
 	 * Takes an associative array of data set from a SkinTemplate-based
@@ -217,7 +217,7 @@ class MonoBookTemplate extends QuickTemplate {
 				<li id="t-ispermalink"><?php $this->msg('permalink') ?></li><?php
 		}
 
-		wfRunHooks( 'MonoBookTemplateToolboxEnd', array( &$this ) );
+		wfRunHooks( 'OpenMokoTemplateToolboxEnd', array( &$this ) );
 ?>
 			</ul>
 		</div>
