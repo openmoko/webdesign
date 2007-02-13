@@ -107,21 +107,21 @@
   </tr>
 
   <tr>
-    <td align="center" width="10%">
+    <td align="center" width="10%" class="spacing_right">
       <b>Reporter</b>
     </td>
-    <td align="center" width="10%">
+    <td align="center" width="10%" class="spacing_right">
       <b>Assignee</b>
     </td>
     [% IF useqacontact %]
-      <td align="center" width="10%">
+      <td align="center" width="10%" class="spacing_right">
         <b>QA Contact</b>
       </td>
     [% END %]
-    <td align="center" width="10%">
+    <td align="center" width="10%" class="spacing_right">
       <b>CC</b>
     </td>
-    <td align="center" width="10%">
+    <td align="center" width="10%" class="spacing_right">
       <b>Voter</b>
     </td>
   </tr>
@@ -143,7 +143,7 @@
         description = 'CC field changes' },
       { name = 'Other',       
         description = 'Any field not mentioned above changes' } ] %]
-    <tr>
+    <tr class="spacing_right_tr">
       [% FOREACH role = [ "Reporter", "Owner", "QAcontact", "CClist", "Voter" ] 
        %]
         [% NEXT IF role == "QAcontact" AND NOT useqacontact %]

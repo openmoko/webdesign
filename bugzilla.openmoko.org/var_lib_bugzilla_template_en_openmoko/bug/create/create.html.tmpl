@@ -17,7 +17,7 @@
   # Rights Reserved.
   #
   # Contributor(s): Gervase Markham <gerv@gerv.net>
-  #                 Ville Skyttä <ville.skytta@iki.fi>
+  #                 Ville Skyttï¿½ <ville.skytta@iki.fi>
   #%]
 
 [% PROCESS global/header.html.tmpl
@@ -49,16 +49,16 @@
   </tr>
 
   <tr>
-    <td align="right" valign="top"><strong>Reporter:</strong></td>
+    <td align="right" valign="top" class="spacing_right"><strong>Reporter:</strong></td>
     <td valign="top">[% reporter FILTER html %]</td>
     
-    <td align="right" valign="top"><strong>Product:</strong></td>
+    <td align="right" valign="top" class="spacing_right"><strong>Product:</strong></td>
     <td valign="top">[% product FILTER html %]</td>
   </tr>
   
   [%# We can't use the select block in these two cases for various reasons. %]
   <tr>
-    <td align="right" valign="top">
+    <td align="right" valign="top" class="spacing_right">
       <strong>Version:</strong>
     </td>
     <td>
@@ -71,7 +71,7 @@
       </select>
     </td>  
     
-    <td align="right" valign="top">
+    <td align="right" valign="top" class="spacing_right">
       <strong>
         <a href="describecomponents.cgi?product=[% product FILTER url_quote %]">
           Component</a>:
@@ -94,7 +94,7 @@
     <td colspan="3"></td>
   </tr>
   
-  <tr>
+  <tr class="spacing_right_tr">
     [% sel = { description => 'Platform', name => 'rep_platform' } %]
     [% INCLUDE select %]
     
@@ -102,7 +102,7 @@
     [% INCLUDE select %]
   </tr>
   
-  <tr>  
+  <tr class="spacing_right_tr">  
   [% IF Param('letsubmitterchoosepriority') %]
     [% sel = { description => 'Priority', name => 'priority' } %]
     [% INCLUDE select %]
@@ -132,7 +132,7 @@
 [% END %]
 
   <tr>
-    <td align="right">
+    <td align="right" class="spacing_right">
       <strong>
         <a href="/bugzilla/bug_status.html#assigned_to">Assigned To</a>:
       </strong>
@@ -145,7 +145,7 @@
   </tr>
   
   <tr>
-    <td align="right"><strong>Cc:</strong></td>
+    <td align="right" class="spacing_right"	><strong>Cc:</strong></td>
     <td colspan="3">
       <input name="cc" size="45" value="[% cc FILTER html %]">
     </td>
@@ -157,7 +157,7 @@
   </tr>
 
   <tr>
-    <td align="right"><strong>URL:</strong></td>
+    <td align="right" class="spacing_right"><strong>URL:</strong></td>
     <td colspan="3">
       <input name="bug_file_loc" size="60" 
              value="[% bug_file_loc FILTER html %]">
@@ -165,13 +165,13 @@
   </tr>
   
   <tr>
-    <td align="right"><strong>Summary:</strong></td>
+    <td align="right" class="spacing_right"><strong>Summary:</strong></td>
     <td colspan="3">
       <input name="short_desc" size="60" value="[% short_desc FILTER html %]">
     </td>
   </tr>
   
-  <tr><td align="right" valign="top"><strong>Description:</strong></td>
+  <tr><td align="right" valign="top" class="spacing_right"><strong>Description:</strong></td>
     <td colspan="3">
       <textarea wrap="hard" name="comment" rows="10" cols="80">
         [% comment FILTER html %]</textarea>

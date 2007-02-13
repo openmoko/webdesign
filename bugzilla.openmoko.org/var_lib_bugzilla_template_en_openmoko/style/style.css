@@ -8,7 +8,7 @@ body,html {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Tahoma, Arial, Helvetica, sans-serif;
 	color: #333;
 /*	background: #F1F1F1 none repeat scroll 0%;*/
-	font-size: 15px !important;
+	font-size: 1em;
 }
 
 body {
@@ -17,12 +17,12 @@ body {
 
 pre {
 	font-family:"Lucida Console", "Courier New", Courier, mono;
-	color: #888;
-	font-size: 0.9em;
+	color: #333;
 }
 
 fieldset {
 	border: 1px solid #ddd;
+	padding: 5px 13px;
 }
 
 h1 {
@@ -46,6 +46,10 @@ img {
 table {
 /*	border-collapse: collapse;*/
 	border-color: #ddd;
+}
+
+label {
+	font-size: 1.2em !important;
 }
 
 /*.header {
@@ -75,7 +79,7 @@ table {
 .page_title {
 	clear: both;
 	background: #eee;
-	padding: 7px 10px 7px 53px;
+	padding: 7px 10px 7px 37px;
 	font-size: 1em;
 	margin: 0px 0px 10px 0px;
 }
@@ -108,8 +112,8 @@ hr {
 	font-size: 0.9em !important;
 }
 
-.container table,
-.container p a {
+.container table{
+
 	font-size: 0.9em !important;
 }
 
@@ -223,4 +227,12 @@ hr {
 .nav_lists {
 	background-image:url(images/navigation/lists.png);
 	width: 53px;
-} 
+}
+
+.spacing_right {
+	padding-right: 5px;
+}
+
+.spacing_right_tr td {
+	padding-right: 5px;
+}

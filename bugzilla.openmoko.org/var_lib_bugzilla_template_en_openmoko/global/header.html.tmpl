@@ -36,7 +36,8 @@
   h2 = ""
   bgcolor = "#FFFFFF"
   onload = ""
-  skin_name = "openmoko"
+  #skin_name = "openmoko"
+  #bugzilla_path = "/openmoko_bugzilla";
 %]
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -59,7 +60,7 @@
       </style>
     [% END %]
     
-    <link href="/style/style.css" rel="stylesheet" type="text/css" />
+    <link href="[%bugzilla_path%]/style/style.css" rel="stylesheet" type="text/css" />
     
     [% IF style_urls %]
       [% FOREACH style_url = style_urls %]

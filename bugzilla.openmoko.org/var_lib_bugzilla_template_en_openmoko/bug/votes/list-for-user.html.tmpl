@@ -54,11 +54,9 @@
           [% IF product.maxperbug < product.maxvotes AND
                 product.maxperbug > 1 %]
             <td>
-              <font size="-1">
                 (Note: only [% product.maxperbug %] vote
                 [% "s" IF product.maxperbug != 1 %] allowed per bug in 
                 this product.)
-              </font>
             </td>
           [% END %]
         </tr>
