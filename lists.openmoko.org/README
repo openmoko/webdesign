@@ -1,1 +1,5 @@
-this is just the singla and only theming directory that mailman has.
+var_lib_mailman_templates_en	
+	this is just the singla and only theming directory that mailman has.
+
+space_www_lists
+	this is where the static content goes
