@@ -22,13 +22,17 @@
 
 [%# Migration note: this file corresponds to the old Param 'bannerhtml' %]
 
-    <table bgcolor="#000000" width="100%" border="0" cellpadding="0"
-           cellspacing="0">
-      <tr>
-        <td>
-          <font color="#FFFFFF" size="8"><center>
-            Bugzilla Version [% Param("version") %]
-          </center></font>
-        </td>
-      </tr>
-    </table>
+	<div id="header">
+		<a href="[% Param('urlbase') %]" id="site_logo"><img src="template/en/[%skin_name%]/style/images/openmoko_logo.png" alt="openmoko.com" /></a>
+		
+		<div id="main_navigation">
+			<ul>
+				<li><a href="http://www.openmoko.org/" class="nav_home"><span>Home</span></a></li>
+				<li><a href="http://wiki.openmoko.org/" class="nav_wiki"><span>Wiki</span></a></li>
+				<li><a href="http://bugzilla.openmoko.org/" class="nav_bugzilla selected"><span>Bugzilla</span></a></li>
+				<li><a href="http://planet.openmoko.org/" class="nav_planet"><span>Planet</span></a></li>
+				<li><a href="http://projects.openmoko.org/" class="nav_projects"><span>Projects</span></a></li>
+				<li><a href="http://lists.openmoko.org/" class="nav_lists"><span>Lists</span></a></li>
+			</ul>
+		</div>
+	</div>

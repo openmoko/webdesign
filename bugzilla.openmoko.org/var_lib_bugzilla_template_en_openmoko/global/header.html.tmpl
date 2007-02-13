@@ -36,13 +36,13 @@
   h2 = ""
   bgcolor = "#FFFFFF"
   onload = ""
+  skin_name = "openmoko"
 %]
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>[% title %]</title>
-    
 [%# Migration note: contents of the old Param 'headerhtml' would go here %]
 
     [% header_html %]
@@ -58,6 +58,8 @@
         [% style %]
       </style>
     [% END %]
+    
+    <link href="template/en/[%skin_name%]/style/style.css" rel="stylesheet" type="text/css" />
     
     [% IF style_urls %]
       [% FOREACH style_url = style_urls %]
@@ -78,25 +80,14 @@
   #%]
   
 [% INCLUDE global/banner.html.tmpl %]
-    
-[% IF h1 || h2 %]
-    <table border="0" cellspacing="0">
-      <tr>
-        <td valign="top" align="left">
-          <table border="0" cellpadding="0" cellspacing="2">
-            <tr>
-              <td valign="top" align="left" nowrap="nowrap">
-                <font size="+1"><b>[% h1 %]</b></font>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td valign="middle">&nbsp;</td>
-        <td valign="middle" align="left">[% h2 %]</td>
-      </tr>
-    </table>
-[% END %]
 
+[% IF h1 || h2 %]
+	<div class="page_title">
+		<strong>[% h1 %]</strong> [% IF h2 %]- [% h2 %][% END %]
+	</div>
+[% END %]
+    
+ <div class="container">
 [% IF message %]
   <table width="100%" cellspacing="0" cellpadding="5" border="1"><tr><td>
     <font color="green">[% message %]</font>
