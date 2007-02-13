@@ -19,7 +19,7 @@
  */
 
 /* @media screen, projection { */
-	#column-content {
+		#column-content {
 		width: 100%;
 		float: right;
 		margin: 0 0 .6em -12.2em;
@@ -27,10 +27,11 @@
 	}
 	#content {
 		border-top: 1px solid #E1E1E1;
-		margin: 0.60em 0 0 14.2em;
+		margin: 1.0em 0 0 14.2em;
 		padding: 0.63em 2em 1.5em 2em;
 		position: relative;
 		z-index: 2;
+		font-size: 1.1em;
 	}
 	#column-one {
 		padding-top: 5.60em;
@@ -38,10 +39,10 @@
 /* } */
 #content {
 	background: white;
-	color: black;
+	color: #333;
 	/* border: 1px solid #aaa; */
 	border-right: none;
-	line-height: 1.5em;
+	line-height: 1.3em;
 }
 /* the left column width is specified in class .portlet */
 
@@ -704,7 +705,7 @@ special external link styling */
 	padding: 0.2em 1em 0.4em .5em;
 	height: 1em;
 	text-transform: lowercase;
-	font-size: 1.0em;
+	font-size: 1.1em;
 	font-weight: bold;
 	white-space: nowrap;
 	width: 12.6em;
@@ -936,7 +937,7 @@ input.searchButton {
 		border-collapse: collapse;
 		padding-left: 1em;
 		list-style: none;
-		font-size: 95%;
+		font-size: 1.0em;
 	}
 	#p-cactions ul {
 		list-style: none;
@@ -1718,3 +1719,14 @@ tr.sv-space td { display: none; }
 	background-image:url(./navigation/lists.png);
 	width: 53px;
 } 
+
+#p-tb,
+#p-search,
+#p-navigation {
+	font-size: 1.1em;
+}
+
+a.new {
+	color: #ff0000 !important;
+	font-weight: bold;
+}
