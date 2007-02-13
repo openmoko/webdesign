@@ -57,7 +57,7 @@ class OpenMokoTemplate extends QuickTemplate {
 		<?php $this->html('headlinks') ?>
 		<title><?php $this->text('pagetitle') ?></title>
 		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "<?php $this->text('stylepath') ?>/<?php $this->text('stylename') ?>/main.css?7"; /*]]>*/</style>
-		<link rel="stylesheet" type="text/css" <?php if(empty($this->data['printable']) ) { ?>media="print"<?php } ?> href="<?php $this->text('stylepath') ?>/common/commonPrint.css" />
+		
 		<!--[if lt IE 5.5000]><style type="text/css">@import "<?php $this->text('stylepath') ?>/<?php $this->text('stylename') ?>/IE50Fixes.css";</style><![endif]-->
 		<!--[if IE 5.5000]><style type="text/css">@import "<?php $this->text('stylepath') ?>/<?php $this->text('stylename') ?>/IE55Fixes.css";</style><![endif]-->
 		<!--[if IE 6]><style type="text/css">@import "<?php $this->text('stylepath') ?>/<?php $this->text('stylename') ?>/IE60Fixes.css";</style><![endif]-->
@@ -89,6 +89,22 @@ class OpenMokoTemplate extends QuickTemplate {
 <?php if($this->data['body_onload'    ]) { ?>onload="<?php     $this->text('body_onload')     ?>"<?php } ?>
  class="<?php $this->text('nsclass') ?> <?php $this->text('dir') ?>">
 	<div id="globalWrapper">
+	
+	<div id="common_header">
+		<a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href'])?>" id="site_logo"><img src="<?php $this->text('logopath') ?>" alt="openmoko.com" /></a>
+		
+		<div id="main_navigation">
+			<ul>
+				<li><a href="http://www.openmoko.org/" class="nav_home"><span>Home</span></a></li>
+				<li><a href="http://wiki.openmoko.org/" class="nav_wiki selected"><span>Wiki</span></a></li>
+				<li><a href="http://bugzilla.openmoko.org/" class="nav_bugzilla"><span>Bugzilla</span></a></li>
+				<li><a href="http://planet.openmoko.org/" class="nav_planet"><span>Planet</span></a></li>
+				<li><a href="http://projects.openmoko.org/" class="nav_projects"><span>Projects</span></a></li>
+				<li><a href="http://lists.openmoko.org/" class="nav_lists"><span>Lists</span></a></li>
+			</ul>
+		</div>
+	</div>
+	
 		<div id="column-content">
 	<div id="content">
 		<a name="top" id="top"></a>

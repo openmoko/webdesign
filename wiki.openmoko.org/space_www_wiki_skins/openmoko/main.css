@@ -1690,31 +1690,31 @@ tr.sv-space td { display: none; }
 
 
 .nav_home {
-	background-image:url(../common/images/navigation/home.png);
+	background-image:url(./navigation/home.png);
 	width: 58px;
 }
 
 .nav_wiki {
-	background-image:url(../common/images/navigation/wiki.png);
+	background-image:url(./navigation/wiki.png);
 	width: 50px;
 }
 
 .nav_bugzilla {
-	background-image:url(../common/images/navigation/bugzilla.png);
+	background-image:url(./navigation/bugzilla.png);
 	width: 79px;
 }
 
 .nav_planet {
-	background-image:url(../common/images/navigation/planet.png);
+	background-image:url(./navigation/planet.png);
 	width: 68px;
 }
 
 .nav_projects {
-	background-image:url(../common/images/navigation/projects.png);
+	background-image:url(./navigation/projects.png);
 	width: 81px;
 }
 
 .nav_lists {
-	background-image:url(../common/images/navigation/lists.png);
+	background-image:url(./navigation/lists.png);
 	width: 53px;
 } 
