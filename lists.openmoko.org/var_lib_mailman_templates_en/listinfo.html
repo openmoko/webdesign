@@ -22,28 +22,23 @@
 
 
     <P>
-      <TABLE COLS="1" BORDER="0" CELLSPACING="4" CELLPADDING="5">
+      <TABLE COLS="1" BORDER="0" CELLSPACING="4" CELLPADDING="5" class="main_container">
 	<TR>
-	  <TD COLSPAN="2" WIDTH="100%" BGCOLOR="#99CCFF" ALIGN="CENTER">
-	    <B><FONT COLOR="#000000" SIZE="+1"><MM-List-Name> --
-	<MM-List-Description></FONT></B>
+	  <TD COLSPAN="2" WIDTH="100%" class="page_title">
+	    <h2><MM-List-Name> -- <MM-List-Description></h2>
 	  </TD>
 	</TR>
-	<tr>
-	    <td colspan="2">
-	      <p>&nbsp;
-	    </td>
-	  </tr>
 	  <tr>
-	    <TD COLSPAN="1" WIDTH="100%" BGCOLOR="#FFF0D0">
-	      <B><FONT COLOR="#000000">About <MM-List-Name></FONT></B>
+	    <TD COLSPAN="2" WIDTH="100%" class="page_subtitle">
+	      <h3>About <MM-List-Name></h3>
 	    </TD>
-            <TD COLSPAN="1" WIDTH="100%" BGCOLOR="#FFF0D0">
-              <MM-lang-form-start><MM-displang-box> <MM-list-langs>
-              <MM-form-end>
-    <MM-Subscribe-Form-Start>
-            </TD>
 	  </TR>
+	  <tr>
+	  	<td>
+	  		<MM-lang-form-start><MM-displang-box> <MM-list-langs>
+              <MM-form-end> <MM-Subscribe-Form-Start>
+        </td>
+     </tr>
 	    <tr>
 	      <td colspan="2">
 		<P><MM-List-Info></P>
@@ -55,8 +50,8 @@
 	</TD>
       </TR>
       <TR>
-	<TD COLSPAN="2" WIDTH="100%" BGCOLOR="#FFF0D0">
-	  <B><FONT COLOR="#000000">Using <MM-List-Name></FONT></B>
+	<TD COLSPAN="2" WIDTH="100%" class="page_subtitle">
+	  <h3>Using <MM-List-Name></h3>
 	</TD>
       </TR>
       <tr>
@@ -69,17 +64,15 @@
 	</td>
       </tr>
       <TR>
-	<TD COLSPAN="2" WIDTH="100%" BGCOLOR="#FFF0D0">
-	  <B><FONT COLOR="#000000">Subscribing to <MM-List-Name></FONT></B>
+	<TD COLSPAN="2" WIDTH="100%" class="page_subtitle">
+	  <h3>Subscribing to <MM-List-Name></h3>
 	</TD>
       </TR>
       <tr>
-	<td colspan="2">
-	  <P>
-	    Subscribe to <MM-List-Name> by filling out the following
-	      form.
-	  <ul>
-	  <MM-List-Subscription-Msg>
+	<td colspan="2" class="subscribe_to_list">
+	  <P>Subscribe to <MM-List-Name> by filling out the following form.</p>
+	  <p><MM-List-Subscription-Msg></p>
+	  
 	      <TABLE BORDER="0" CELLSPACING="2" CELLPADDING="2"
 		WIDTH="70%" HEIGHT= "112">
 		<TR>
@@ -133,13 +126,12 @@
 	  <center><MM-Subscribe-Button></P></center>
     </TABLE>
     <MM-Form-End>
-    </ul>
     </td>
     </tr>
     <TR>
-      <TD COLSPAN="2" WIDTH="100%" BGCOLOR="#FFF0D0">
-	<a name="subscribers">
-        <B><FONT COLOR="#000000"><MM-List-Name> Subscribers</FONT></B></a>
+      <TD COLSPAN="2" WIDTH="100%" class="page_subtitle">
+	<a name="subscribers"></a>
+        <h3><MM-List-Name> Subscribers</h3>
       </TD>
     </TR>
     <tr>
