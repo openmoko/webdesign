@@ -1636,7 +1636,7 @@ tr.sv-space td { display: none; }
 .mw-plusminus-null { color: #aaa; }
 
 #common_header {
-	height: 90px;
+	height: 7em;
 	position: relative;
 }
 
