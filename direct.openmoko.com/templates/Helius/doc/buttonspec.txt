@@ -1,0 +1,26 @@
+Helius and Pixame_v1 2 Buttons
+This file is intended to help adding more buttons when they are needed.
+It purpose is to discribe how the button were made so that they
+can be duplicated in the future.
+
+Original Spec:
+   Background color: R 0 G 0 B 0
+   Boarder color:  R 0  G 38  B 138
+   Drop shadow: R 153  G 153  B 153
+   height: 14 Pixels
+   Font: Unkowen 
+---------------------------------------------------
+New
+Button Software: Deknop
+Formate: .gif
+LZW compression: Ulead photoimpact SE 4.2.
+
+ Background color: R 0 G 0 B 0
+   Boarder color:  R 0  G 38  B 138
+   Drop shadow: R 153  G 153  B 153
+   height: 14 Pixels 
+   Width: variable
+Font: Arial
+Font style: Bold
+Font Size: 10 points
+Font color: R:0 G:38 B: 138 (white)

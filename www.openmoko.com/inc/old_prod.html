@@ -1,0 +1,19 @@
+<txp:if_individual_article>
+   <txp:php>
+      global $thisarticle;
+      if (($thisarticle['category1'] == 'accessories') or ($thisarticle['category2'] == 'accessories') or ($thisarticle['category1'] == 'featured') or ($thisarticle['category2'] == 'featured')) {
+        if (strtolower($thisarticle['custom2']) == 'alternative') {
+           include('inc/accessory_alternative.html');
+        } else if (strtolower($thisarticle['custom2']) == 'simple') {
+           include('inc/accessory_simple.html');
+        } else {
+           include('inc/accessory.html');
+        }
+      } else {
+        include('inc/product_'.$thisarticle['url_title'].'.html');
+      }
+   </txp:php>
+<txp:article form="nodisplay" />   
+<txp:else />
+   <txp:php>include('inc/products.html');</txp:php>
+</txp:if_individual_article>

@@ -1,0 +1,110 @@
+<?php
+/*
+
+  Copyright (c) 2005 Chainreactionworks.com
+
+  Released under the GNU General Public License
+  Original Auhtor:
+  Updates by:
+
+*/
+
+?>
+<font face="Arial"><span style="font-size:10pt;">
+<tr>
+ <td>
+</span></font><p align="center"><b><span style="font-size:10pt;"><font face="Arial">Data Feed Input/Output Introduction</font></span></b></p>
+<p>
+<font face="Arial"><span style="font-size:10pt;">&nbsp;<b> 1. Introduction:</b> Data feed service is
+based on Calvin K's data feed contribution. The basic functions were retained
+but the rest of the internal code was changed to follow OSC Style of coding.
+Along with the coding change an&nbsp;admin interface was introduced to manage
+the feed configuration. With these coding changed and the addition of a admin
+the process was split into 4 steps. Not all of the steps are required for each
+feed you do.</span></font></p>
+<p>
+<font face="Arial"><span style="font-size:10pt;">&nbsp; <b>2. Goals:</b><br>The typical store owner never needs to edit a code or define file directly.The store
+owner does not need a lot of support on how to use program. Combines the functions
+of moving data in and out of store is in one area. Make it flexible enough for
+small, medium and large store to use program effectively. Move program files closer
+to OSC/CRE Loaded standards for look and feel, and coding.<br><br>
+&nbsp; <b>3. Parts of Data Feed Service:</b><br>
+Froogle data feed : Calvin K<br>
+&nbsp;Salemaker for froogle feed: by Marcel van Lieshout<br>
+&nbsp;Admin for Data Feed : Tom O'Neill<br><br>
+&nbsp;&nbsp;&nbsp; d. For Data feeds setup up:<br>
+Step 1 <br>
+&nbsp;To set up this modules data feed service, Review the 7 steps to your first feed. It outlines
+what steps you need to take to do a feed. It will take you through the configuration process to the uploading and checking of the feed.<br>
+&nbsp;Step 2<br>The you will need to configure and run the data feeds this
+is described in the running doc/configureandrun.txt document The file field_spec.txt
+describes the limitation of what can be placed into each field<br><br>
+</span></font>
+<p><font face="Arial"><span style="font-size:10pt;">
+</td>
+</tr>
+<tr>
+  <td>
+
+ </span></font><b><font face="Arial"><span style="font-size:10pt;">&nbsp;3. Error and status messages</span></font></b><font face="Arial"><span style="font-size:10pt;">
+  </td>
+ </tr>
+ <tr>
+ <td>
+  All messages except the result of an import will appear near the top of the form, Blue background
+  is for normal messages, red back ground for errors. <br>
+  <img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/ep/images/epb_export_mesg.png" border="0" >
+  </td>
+</tr>
+<tr>
+  <td>
+ </span></font><b><font face="Arial"><span style="font-size:10pt;">Import result</span></font></b><font face="Arial"><span style="font-size:10pt;">
+  </td>
+ </tr>
+ <tr>
+ <td>
+ The Import result will now appear below the admin screen<br>
+  <img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/ep/images/import_results.gif" border="0" >
+  </td>
+</tr>
+
+<tr>
+  <td>
+ </span></font><b><font face="Arial"><span style="font-size:10pt;">Help while using the admin screens</span></font></b><font face="Arial"><span style="font-size:10pt;">
+  </td>
+ </tr>
+ <tr>
+ <td>
+ You will notice a <img src="images/icon_info.gif" border="0" > through out the admin screens This
+ is individual help for each setting or input you could use. It will display a popup window with
+ help.<br>
+  <img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/ep/images/item_help.gif" border="0" >
+  </td>
+</tr>
+<tr>
+ <td>
+ <br><br><b> 5. Features added and changes to basic programs.</b><br>
+&nbsp;Data Feed:<br>
+&nbsp;1. Added language files<br>
+&nbsp;2. Multiple configurations for multiple feed services now available through admin screen<br>
+&nbsp;3. Configuration configured in admin rather then edit a file.<br>
+&nbsp;4. Feed submission now A multiple step process.<br>
+&nbsp;5. Switched to tep functions for data base queries.<br>
+&nbsp;6. Split file generation and FTP code into two separate files.<br>
+&nbsp;7. Combined Froogle, Yahoo and Bizrite into one package (Not all installed and adapted yet)<br>
+&nbsp;8. added fields for advance feed to products database<br>
+&nbsp;9. added separate sql file for additional info for froogle feed<br>
+&nbsp;10. Builds Category strings before building feed file.<br>
+&nbsp;11. Help popups added to admin screens.<br>
+&nbsp;12. Added salemaker contribution pricing to price sent to price in feed.<br>
+&nbsp;13. Uses tax zone from store. <br>
+&nbsp;14. Add the fields froogle_type, upc, isbn, manufacturer_product_id to products table and
+products edit screen. (not completed in this version)<br>
+&nbsp;15. add froogle specific fields for books, music, video to a separate table.(not completed in this version)<br>&nbsp;
+</td>
+</tr></span></font>
+<tr>
+ <td>
+&nbsp; &nbsp;  </span></font><a href="data.php?selected_box=data"><font face="Arial"><span style="font-size:10pt;"><img src="includes/languages/english/images/buttons/button_return.gif"></span></font></a><font face="Arial"><span style="font-size:10pt;">
+  </td>
+</tr>

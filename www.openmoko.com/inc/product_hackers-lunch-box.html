@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<txp:output_form form="moko_html_header" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body id="product_neo1973">
+
+<div id="wrapper">
+	<txp:php>
+		global $logo_sufix; $logo_sufix = "_2";
+		global $url_title;
+		echo $GLOBALS['thisarticle']['url_title'];die();
+	</txp:php>
+	
+	<txp:output_form form="moko_header" />
+	
+	<div id="site_content"></div>
+	<div id="middleblock"><div id="middleblock_inner"><div id="middleblock_inner2">
+	
+		<div id="middleblock_container">
+			<div class="banner_images">
+				<div id="tab_big_image_article_0" class="tab_item" style="">
+					<a href="#" class="button_enlarge"><span>enlarge</span></a>
+					<txp:php>
+						$image_id="3";
+						
+						if ((strpos($_SERVER['HTTP_USER_AGENT'],"MSIE")) and (strpos($_SERVER['HTTP_USER_AGENT'],"MSIE 7")===false)) {
+							$rs = safe_row('*', 'txp_image', "id = $image_id limit 1");						
+							
+							if (strtolower($rs['ext']) == '.png') {
+								global $prefs;
+
+								$siteroot = link_to_home(array());								
+								$filepath = $siteroot.$prefs['img_dir'].'/';
+	
+								$filename=$image_id.$rs['ext']; $width = $rs['w']; $height = $rs['h'];
+								$alt = isset($rs['alt']) ? $rs['alt'] : $rs['name'];
+								
+								echo "<img src='".$siteroot."images/blank.gif' width='$width' height='$height'  alt='$alt' style=\"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='".$filepath.$filename."', sizingMethod='scale')\" />";
+							} else {
+								$image = image(array("id"=>$image_id));
+								echo $image;
+							}
+						} else {				
+							$image = image(array("id"=>$image_id));
+							echo $image;
+						}
+					</txp:php>
+				</div>
+				<div id="tab_big_image_article_1" class="tab_item display_none">
+					<a href="#" class="button_enlarge"><span>enlarge</span></a>
+					<txp:php>
+						$image_id="4";
+						
+						if ((strpos($_SERVER['HTTP_USER_AGENT'],"MSIE")) and (strpos($_SERVER['HTTP_USER_AGENT'],"MSIE 7")===false)) {
+							$rs = safe_row('*', 'txp_image', "id = $image_id limit 1");						
+							
+							if (strtolower($rs['ext']) == '.png') {
+								global $prefs;
+
+								$siteroot = link_to_home(array());								
+								$filepath = $siteroot.$prefs['img_dir'].'/';
+	
+								$filename=$image_id.$rs['ext']; $width = $rs['w']; $height = $rs['h'];
+								$alt = isset($rs['alt']) ? $rs['alt'] : $rs['name'];
+								
+								echo "<img src='".$siteroot."images/blank.gif' width='$width' height='$height'  alt='$alt' style=\"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='".$filepath.$filename."', sizingMethod='scale')\" />";
+							} else {
+								$image = image(array("id"=>$image_id));
+								echo $image;
+							}
+						} else {				
+							$image = image(array("id"=>$image_id));
+							echo $image;
+						}
+					</txp:php>
+
+				</div>
+				
+				<div class="shadow">&nbsp;</div>
+			</div>
+					
+			<script type="text/javascript">
+				_pageTabs['big_image']=2;
+				showTab('big_image',0);
+			</script>
+			<div class="banner_content">
+				<h1><span>Hacker's Lunch Box</span></h1>
+				<p>Hacker's Lunch Box is the world’s first completely open, Linux-based mobile phone. Designed with elongated oval lines and smooth rounded edges, the sleek exterior, and ergonomic feel fit the Neo1973 into the palm of your hand.</p>
+				
+				<div class="banner_details">
+					<div class="banner_left">
+						<h2>Colours</h2>
+						<ul class="banner_product_thumbs">
+							<li><a href="#" onclick="return showTab('big_image',0)"><txp:image id="5" /></a></li>
+							<li><a href="#" onclick="return showTab('big_image',1)"><txp:image id="6" /></a></li>
+						</ul>
+						<a href="#" class="button_buy_it_now img_button"><span>Bu It Now</span></a>
+					</div>
+					
+					<div class="banner_right">
+						<h2><a href="#">Accessories</a></h2>
+						<ul>
+							<li><a href="#">Car kit</a></li>
+							<li><a href="#">Hackers Lunch Box</a></li>
+							<li><a href="#">Carrying Case</a></li>
+							<li><a href="#">Stylus</a></li>
+						</ul>
+						
+						<a href="#" class="button_all_accessories"><span>All Accessories</span></a>
+					</div>
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	
+		<ul id="middleblock_tabs">
+			<li><a href="#tab_main_article_0" onclick="return showTab('main',0)" id="tab_main_article_0_link"><span>Standard Kit</span></a></li>
+			<li><a href="#tab_main_article_1" onclick="return showTab('main',1)" id="tab_main_article_1_link"><span>Pictures</span></a></li>
+			<li><a href="#tab_main_article_2" onclick="return showTab('main',2)" id="tab_main_article_2_link"><span>Screenshots</span></a></li>
+			<li><a href="#tab_main_article_3" onclick="return showTab('main',3)" id="tab_main_article_3_link"><span>Hardware</span></a></li>
+			<li><a href="#tab_main_article_4" onclick="return showTab('main',4)" id="tab_main_article_4_link"><span>Software</span></a></li>
+		</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+<txp:php>
+$GLOBALS['pretext']['tab_counter']="standard_kit";
+$GLOBALS['pretext']['article_counter']=0;
+</txp:php>
+
+	<div class="main_container tab_item" id="tab_main_article_0">
+		<div class="left_column">
+			<h3>What's Included:</h3>
+			<ul>
+				<txp:article_custom form="moko_product_article_link" section="products" category="products-standard_kit"/>
+			</ul>
+		</div>
+		
+		<div class="right_column">
+<txp:php>
+$GLOBALS['pretext']['article_counter']=0;
+</txp:php>
+			<txp:article_custom form="moko_product_article" section="products" category="products-standard_kit"/>
+<script type="text/javascript">
+_pageTabs['<txp:php>echo $GLOBALS['pretext']['tab_counter'];</txp:php>']=<txp:php>echo $GLOBALS['pretext']['article_counter'];</txp:php>;
+showTab('<txp:php>echo $GLOBALS['pretext']['tab_counter'];</txp:php>',0);
+</script>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+
+<script type="text/javascript">
+_pageTabs['main']=5;
+showTab('main',0);
+</script>
+
+<txp:php>
+$GLOBALS['pretext']['tab_counter']="pictures";
+$GLOBALS['pretext']['article_counter']=0;
+</txp:php>
+
+	<div class="main_container tab_item" id="tab_main_article_1">
+		<div class="left_column">
+			<h3>Some Title:</h3>
+			<ul>
+				<txp:article_custom form="moko_product_article_link" section="products" category="products-pictures"/>
+			</ul>
+		</div>
+		
+		<div class="right_column">
+<txp:php>
+$GLOBALS['pretext']['article_counter']=0;
+</txp:php>
+			<txp:article_custom form="moko_product_article" section="products" category="products-pictures"/>
+<script type="text/javascript">
+_pageTabs['<txp:php>echo $GLOBALS['pretext']['tab_counter'];</txp:php>']=<txp:php>echo $GLOBALS['pretext']['article_counter'];</txp:php>;
+showTab('<txp:php>echo $GLOBALS['pretext']['tab_counter'];</txp:php>',0);
+</script>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	
+<txp:php>
+$GLOBALS['pretext']['tab_counter']="screenshots";
+$GLOBALS['pretext']['article_counter']=0;
+</txp:php>
+
+	<div class="main_container tab_item" id="tab_main_article_2">
+		<div class="left_column">
+			<h3>Some Title:</h3>
+			<ul>
+				<txp:article_custom form="moko_product_article_link" section="products" category="products-screenshots"/>
+			</ul>
+		</div>
+		
+		<div class="right_column">
+<txp:php>
+$GLOBALS['pretext']['article_counter']=0;
+</txp:php>
+			<txp:article_custom form="moko_product_article" section="products" category="products-screenshots"/>
+<script type="text/javascript">
+_pageTabs['<txp:php>echo $GLOBALS['pretext']['tab_counter'];</txp:php>']=<txp:php>echo $GLOBALS['pretext']['article_counter'];</txp:php>;
+showTab('<txp:php>echo $GLOBALS['pretext']['tab_counter'];</txp:php>',0);
+</script>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	
+<txp:php>
+$GLOBALS['pretext']['tab_counter']="hardware";
+$GLOBALS['pretext']['article_counter']=0;
+</txp:php>
+
+	<div class="main_container tab_item" id="tab_main_article_3">
+		<div class="left_column">
+			<h3>Some Title:</h3>
+			<ul>
+				<txp:article_custom form="moko_product_article_link" section="products" category="products-hardware"/>
+			</ul>
+		</div>
+		
+		<div class="right_column">
+<txp:php>
+$GLOBALS['pretext']['article_counter']=0;
+</txp:php>
+			<txp:article_custom form="moko_product_article" section="products" category="products-hardware"/>
+<script type="text/javascript">
+_pageTabs['<txp:php>echo $GLOBALS['pretext']['tab_counter'];</txp:php>']=<txp:php>echo $GLOBALS['pretext']['article_counter'];</txp:php>;
+showTab('<txp:php>echo $GLOBALS['pretext']['tab_counter'];</txp:php>',0);
+</script>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	
+<txp:php>
+$GLOBALS['pretext']['tab_counter']="software";
+$GLOBALS['pretext']['article_counter']=0;
+</txp:php>
+
+	<div class="main_container tab_item" id="tab_main_article_4">
+		<div class="left_column">
+			<h3>Some Title:</h3>
+			<ul>
+				<txp:article_custom form="moko_product_article_link" section="products" category="products-software"/>
+			</ul>
+		</div>
+		
+		<div class="right_column">
+<txp:php>
+$GLOBALS['pretext']['article_counter']=0;
+</txp:php>
+			<txp:article_custom form="moko_product_article" section="products" category="products-software"/>
+<script type="text/javascript">
+_pageTabs['<txp:php>echo $GLOBALS['pretext']['tab_counter'];</txp:php>']=<txp:php>echo $GLOBALS['pretext']['article_counter'];</txp:php>;
+showTab('<txp:php>echo $GLOBALS['pretext']['tab_counter'];</txp:php>',0);
+</script>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	
+	<txp:output_form form="moko_footer" />
+	
+</div>
+
+</body>
+</html>

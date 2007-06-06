@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<txp:output_form form="moko_html_header" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+
+<div id="wrapper">
+
+	<txp:output_form form="moko_header" />
+		
+	<div class="left_container">
+		<div class="sidebox"><div class="inner"><div class="inner_2">
+			<form id="searchform" method="get" action="<txp:link_to_home />">
+				<label>Search openmoko</label>
+				<input type="hidden" name="s" value="search" />
+				<input type="text" class="input_text" name="q" />
+				<input type="image" class="input_submit" src="<txp:link_to_home />images/button_go.png" alt="GO"/>
+			</form>
+		</div></div></div>
+		
+		<a href="#" class="side_banner"><img src="<txp:link_to_home />images/__sample_banner_1.png" alt="baner" /></a>
+		
+		<a href="#" class="side_banner"><img src="<txp:link_to_home />images/__sample_banner_2.png" alt="baner" /></a>
+	</div>
+	
+	<div class="right_container">
+			<div class="content" id="site_content">
+				<h2>Contact Us</h2>
+                
+                <div class="contact_single_block">
+                	<h3>General E-Mail</h3>
+                    <p class="contact_mails"><span>General information</span><a href="mailto:contact@openmoko.com">contact@openmoko.com</a></p>
+                    <p class="contact_mails"><span>Sales information</span><a href="mailto:sales@openmoko.com">sales@openmoko.com</a></p>
+                    <p class="contact_mails"><span>Investor relations</span><a href="mailto:investors@openmoko.com">investors@openmoko.com</a></p>
+                    <p class="contact_mails"><span>Employment</span><a href="mailto:jobs@openmoko.com">jobs@openmoko.com</a></p>
+                </div>
+                
+                <div class="contact_single_block">
+                	<div class="contact_column">
+                    	<txp:article_custom id="62" form="article_simple" />
+	                </div>
+                    
+                	<div class="contact_column">
+                    	<txp:article_custom id="61" form="article_simple" />
+                    </div>
+                    
+                    <div class="clear"></div>
+                </div>
+                
+                <div class="contact_single_block">
+	                <h3>Directions and Map</h3>
+                    <div class="contact_map_container">
+                    	<img src="<txp:link_to_home/>images/contact_map.png" alt="map" />
+                    </div>
+                    
+	               	<div class="contact_column">
+                    	<txp:article_custom id="60" form="article_body" />
+                    </div>
+                    
+	               	<div class="contact_column">
+                    	<txp:article_custom id="59" form="article_body" />
+                    </div>
+                    
+                    <div class="clear"></div>
+                </div>
+
+				<a href="#" class="top_link"><span>top</span></a>
+			</div>	
+	</div>
+	
+	<div class="clear" style="height:20px;"></div>
+	<txp:output_form form="moko_footer" />
+	
+</div>
+
+</body>
+</html>
