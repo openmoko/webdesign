@@ -1,0 +1,91 @@
+<?php
+/*
+
+  Copyright (c) 2005 Chainreactionworks.com
+
+  Released under the GNU General Public License
+  Original Auhtor:
+  Updates by:
+  
+*/
+
+?>
+<tr>
+ <td>
+
+
+<b>How to do specific task with the files in Easy Populate Advance:</b><br><br>
+<br>
+&nbsp;&nbsp;1. Adding new products:<br>
+&nbsp;&nbsp;&nbsp;  a. To add products the product id should be 0, there can be many 0's for product ID's 
+  as needed. The code will detect the 0 as a new product and auto increment the 
+  products_id.
+  <br>
+
+&nbsp;&nbsp;&nbsp;  b. If the products_id number is left blank then the product is not added. You can also 
+  insert you own product ID. they do not have to be sequncial. <br>
+
+&nbsp;&nbsp;&nbsp;  c. If you need to specify your own unique products_ID, and it does not exist in the data
+  base it will be added as a new product. Make sure you add the correct categories, 
+  other wise you will need to use the move product to a new category procedure.
+<br>
+Example:
+<br>
+I have a previous inventory software that has already assigned product ID's they are
+<br>
+12001
+15001
+14
+2000
+<br>
+These can be used by simply putting the in the v-product_id column.
+<br><br>
+&nbsp;&nbsp;2. Adding linked products (Yes Version 3.01 can handle linked products):
+A linked product is having one product record set, but having it show in multiple 
+categories.
+<br>
+&nbsp;&nbsp;&nbsp;  a. For a product you want to link to another category 
+Create a download using complete or model/category in the  Select fields to download
+you can limit the list by using the filter settings.
+<br>
+&nbsp;&nbsp;&nbsp;  b. Import into the spead sheet program.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 1. Copy the original product line to a new line<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 2. Change only category information where you want the product linked to.
+    Leaving the v_product_id unchanged.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 3. Save the file and re upload<br>
+<br><br>
+&nbsp;&nbsp;3.Deleting products (This has been added back for products only):
+<br>&nbsp;&nbsp;&nbsp;  a. Single product not linked
+<br>
+&nbsp;&nbsp;&nbsp;  Download any of the files that has a products_id's. You will notice a column called v_action
+all the way to the left. In this column add delete for each product you which to delete.
+<br>
+&nbsp;&nbsp;&nbsp;  b. Deleting linked product:
+ Do a download that has all of the links for the product 
+cut the paste th item you which do remove in front of the product links to remain.
+In the v_action column enter delete for the link you want to remove.
+<br>
+Note: the deleted item must be listed first. The product to remain must be list after the
+product link you are deleting.
+<br><br>
+&nbsp;&nbsp;4. Moving a product between two categories
+  In the spread sheet program
+<br>&nbsp;&nbsp;&nbsp;   1. copy the line for the product to a new line
+<br>&nbsp;&nbsp;&nbsp;   2. on the original line type in delete in the v_action column
+<br>&nbsp;&nbsp;&nbsp;   3. on the new line change the categories
+<br>
+&nbsp;&nbsp;4. Removing columns in the spread sheet.
+Due to how Ep was designed you do not need all of the column from the export file to be present
+in the import file.
+<br>&nbsp;&nbsp;&nbsp;   1. Minmum columns:
+<br>&nbsp;&nbsp;&nbsp   products_id, v_status, v_action, EOREOR
+ If you have prodcut information: any or all by products_id can be removed
+<br>&nbsp;&nbsp;&nbsp   If you have mete tags or header tags installed make sure you leave the set together  If you have prodcut information: any or all by products_id can be removed
+<br>&nbsp;&nbsp;&nbsp If you have category information: any or all of the unused category_ columns. 
+ </td>
+</tr>
+<tr>
+ <td>
+&nbsp; &nbsp; <a href="data.php?selected_box=data"> <img src="includes/languages/english/images/buttons/button_return.gif"></a>
+  </td>
+</tr>

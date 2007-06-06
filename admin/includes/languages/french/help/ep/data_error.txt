@@ -1,0 +1,34 @@
+
+
+
+
+
+what the basic froogle feed sends:
+product_url    name    description   price   image_url   category    offer_id
+
+http://192.168.1.35/loaded6151/product_info.php?products_id=28  $25 Gift Certificate  Buy a Gift Certificate for your friends or family 26.38 http://192.168.1.35/loaded6151/images/giftcert-25-sm.gif   Gift Certificate 28
+
+
+froogle product url not set up For SEO urls
+http://192.168.1.35/loaded6151/product_info.php?products_id=20
+
+1. FTP open connection failed to
+The is no server listed in the configure file to connect to
+
+2. FTP connection has failed!
+Failed to connect to the froogle server.
+  wrong user or password entered into the configuration
+
+3. Attempted to connect to
+ An attempt to connect to the server failed If you have list a server, Froogle ftp could be down
+ or you have the wrong server listed inthe configuration.
+ 
+ 
+4. Couldn\'t change directory on
+
+5. Uploaded froogle.txt to hedwig.google.com as /testuser/froogle.txt
+
+The upload worked, Now go to froogle and log into your account and double check the feed.
+
+ 
+ 

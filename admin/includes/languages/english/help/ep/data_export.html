@@ -1,0 +1,144 @@
+<?php
+/*
+
+  Copyright (c) 2005 Chainreactionworks.com
+
+  Released under the GNU General Public License
+  Original Auhtor:
+  Updates by:
+
+*/
+
+?>
+<tr>
+ <td align = "left">
+ <img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/ep/images/epa_start.png" border="0" ><br>
+
+ The Export Screen
+ </td>
+</tr>
+<tr>
+ <td>
+<b>Basic change with EPA</b>
+ </td>
+</tr>
+<tr>
+ <td>
+The changes here are in the handling of HTML content in descriptions; image path URL's,
+and EP import filename requirements. You may now import files with html in the text
+fields and not have it mangled by EP or Excel.  URL's for images in subdirectories
+can be handled and correctly written to the database.   Beginning with 2.75, EP
+Advanced will not install files unless it begins with EPA,and EP Basic will not
+install files that begin with EPA.  This feature is to protect the database from
+errors related to a new column added to the Easy populate file format.  EP Advanced
+uses the product_id column, this allow for more features to be added. EPA is will also allow
+you to refine your export file so you can target a specific group of records to edit
+ </td>
+ </tr>
+  <tr>
+ <td>
+<br><H3><b>1. Select method to save export file </b></H3><br>
+<img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/ep/images/epa_sel_export.png" border="0" ><br>
+  </td>
+</tr>
+<tr>
+ <td>
+To export select where you want the export file placed.
+</td>
+</tr>
+<tr>
+ <td>
+<br><H3><b>2. Select field set to export</b></H3><br>
+<img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/ep/images/epa_field_group.png" border="0" ><br>
+ </td>
+</tr>
+
+<tr>
+ <td>
+Next select which group of feilds to export
+</td>
+</tr>
+  </td>
+ </tr>
+
+<tr>
+ <td>
+<br><H3><b>3.Select field for sort order </b></H3><br>
+<img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/ep/images/epa_sortorder.png" border="0" ><br>
+ </td>
+</tr>
+
+<tr>
+ <td>
+Next select the sort order you want the rows to apear in the export file.
+</td>
+</tr>
+<tr>
+ <td>
+<br><H3><b>4.Limit number of products to Export </b></H3><br>
+<br>
+ </td>
+</tr>
+
+<tr>
+ <td>
+If you deal with large export files and find it diffcult to find products to edit. You
+can use the Limits to make you export files small and target specific groups of records.
+Not all export files can be limited by all meathods. Meathods can also be combined.
+</td>
+</tr>
+<tr>
+ <td>
+&nbsp;&nbsp;&nbsp;<H4><b>a. Limit By Category </b></H4><br>
+&nbsp;&nbsp;&nbsp;<img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/ep/images/epa_limit_cat.png" border="0" >
+<br>
+ </td>
+</tr>
+
+<tr>
+ <td>
+ If you have TOP showing in the drop down box all categories are looked at.
+ If you have a category showing in the drop down box, the that category and all sub categories will be in the list
+ The categories drop down is generated from your categories in the database
+</td>
+</tr>
+<tr>
+ <td>
+&nbsp;&nbsp;&nbsp;<H4><b>b. Limit By Manufacture </b></H4><br>
+&nbsp;&nbsp;&nbsp;<img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/ep/images/epa_limit_man.png" border="0" >
+<br>
+ </td>
+</tr>
+
+<tr>
+ <td>
+ If you have "Manufactures showing in the drop down box all manufactures are looked at.
+ You can select any manufacture to target just there products
+ The drop down list of manufacures is read from your manufacters.
+ </td>
+</tr>
+
+<tr>
+ <td>
+&nbsp;&nbsp;&nbsp;<H4><b>c. Limit By Product Range </b></H4><br>
+&nbsp;&nbsp;&nbsp;<img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/ep/images/epa_limit_prodid.png" border="0" >
+<br>
+ </td>
+</tr>
+
+<tr>
+ <td>
+ You can use Product Id's to limit your export file.
+<br>&nbsp;&nbsp;&nbsp;  1. If no product_id's are enter all of the product are in the export file
+<br>&nbsp;&nbsp;&nbsp;  2. If the begin product_id and no end product_id is entered. Products from the first product id to the end are in the export file
+<br>&nbsp;&nbsp;&nbsp;  3. If no beginning product_id's and only and ending product_ID. From the first id to ending the products are in the export file
+<br>&nbsp;&nbsp;&nbsp;  4. If the begin product_id and ending product_id is enter then this range of products are in the export file
+ </td>
+</tr>
+
+
+<tr>
+<td>
+<br>&nbsp; &nbsp; <a href="data.php?selected_box=data"> <img src="includes/languages/english/images/buttons/button_return.gif"></a>
+  </td>
+</tr>

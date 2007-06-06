@@ -1,0 +1,4 @@
+<?php
+define('MODULE_CHECKOUT_SUCCESS_NOTIFICATIONS_TITLE', 'Avis');
+define('MODULE_CHECKOUT_SUCCESS_NOTIFICATIONS_DESCRIPTION', 'Module De Succès De Contrôle D\'Avis De Produit');
+?>
