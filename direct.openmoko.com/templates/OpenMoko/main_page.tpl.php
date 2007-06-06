@@ -29,7 +29,7 @@ if ( file_exists(DIR_WS_INCLUDES . FILENAME_HEADER_TAGS) ) {
 			<input type="hidden" name="s" value="search" />
 			<input type="text" class="input_text" name="q" />
 
-			<input type="image" class="input_submit" src="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/images/button_go.png" alt="GO"/>
+			<input type="image" class="input_submit" src="<?php echo PROTOCOL.OPENMOKO_SHOP_HOST.OPENMOKO_SHOP_WS_PATH; ?>/images/button_go.png" alt="GO"/>
 		</form>
 	</div></div></div>
 	
