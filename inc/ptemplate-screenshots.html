@@ -1,0 +1,56 @@
+<?php
+
+	$scrimages = safe_rows('*', 'txp_image', "category = '".$GLOBALS['current_category']."'");
+	global $prefs;
+	$imgdir = link_to_home(array()).$prefs['img_dir'].'/';
+    
+      
+	echo "<script>";
+    echo "var images_dir = '".$imgdir."';";
+    for ($x=0; $x<count($scrimages);$x++) {
+		echo "screenshots_data[".$x."] = {'description':'".$scrimages[$x]['caption']."','title':'".$scrimages[$x]['alt']."','filename':'".$scrimages[$x]['id'].$scrimages[$x]['ext']."','width':'".$scrimages[$x]['w']."','height':'".$scrimages[$x]['h']."'};";
+    }
+	echo "</script>";    
+	
+?>
+
+<div class="screenshots_page">
+	<div class="title_container">
+		<h2>Screenshots</h2>
+	</div>
+
+	<div id="screenshot_caption">
+<?php
+	echo "<h3>".$scrimages[0]['alt']."</h3>";
+    echo $scrimages[0]['caption'];
+?>
+	</div>
+	
+	<div class="screenshots_right">
+		<div class="screenshot_image">
+		<?php
+			echo '<img src="'.$imgdir.$scrimages[0]['id'].$scrimages[0]['ext'].'" alt="'.$scrimages[0]['alt'].'" id="screenshot_image"/>';;
+		?>
+		</div>
+		
+		<div class="screenshot_thumbs">
+		
+<?php		
+	$x=0;
+	foreach ($scrimages as $screenshot) {
+    
+		echo '<div class="screenshot_thumb" onclick="setScreenshot('.$x.'); return false;">';
+		echo '<img src="'.$imgdir.$screenshot['id'].'t'.$screenshot['ext'].'" alt="'.$screenshot['alt'].'" />';
+		echo '</div>';
+        
+        $x++;
+	}
+
+?>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	
+	<div class="clear" style="height: 10px;"></div>
+</div>

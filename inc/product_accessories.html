@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<txp:output_form form="moko_html_header" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+
+<div id="wrapper">
+	<txp:output_form form="moko_header" />
+	
+	<div id="featured_accessory">
+		<div id="article_description" class="featured_product">
+		<txp:php>				
+			global $featured;
+			
+			$product_id = 90;
+			$featured =  safe_row('title,body,url_title,excerpt,image', 'textpattern', "id = ".$product_id." limit 1");
+			
+			echo "<h2>".$featured['title']."</h2>";
+			echo "<div class='description'>".$featured['excerpt']."</div>";
+			echo "<a href='".link_to_home(array())."products/".$featured['url_title']."' class='button_more_details img_button'><span>More Details</span></a>";
+
+		</txp:php>
+		</div>
+		
+		<txp:php>
+			global $featured;
+			
+			if ((strpos($_SERVER['HTTP_USER_AGENT'],"MSIE")) and (strpos($_SERVER['HTTP_USER_AGENT'],"MSIE 7")===false)) {
+						$images = explode(",",trim($featured['image']));
+						$image_name = $images[0];
+						$rs = safe_row('*', 'txp_image', "id = $image_name");						
+						
+						if (strtolower($rs['ext']) == '.png') {
+							global $prefs;
+							
+							$filepath = "http://".$prefs['siteurl'].'/'.$prefs['img_dir'].'/';
+							$siteroot = "http://".$prefs['siteurl'].'/';
+
+							$filename=$image_name.$rs['ext']; $width = $rs['w']; $height = $rs['h'];
+							$alt = isset($rs['alt']) ? $rs['alt'] : $rs['name'];
+																
+							echo "<img src='".$siteroot."images/blank.gif' width='$width' height='$height'  alt='$alt' style=\"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='".$filepath.$filename."', sizingMethod='scale')\"  class='featured_image' />";
+						} else {
+							$image = image(array("id" => $featured['image'],"class"=>"featured_image"));
+							echo $image;								}
+					} else {				
+						$image = image(array("id" => $featured['image'],"class"=>"featured_image"));
+						echo $image;
+					} 
+		</txp:php>
+	</div>
+	<div class="titlebar titlebar_accessories">
+		<h2>Accessories</h2>
+		<div class="pagination">
+			<txp:php>
+				global $pretext;
+				global $thispage;
+				global $prefs;		
+				global $page;
+				global $articles_per_page;
+				
+				$articles_per_page = 10;
+				
+				$page = isset($_GET['pg']) ? $_GET['pg'] : 0;					
+			
+				$base_url = "http://".$prefs['siteurl']."/products/accessories?pg=";
+				
+			
+				$total_pages = ceil(mem_article_count(array(
+					'section'=>'products',
+					'category'=>'accessories'
+				))/$articles_per_page);
+				
+				if ($page !=0) {
+					echo "<a href='".$base_url."0' class='pag_first'>First</a>";
+					echo "<a href='$base_url".($page-1)."' class='pag_previous'>Previous</a>";
+				} else {
+					echo "<a href='##' class='pag_first disabled'>First</a>";
+					echo "<a href='##' class='pag_previous disabled'>Previous</a>";
+				}
+				for ($x=1;$x<($total_pages+1);$x++) {
+					echo "<a href='$base_url".($x-1)."'";
+					if (($x-1)==$page) echo " class='selected'";
+					echo">$x</a>";
+				};
+				
+				if ($page != ($total_pages-1)) {
+					echo "<a href='$base_url".($page+1)."' class='pag_next'>Next</a>";
+					echo "<a href='$base_url".($total_pages-1)."' class='pag_last'>Last</a>";
+				} else {
+					echo "<a href='##' class='pag_next disabled'>Next</a>";
+					echo "<a href='##' class='pag_last disabled'>Last</a>";
+				}
+			</txp:php>
+		</div>
+	</div>
+	
+	<div class="left_container left_container_alternative">
+		<div class="sidebox"><div class="inner"><div class="inner_2">
+			<form id="searchform" method="get" action="<txp:link_to_home />">
+				<label>Search openmoko</label>
+				<input type="hidden" name="s" value="search" />
+				<input type="text" class="input_text" name="q" />
+				<input type="image" class="input_submit" src="<txp:link_to_home />images/button_go.png" alt="GO"/>
+			</form>
+		</div></div></div>
+		
+		<a href="#" class="side_banner"><img src="<txp:link_to_home />images/__sample_banner_1.png" alt="baner" /></a>
+		
+		<a href="#" class="side_banner"><img src="<txp:link_to_home />images/__sample_banner_2.png" alt="baner" /></a>
+	</div>
+	
+	<div class="right_container right_container_alternative">		
+			<div class="accessories_listing">		
+			<txp:php>
+				global $x;
+				global $y;
+				global $page;
+				global $articles_per_page;
+				
+				$x =0; $y=0;
+								
+				$articles = article_custom(array(
+					'section'=>'products',
+					'category'=>'accessories',
+					'form'=>'accessory_list',
+					'limit'=>$articles_per_page,
+					'offset'=>($page * $articles_per_page)
+				));
+				
+				echo $articles;
+								
+				if (($x % 2) !=0) {
+					echo '<div class="clear"></div>';
+					echo '</div></div>';
+					echo '</div>';
+				}
+			</txp:php>
+					<a href="#" class="top_link top_link_alt"><span>top</span></a>
+					<div class="pagination bottom_pagination">
+						<txp:php>
+							global $pretext;
+							global $thispage;
+							global $prefs;		
+							global $page;
+							global $articles_per_page;
+							
+							$page = isset($_GET['pg']) ? $_GET['pg'] : 0;					
+						
+							$base_url = "http://".$prefs['siteurl']."/products/accessories?pg=";
+							
+							$total_pages = ceil(mem_article_count(array(
+								'section'=>'products',
+								'category'=>'accessories'
+							))/$articles_per_page);
+							
+							if ($page !=0) {
+								echo "<a href='".$base_url."0' class='pag_first'>First</a>";
+								echo "<a href='$base_url".($page-1)."' class='pag_previous'>Previous</a>";
+							} else {
+								echo "<a href='##' class='pag_first disabled'>First</a>";
+								echo "<a href='##' class='pag_previous disabled'>Previous</a>";
+							}
+							for ($x=1;$x<($total_pages+1);$x++) {
+								echo "<a href='$base_url".($x-1)."'";
+								if (($x-1)==$page) echo " class='selected'";
+								echo">$x</a>";
+							};
+							
+							if ($page != ($total_pages-1)) {
+								echo "<a href='$base_url".($page+1)."' class='pag_next'>Next</a>";
+								echo "<a href='$base_url".($total_pages-1)."' class='pag_last'>Last</a>";
+							} else {
+								echo "<a href='##' class='pag_next disabled'>Next</a>";
+								echo "<a href='##' class='pag_last disabled'>Last</a>";
+							}
+						</txp:php>
+					</div>
+			</div>
+
+	</div>
+	
+	<div class="clear" style="height:20px;"></div>
+	<txp:output_form form="moko_footer" />
+	
+</div>
+
+</body>
+</html>

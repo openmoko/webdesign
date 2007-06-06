@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<txp:output_form form="moko_html_header" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+
+<div id="wrapper">
+
+	<txp:output_form form="moko_header" />
+		
+	<div class="left_container">
+		<div class="sidebox"><div class="inner"><div class="inner_2">
+			<form id="searchform" method="get" action="<txp:link_to_home />">
+				<label>Search openmoko</label>
+				<input type="hidden" name="s" value="search" />
+				<input type="text" class="input_text" name="q" />
+				<input type="image" class="input_submit" src="<txp:link_to_home />images/button_go.png" alt="GO"/>
+			</form>
+		</div></div></div>
+		
+		<a href="#" class="side_banner"><img src="<txp:link_to_home />images/__sample_banner_1.png" alt="baner" /></a>
+		
+		<a href="#" class="side_banner"><img src="<txp:link_to_home />images/__sample_banner_2.png" alt="baner" /></a>
+	</div>
+	
+	<div class="right_container">
+			<div class="accessory_block"><div class="inner">
+				<div id="article_description">
+					<h2><txp:title /></h2>
+					<div class="description">
+						<txp:body />
+					</div>
+					
+					<div class="accessory_image">
+						 <txp:php>		
+							global $thisarticle;
+							$article_image = trim($thisarticle['article_image']);
+							$article_images = explode(',',$article_image);
+							if (count($article_images)>1) {
+								$article_image = $article_images[1];
+							} else {
+								$article_image = $article_images[0];
+							}
+							
+							if ((strpos($_SERVER['HTTP_USER_AGENT'],"MSIE")) and (strpos($_SERVER['HTTP_USER_AGENT'],"MSIE 7")===false)) {
+								$rs = safe_row('*', 'txp_image', "id = $article_image limit 1");						
+								
+								if (strtolower($rs['ext']) == '.png') {
+									global $prefs;
+									
+									$filepath = "http://".$prefs['siteurl'].'/'.$prefs['img_dir'].'/';
+									$siteroot = "http://".$prefs['siteurl'].'/';
+	
+									$filename=$article_image.$rs['ext']; $width = $rs['w']; $height = $rs['h'];
+									$alt = isset($rs['alt']) ? $rs['alt'] : $rs['name'];
+									
+									echo "<img src='".$siteroot."images/blank.gif' width='$width' height='$height'  alt='$alt' style=\"filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='".$filepath.$filename."', sizingMethod='scale')\" />";
+								} else {
+									$image = image(array("id"=>$article_image));
+									echo $image;
+								}
+							} else {				
+								$image = image(array("id"=>$article_image));
+								echo $image;
+							}
+						</txp:php>
+					</div>
+					
+					<a href="#" class="button_by_it_now img_button"><span>By it now</span></a>
+				</div>
+			</div></div>
+			
+		<div class="back_to_accessories_container">
+			<a href="<txp:link_to_home />products/accessories">Back to accessories</a>
+		</div>
+
+	</div>
+	
+	<div class="clear" style="height:20px;"></div>
+	<txp:output_form form="moko_footer" />
+	
+</div>
+
+</body>
+</html>
