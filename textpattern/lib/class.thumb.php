@@ -207,8 +207,22 @@ class wet_thumb {
 	    }		
 	}
 
+	if ($this->_DST['type'] == 3) {
+		$this->_DST['image'] = imageResizeAlpha($this->_SRC['image'],$this->_DST['width'],$this->_DST['height']);
+		
+		imagealphablending($this->_DST['image'], false);
+		imagesavealpha($this->_DST['image'], true);
+		imagepng($this->_DST['image'], $this->_DST['file']);
+		
+		imagedestroy($this->_DST['image']);
+		imagedestroy($this->_SRC['image']);
+		
+		return true;
+		
+	} else {
 	// DST erstellen
 	$this->_DST['image'] = imagecreatetruecolor($this->_DST['width'], $this->_DST['height']);
+	
 	imagecopyresampled($this->_DST['image'], $this->_SRC['image'], 0, 0, $off_w, $off_h, $this->_DST['width'], $this->_DST['height'], $this->_SRC['width'], $this->_SRC['height']);
 	if ($this->sharpen === true) {
 	    $this->_DST['image'] = UnsharpMask($this->_DST['image'],80,.5,3);
@@ -256,6 +270,7 @@ class wet_thumb {
 	imagedestroy($this->_DST['image']);
 	imagedestroy($this->_SRC['image']);
 	return true;
+    }
     }
     
     /**
@@ -410,7 +425,30 @@ function UnsharpMask($img, $amount, $radius, $threshold)    {
     return $img;
 }
 
+/* ADDITIONAL FUNCTIONS FOR ALPHA TRANSPARENT RESIZEING */
 
+/**
+ * Resize a PNG file with transparency to given dimensions
+ * and still retain the alpha channel information
+ * Author:  Alex Le - http://www.alexle.net
+ */
+function imageResizeAlpha(&$src, $w, $h)
+{
+		/* create a new image with the new width and height */
+		$temp = imagecreatetruecolor($w, $h);
+ 
+		/* making the new image transparent */
+//		$background = imagecolorallocate($temp, 0, 0, 0);
+//		ImageColorTransparent($temp, $background); // make the new temp image all transparent
+		imagealphablending($temp, false); // turn off the alpha blending to keep the alpha channel
+ 
+		/* Resize the PNG file */
+		/* use imagecopyresized to gain some performance but loose some quality */
+		imagecopyresized($temp, $src, 0, 0, 0, 0, $w, $h, imagesx($src), imagesy($src));
+		/* use imagecopyresampled if you concern more about the quality */
+		//imagecopyresampled($temp, $src, 0, 0, 0, 0, $w, $h, imagesx($src), imagesy($src));
+		return $temp;
+}
 
 
 

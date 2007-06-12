@@ -1,9 +1,10 @@
+<?php require('textpattern/additional_functions.php') ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 <txp:output_form form="moko_html_header" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+</head>
 
 <body>
 
@@ -29,7 +30,7 @@
 	<div class="right_container">
 
 			<txp:php>
-				$default_document = 25;
+				$default_document = 37;
 				
 				global $current_article_id;		
 				$current_article_id = $GLOBALS['thisarticle']['thisid'];
@@ -44,7 +45,7 @@
 				<txp:if_individual_article>
 					<txp:article form="simple_article" />
 				<txp:else />
-					<txp:article form="simple_article" id="25"/>
+					<txp:article form="simple_article" id="37"/>
 				</txp:if_individual_article>
 				<a href="#" class="top_link"><span>top</span></a>
 			</div>	
