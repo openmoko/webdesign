@@ -27,7 +27,7 @@
 /lib/txplib_db.php: r1879 (d68b6ea69950e405c4fec23b8641d9c2)
 /lib/IXRClass.php: r765 (cbe59b59246dce060a4b4a52b4d448d8)
 /lib/txplib_forms.php: r1887 (0049a228dc8eb346f8603478a7c1b2e2)
-/lib/class.thumb.php: r1955 (12961180eee3add5096e69e0a154284e)
+/lib/class.thumb.php: r1 (4d8cf5f71f92b4a2e6f9f8d52fde082d)
 /lib/constants.php: r1955 (0e40251c717c52b2b7fe992b62a3e97a)
 /lib/txplib_update.php: r1239 (757f8189fcc53a795d7c807f17b2e788)
 /lib/txplib_wrapper.php: r1239 (584448787b4a3488200722672c0eee0d)
