@@ -15,7 +15,7 @@
 	setcookie('openmoko_fontsize',$current_size);
 	
 	if (!$redirect_url) {
-		header('Location: '.PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH);
+		header('Location: ' . om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ) );
 	} else {
 		header("Location: ".$redirect_url);
 	}	
