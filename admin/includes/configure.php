@@ -8,7 +8,8 @@
   Released under the GNU General Public License
 */
 
-require_once '../../openmoko_common_cfg.php';
+require_once '../../openmoko_config-inc.php';
+require_once '../../openmoko_common-inc.php';
 
 // Define the webserver and path parameters
 // * DIR_FS_* = Filesystem directories (local/physical)

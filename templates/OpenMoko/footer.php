@@ -54,14 +54,14 @@ if ($banner = tep_banner_exists('dynamic', 'googlefoot')) {
 
 	<div id="footer">
 		<ul id="secundary_navigation">
-			<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/">Home</a></li>
-			<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/about">About</a></li>
-			<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/products">Products</a></li>
-			<li><a href="<?php echo 'https://'.OPENMOKO_SHOP_HOST.OPENMOKO_SHOP_WS_PATH; ?>/" class="selected">Shop</a></li>
-			<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/developers">Developers</a></li>
-			<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/press">Press</a></li>
-			<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/careers">Careers</a></li>
-			<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/contact">Contact</a></li>
+			<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/">Home</a></li>
+			<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/about">About</a></li>
+			<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/products">Products</a></li>
+			<li><a href="<?php /* FIXME */ echo 'https://'.OPENMOKO_SHOP_HOST.OPENMOKO_SHOP_WS_PATH; ?>/" class="selected">Shop</a></li>
+			<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/developers">Developers</a></li>
+			<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/press">Press</a></li>
+			<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/careers">Careers</a></li>
+			<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/contact">Contact</a></li>
 		</ul>
 		
 		Copyright &copy; 2006 Openmoko, Inc. All Rights Reserved

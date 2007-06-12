@@ -67,14 +67,14 @@ if (DOWN_FOR_MAINTENANCE_HEADER_OFF =='false') {
 		<a href="#" id="site_logo"><img src="http://<?php echo OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/images/openmoko_logo.png" alt="openmoko.com" /></a>
 		<div id="main_navigation">
 			<ul>
-				<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/" class="nav_home"><span>Home</span></a></li>
-				<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/about" class="nav_about"><span>About</span></a></li>
-				<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/products" class="nav_products"><span>Products</span></a></li>
-				<li><a href="<?php echo 'https://'.OPENMOKO_SHOP_HOST.OPENMOKO_SHOP_WS_PATH; ?>/" class="nav_shop selected"><span>Shop</span></a></li>
-				<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/developers" class="nav_developers"><span>Developers</span></a></li>
-				<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/press" class="nav_press"><span>Press</span></a></li>
-				<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/careers" class="nav_careers"><span>Careers</span></a></li>
-				<li><a href="<?php echo PROTOCOL.OPENMOKO_WEB_HOST.OPENMOKO_WEB_WS_PATH; ?>/contact" class="nav_contact"><span>Contact</span></a></li>
+				<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/" class="nav_home"><span>Home</span></a></li>
+				<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/about" class="nav_about"><span>About</span></a></li>
+				<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/products" class="nav_products"><span>Products</span></a></li>
+				<li><a href="<?php /* FIXME */ echo 'https://' . OPENMOKO_SHOP_HOST . OPENMOKO_SHOP_WS_PATH; ?>/" class="nav_shop selected"><span>Shop</span></a></li>
+				<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/developers" class="nav_developers"><span>Developers</span></a></li>
+				<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/press" class="nav_press"><span>Press</span></a></li>
+				<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/careers" class="nav_careers"><span>Careers</span></a></li>
+				<li><a href="<?php echo om_href_link( OPENMOKO_WEB_HOST, OPENMOKO_WEB_WS_PATH ); ?>/contact" class="nav_contact"><span>Contact</span></a></li>
 			</ul>
 
 		</div>
