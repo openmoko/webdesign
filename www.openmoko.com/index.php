@@ -13,9 +13,10 @@ $LastChangedRevision: 1925 $
 			unset($$name);
 	define("txpinterface", "public");
 
-	// NOTE: to use constants from our openmoko_common_cfg.php in config.php
+	// NOTE: to use constants from our openmoko_config-inc.php in config.php
 	// we have to make sure it gets loaded before config.php is used.
-	require_once '../openmoko_common_cfg.php';
+	require_once '../openmoko_config-inc.php';
+	require_once '../openmoko_common-inc.php';
 
 
 	// Use buffering to ensure bogus whitespace in config.php is ignored
