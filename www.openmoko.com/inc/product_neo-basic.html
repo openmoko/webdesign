@@ -1,3 +1,4 @@
+<?php require('textpattern/additional_functions.php') ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -13,7 +14,8 @@
 	<txp:php>
 		global $url_title; $url_title=$GLOBALS['thisarticle']['url_title'];
 		global $thisproductpage; $thisproductpage = link_to_home(array()).'products/'.$url_title.'/';
-		global $current_category; $current_category = isset($_GET['current_page']) ? $GLOBALS['url_title'].'-'.$_GET['current_page'] : $GLOBALS['url_title'].'-standard_kit';		
+		global $current_category; $current_category = isset($_GET['current_page']) ? $GLOBALS['url_title'].'-'.$_GET['current_page'] : $GLOBALS['url_title'].'-standard_kit';
+		global $alt_nav; $alt_nav = array('pictures','hardware');
 		global $logo_sufix; $logo_sufix = "_2";
 	</txp:php>
 	
@@ -32,7 +34,7 @@
 				global $big_images;
 				global $small_images;
 				
-				$hcp = safe_row('*', 'textpattern', "url_title = 'product_".$GLOBALS['url_title']."' limit 1");
+				$hcp = safe_row('*', 'textpattern', "url_title = '".$GLOBALS['url_title']."-home' limit 1");
 				
 				$images = $hcp['Image'];
 				$images = explode(',',$images);
@@ -121,7 +123,7 @@
 			</div>
 		</div>
 	
-		<ul id="middleblock_tabs">
+		<ul id="middleblock_tabs" <txp:php>if (in_array($_GET['current_page'],$GLOBALS['alt_nav'])) {echo ' class="middleblock_tabs_alt"';}</txp:php>>
 			<li><a href="<txp:php>echo $GLOBALS['thisproductpage'];</txp:php>?current_page=standard_kit" 
 			<txp:php> if ($GLOBALS['current_category'] == ($GLOBALS['url_title'].'-standard_kit')) echo ' class="selected"';</txp:php>><span>Standard Kit</span></a></li>
 			<li><a href="<txp:php>echo $GLOBALS['thisproductpage'];</txp:php>?current_page=pictures" 
@@ -147,6 +149,8 @@
 	<txp:output_form form="moko_footer" />
 	
 </div>
+
+<txp:output_form form="moko_overlay" />
 
 </body>
 </html>
