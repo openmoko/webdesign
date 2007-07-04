@@ -1,1 +1,0 @@
-This is the OpenMoko Online Store. This content will be customized by designers / coders at a later time. For now...just the essentials.
