@@ -44,7 +44,7 @@
 	</div>
 		
 	<div class="right_container">
-    	<form id=check_order_form" action="#" method="post">
+    	<form id=check_order_form" action="/cgi-bin/order.cgi" method="post">
 			<div class="content" id="site_content">
 				<h2 class="shop">Openmoko Online Shop</h2>
                 <h3 class="shop">Your Order:</h3>
@@ -53,7 +53,7 @@
                     <tr>
 			<td class="quantity_column">
 				<ul class="product">
-					<li class="quantity"><strong>Quantity:</strong>FNORD</li>
+					<li class="quantity"><strong>Quantity:</strong><TMPL_VAR NAME=QUANTITY_BASIC></li>
 				</ul>
 			</td>
                         <td class="image_column"><img src="images/_sample_product_2.jpg" alt="product1" /></td>
@@ -68,7 +68,7 @@
                     <tr>
 			<td class="quantity_column">
 				<ul class="product">
-					<li class="quantity"><strong>Quantity:</strong>FNORD</li>
+					<li class="quantity"><strong>Quantity:</strong><TMPL_VAR NAME=QUANTITY_ADVANCED></li>
 				</ul>
 			</td>
                         <td class="image_column"><img src="images/_sample_product_1.jpg" alt="product1" /></td>
@@ -89,67 +89,67 @@
                 
                 	<div class="group first">
 	                    <label><strong>Name:</strong></label>
-                        <div class="input_field">NAME</div>
+                        <div class="input_field"><TMPL_VAR NAME=SHIPPING_NAME></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label>Company:</label>
-                        <div class="input_field">COMPANY</div>
+                        <div class="input_field"><TMPL_VAR NAME=SHIPPING_COMPANY></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label><strong>Address:</strong></label>
-                        <div class="input_field">ADDRESS</div>
+                        <div class="input_field"><TMPL_VAR NAME=SHIPPING_ADDRESS1></div>
                         <div class="clear"></div>
                     </div>
                     
 			<div class="group">
 	                    <label>Address (continued):</label>
-                        <div class="input_field">ADDESS2</div>
+                        <div class="input_field"><TMPL_VAR NAME=SHIPPING_ADDESS2></div>
                         <div class="clear"></div>
                     </div>
 
                 	<div class="group">
 	                    <label><strong>Post Code / ZIP:</strong></label>
-                        <div class="input_field">ZIP</div>
+                        <div class="input_field"><TMPL_VAR NAME=SHIPPING_ZIP></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label><strong>City:</strong></label>
-                        <div class="input_field">CITY</div>
+                        <div class="input_field"><TMPL_VAR NAME=SHIPPING_CITY></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label><strong>State / Province:</strong></label>
-                        <div class="input_field">STATE</div>
+                        <div class="input_field"><TMPL_VAR NAME=SHIPPING_STATE></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label><strong>Country:</strong></label>
-                        <div class="input_field">COUNTRY</div>
+                        <div class="input_field"><TMPL_VAR NAME=SHIPPING_COUNTRY></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label>Phone Number:</label>
-                        <div class="input_field">PHONE</div>
+                        <div class="input_field"><TMPL_VAR NAME=SHIPPING_PHONE></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label><strong>E-mail:</strong></label>
-                        <div class="input_field">MAIL</div>
+                        <div class="input_field"><TMPL_VAR NAME=SHIPPING_EMAIL></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label>Comments / Shipping instructions:</label>
-                        <div class="input_field">COMMENTS</div>
+                        <div class="input_field"><TMPL_VAR NAME=COMMENTS></div>
                         <div class="clear"></div>
                     </div>
 
@@ -179,62 +179,68 @@
                 
 	               	<div class="group first">
 						<label><strong>Name:</strong></label>
-                        <div class="input_field">BNAME</div>
+                        <div class="input_field"><TMPL_VAR NAME=BILLING_NAME></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label>Company:</label>
-                        <div class="input_field">BCOMPANY</div>
+                        <div class="input_field"><TMPL_VAR NAME=BILLING_COMPANY></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label><strong>Address:</strong></label>
-                        <div class="input_field">BADDRESS</div>
+                        <div class="input_field"><TMPL_VAR NAME=BILLING_ADDRESS1></div>
                         <div class="clear"></div>
                     </div>
-                    
+
+                       <div class="group">
+                            <label>Address (continued):</label>
+                        <div class="input_field"><TMPL_VAR NAME=BILLING_ADDRESS2></div>
+                        <div class="clear"></div>
+                    </div>
+ 
                 	<div class="group">
 	                    <label><strong>Post Code / ZIP:</strong></label>
-                        <div class="input_field">BZIP</div>
+                        <div class="input_field"><TMPL_VAR NAME=BILLING_ZIP></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label><strong>City:</strong></label>
-                        <div class="input_field">BCITY</div>
+                        <div class="input_field"><TMPL_VAR NAME=BILLING_CITY></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label><strong>State / Province:</strong></label>
-                        <div class="input_field">BSTATE</div>
+                        <div class="input_field"><TMPL_VAR NAME=BILLING_STATE></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label><strong>Country:</strong></label>
-                        <div class="input_field">BCOUNTRY</div>
+                        <div class="input_field"><TMPL_VAR NAME=BILLING_COUNTRY></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label>Phone Number:</label>
-                        <div class="input_field">BPHONE</div>
+                        <div class="input_field"><TMPL_VAR NAME=BILLING_PHONE></div>
                         <div class="clear"></div>
                     </div>
                     
                 	<div class="group">
 	                    <label><strong>E-mail:</strong></label>
-                        <div class="input_field">BMAIL</div>
+                        <div class="input_field"><TMPL_VAR NAME=BILLING_EMAIL></div>
                         <div class="clear"></div>
                     </div>
                 </div>               
 			</div>
             
             <div class="button_bar">
-                <a href="#"><img src="images/button_proceed_to_checkout.gif" alt="proceed to checkout" /></a>
+                <a href="/cgi-bin/order.cgi"><img src="images/button_proceed_to_checkout.gif" alt="proceed to checkout" /></a>
             </div>
             
             <a href="#" class="top_link"><span>top</span></a>
