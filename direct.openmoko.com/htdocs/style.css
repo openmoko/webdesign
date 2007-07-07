@@ -49,7 +49,7 @@ ul {
 }
 
 ul li {
-	background: url(images/list_bullet.gif) no-repeat 0 0.5em;
+/*	background: url(images/list_bullet.gif) no-repeat 0 0.5em;*/
 	padding-left: 0.7em;
 	margin-bottom: 0.4em;
 }
