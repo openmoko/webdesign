@@ -16,12 +16,12 @@
 
 .shadow {
 	background-image: none;
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://38one.servehttp.com/openmoko/images/product_bottom_shadow.png',sizingMethod='scale');
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/product_bottom_shadow.png',sizingMethod='scale');
 }
 
 .button_enlarge {
 	background: none;
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://38one.servehttp.com/openmoko/images/button_enlarge.png',sizingMethod='scale');
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/button_enlarge.png',sizingMethod='scale');
 	top: 50%;
 	cursor: pointer;
 }
