@@ -173,7 +173,7 @@
                     
                 	<div class="group">
 	                    <label><strong>Country:</strong></label>
-                        <div class="input_field"><TMPL_VAR NAME=shipping_country ESCAPE=1></div>
+                        <div class="input_field"><TMPL_VAR NAME=shipping_country_name ESCAPE=1></div>
                         <div class="clear"></div>
                     </div>
                     
@@ -245,7 +245,7 @@
                     
                 	<div class="group">
 	                    <label><strong>Country:</strong></label>
-                            <div class="input_field"><TMPL_VAR NAME=billing_country></div>
+                            <div class="input_field"><TMPL_VAR NAME=billing_country_name></div>
                             <div class="clear"></div>
                         </div>
                     
@@ -349,8 +349,8 @@
 </TMPL_IF>
             
             <div class="button_bar">
-		<input type="submit" text="Submit Data"\>
-                <a href="javascript:document.order_form.submit();"><img src="/images/button_proceed_to_checkout.gif" alt="proceed to checkout" /></a>
+		<input type="submit" value="Submit Order!"\>
+                <!-- <a href="javascript:document.order_form.submit();"><img src="/images/button_proceed_to_checkout.gif" alt="proceed to checkout" /></a> -->
             </div>
             
             <a href="#" class="top_link"><span>top</span></a>
