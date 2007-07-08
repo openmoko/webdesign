@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>openmoko.com: Shop</title>
     
-    <link href="./style.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
     
     <!--[if gt IE 6]>
             <link rel="stylesheet" type="text/css" href="./ie7fix.css" media="screen" />
@@ -17,7 +17,7 @@
             <meta http-equiv="imagetoolbar" content="no" />
     <![endif]-->
     
-    <link href="./print.css" rel="stylesheet" type="text/css" media="print" />
+    <link href="/print.css" rel="stylesheet" type="text/css" media="print" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 
@@ -25,7 +25,7 @@
 
 <div id="wrapper">
 	<div id="header" class="header_press ">
-		<a href="#" id="site_logo"><img src="images/openmoko_logo.png" alt="openmoko.com" /></a>
+		<a href="#" id="site_logo"><img src="/images/openmoko_logo.png" alt="openmoko.com" /></a>
 		
 		<div id="main_navigation">
 			<ul>
@@ -42,30 +42,30 @@
 	</div>
 		
 	<div class="right_container">
-    	<form id=check_order_form" action="/cgi-bin/order.cgi" method="post">
-	<input name="quantity_basic" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=quantity_basic ESCAPE=1>" />
-	<input name="quantity_advanced" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=quantity_advanced ESCAPE=1>" />
-	<input name="shipping_name" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=shipping_name ESCAPE=1>" />
-	<input name="shipping_company" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=shipping_company ESCAPE=1>" />
-	<input name="shipping_address1" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=shipping_address1 ESCAPE=1>" />
-	<input name="shipping_address2" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=shipping_address2 ESCAPE=1>" />
-	<input name="shipping_zip" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=shipping_zip ESCAPE=1>" />
-	<input name="shipping_city" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=shipping_city ESCAPE=1>" />
-	<input name="shipping_state" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=shipping_state ESCAPE=1>" />
-	<input name="shipping_country" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=shipping_country ESCAPE=1>" />
-	<input name="shipping_phone" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=shipping_phone ESCAPE=1>" />
-	<input name="shipping_email" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=shipping_email ESCAPE=1>" />
-	<input name="billing_name" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=billing_name ESCAPE=1>" />
-	<input name="billing_company" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=billing_company ESCAPE=1>" />
-	<input name="billing_address1" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=billing_address1 ESCAPE=1>" />
-	<input name="billing_address2" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=billing_address2 ESCAPE=1>" />
-	<input name="billing_zip" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=billing_zip ESCAPE=1>" />
-	<input name="billing_city" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=billing_city ESCAPE=1>" />
-	<input name="billing_state" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=billing_state ESCAPE=1>" />
-	<input name="billing_country" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=billing_country ESCAPE=1>" />
-	<input name="billing_email" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=billing_email ESCAPE=1>" />
-	<input name="comments" class="text" type="hidden" disabled="1" value="<TMPL_VAR NAME=comments ESCAPE=1>" />
-	<input name="step" class="text" type="hidden" disabled="1" value="2" />
+    	<form name="order_form" id="order_form" action="/cgi-bin/order.cgi" method="post">
+	<input name="quantity_basic" class="text" type="hidden" value="<TMPL_VAR NAME=quantity_basic ESCAPE=1>" />
+	<input name="quantity_advanced" class="text" type="hidden" value="<TMPL_VAR NAME=quantity_advanced ESCAPE=1>" />
+	<input name="shipping_name" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_name ESCAPE=1>" />
+	<input name="shipping_company" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_company ESCAPE=1>" />
+	<input name="shipping_address1" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_address1 ESCAPE=1>" />
+	<input name="shipping_address2" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_address2 ESCAPE=1>" />
+	<input name="shipping_zip" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_zip ESCAPE=1>" />
+	<input name="shipping_city" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_city ESCAPE=1>" />
+	<input name="shipping_state" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_state ESCAPE=1>" />
+	<input name="shipping_country" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_country ESCAPE=1>" />
+	<input name="shipping_phone" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_phone ESCAPE=1>" />
+	<input name="shipping_email" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_email ESCAPE=1>" />
+	<input name="billing_name" class="text" type="hidden" value="<TMPL_VAR NAME=billing_name ESCAPE=1>" />
+	<input name="billing_company" class="text" type="hidden" value="<TMPL_VAR NAME=billing_company ESCAPE=1>" />
+	<input name="billing_address1" class="text" type="hidden" value="<TMPL_VAR NAME=billing_address1 ESCAPE=1>" />
+	<input name="billing_address2" class="text" type="hidden" value="<TMPL_VAR NAME=billing_address2 ESCAPE=1>" />
+	<input name="billing_zip" class="text" type="hidden" value="<TMPL_VAR NAME=billing_zip ESCAPE=1>" />
+	<input name="billing_city" class="text" type="hidden" value="<TMPL_VAR NAME=billing_city ESCAPE=1>" />
+	<input name="billing_state" class="text" type="hidden" value="<TMPL_VAR NAME=billing_state ESCAPE=1>" />
+	<input name="billing_country" class="text" type="hidden" value="<TMPL_VAR NAME=billing_country ESCAPE=1>" />
+	<input name="billing_email" class="text" type="hidden" value="<TMPL_VAR NAME=billing_email ESCAPE=1>" />
+	<input name="comments" class="text" type="hidden" value="<TMPL_VAR NAME=comments ESCAPE=1>" />
+	<input name="step" class="text" type="hidden" value="2" />
 
 			<div class="content" id="site_content">
 				<h2 class="shop">Openmoko Online Shop - Step 2/3</h2>
@@ -78,7 +78,7 @@
 					<li class="quantity"><strong>Quantity: <TMPL_VAR NAME=quantity_basic></strong></li>
 				</ul>
 			</td>
-                        <td class="image_column"><img src="images/_sample_product_2.jpg" alt="Neo Basic" /></td>
+                        <td class="image_column"><img src="/images/_sample_product_2.jpg" alt="Neo Basic" /></td>
                         <td class="description_column">
                         	<ul class="product">
                             	<li class="name"><h2>Neo Base</h2></li>
@@ -93,7 +93,7 @@
 					<li class="quantity"><strong>Quantity: <TMPL_VAR NAME=quantity_advanced></strong></li>
 				</ul>
 			</td>
-                        <td class="image_column"><img src="images/_sample_product_1.jpg" alt="Neo Advanced" /></td>
+                        <td class="image_column"><img src="/images/_sample_product_1.jpg" alt="Neo Advanced" /></td>
                         <td class="description_column">
                         	<ul class="product">
                             	<li class="name"><h2>Neo Advanced</h2></li>
@@ -110,13 +110,20 @@
                 <div class="shipping_info">
 			<div class="group">
 	                    <label><strong>Available shipping options:</strong></label>
-                        <div class="input_field">
+                            <div class="input_field">
+			    	<table>
+				<tr><th>Name</th><th>Shipping cost</th><th><strong>Total cost</strong></th></tr>
 <TMPL_LOOP NAME=delivery_options>
-                        	<span class="radio_block"><label><input type="radio" name="upsmethod" value="<TMPL_VAR NAME=delivery_value>" />&nbsp;<TMPL_VAR NAME=delivery_name>:&nbsp;&nbsp;<TMPL_VAR NAME=delivery_cost></label>&nbsp;&nbsp;<a href="#">?</a></span><br />
+				<tr>
+					<td><label><input type="radio" name="upsmethod" value="<TMPL_VAR NAME=delivery_value>" /><TMPL_VAR NAME=delivery_name></label></td>
+					<td><TMPL_VAR NAME=delivery_cost></td>
+					<td><strong class="orange"><TMPL_VAR NAME=delivery_total></strong></td>
+				</tr>
 </TMPL_LOOP>
+				</table>
+                            </div>
+                            <div class="clear"></div>
                         </div>
-                        <div class="clear"></div>
-                    </div>
 		</div>
 
 		<h3 class="shop">Shipping Address:</h3>
@@ -188,73 +195,72 @@
                         <div class="clear"></div>
                     </div>
 
-                    </div>
+                </div>
                     
 <TMPL_IF NAME="billing_name">
                 <h3 class="shop">Billing Address: </span></h3>
                 <div class="shipping_info">
                 
 	               	<div class="group first">
-						<label><strong>Name:</strong></label>
-                        <div class="input_field"><TMPL_VAR NAME=billing_name></div>
-                        <div class="clear"></div>
-                    </div>
+				<label><strong>Name:</strong></label>
+                            <div class="input_field"><TMPL_VAR NAME=billing_name></div>
+                            <div class="clear"></div>
+                        </div>
                     
                 	<div class="group">
 	                    <label>Company:</label>
-                        <div class="input_field"><TMPL_VAR NAME=billing_company></div>
-                        <div class="clear"></div>
-                    </div>
+                            <div class="input_field"><TMPL_VAR NAME=billing_company></div>
+                            <div class="clear"></div>
+                        </div>
                     
                 	<div class="group">
 	                    <label><strong>Address:</strong></label>
-                        <div class="input_field"><TMPL_VAR NAME=billing_address1></div>
-                        <div class="clear"></div>
-                    </div>
+                            <div class="input_field"><TMPL_VAR NAME=billing_address1></div>
+                            <div class="clear"></div>
+                        </div>
 
                        <div class="group">
                             <label>Address (continued):</label>
-                        <div class="input_field"><TMPL_VAR NAME=billing_address2></div>
-                        <div class="clear"></div>
-                    </div>
+                            <div class="input_field"><TMPL_VAR NAME=billing_address2></div>
+                            <div class="clear"></div>
+                        </div>
  
                 	<div class="group">
 	                    <label><strong>Post Code / ZIP:</strong></label>
-                        <div class="input_field"><TMPL_VAR NAME=billing_zip></div>
-                        <div class="clear"></div>
-                    </div>
+                            <div class="input_field"><TMPL_VAR NAME=billing_zip></div>
+                            <div class="clear"></div>
+                        </div>
                     
                 	<div class="group">
 	                    <label><strong>City:</strong></label>
-                        <div class="input_field"><TMPL_VAR NAME=billing_city></div>
-                        <div class="clear"></div>
-                    </div>
+                            <div class="input_field"><TMPL_VAR NAME=billing_city></div>
+                            <div class="clear"></div>
+                        </div>
                     
                 	<div class="group">
 	                    <label><strong>State / Province:</strong></label>
-                        <div class="input_field"><TMPL_VAR NAME=billing_state></div>
-                        <div class="clear"></div>
-                    </div>
+                            <div class="input_field"><TMPL_VAR NAME=billing_state></div>
+                            <div class="clear"></div>
+                        </div>
                     
                 	<div class="group">
 	                    <label><strong>Country:</strong></label>
-                        <div class="input_field"><TMPL_VAR NAME=billing_country></div>
-                        <div class="clear"></div>
-                    </div>
+                            <div class="input_field"><TMPL_VAR NAME=billing_country></div>
+                            <div class="clear"></div>
+                        </div>
                     
                 	<div class="group">
 	                    <label>Phone Number:</label>
-                        <div class="input_field"><TMPL_VAR NAME=billing_phone></div>
-                        <div class="clear"></div>
-                    </div>
+                            <div class="input_field"><TMPL_VAR NAME=billing_phone></div>
+                            <div class="clear"></div>
+                        </div>
                     
                 	<div class="group">
 	                    <label><strong>E-mail:</strong></label>
-                        <div class="input_field"><TMPL_VAR NAME=billing_email></div>
-                        <div class="clear"></div>
-                    </div>
+                            <div class="input_field"><TMPL_VAR NAME=billing_email></div>
+                            <div class="clear"></div>
+                        </div>
                 </div>               
-            </div>
 <TMPL_ELSE>
                 <h3 class="shop">Billing Address: same as shipping address </span></h3>
 </TMPL_IF>
@@ -264,27 +270,38 @@
 		<div class="shipping_info">
                 	<div class="group first">
 	                    <label><strong>Credit Card Holder: </strong></label>
-                        <div class="input_field"><input class="text" type="text" name="cc_holder" /></div>
-                        <div class="clear"></div>
-                    </div>
+                            <div class="input_field"><input class="text" type="text" name="cc_holder" /></div>
+                            <div class="clear"></div>
+                        </div>
 
-                <div class="shipping_info">
-                	<div class="group first">
+                	<div class="group">
+	                    <label><strong>Credit Card Type: </strong></label>
+                            <div class="input_field">
+			    	<select name="cc_type">
+					<option value="VISA">VISA</option>
+					<option value="American Express">American Express</option>
+				</select>
+			    </div>
+                            <div class="clear"></div>
+                        </div>
+
+                	<div class="group">
 	                    <label><strong>Credit Card Number: </strong></label>
-                        <div class="input_field"><input class="text" type="text" name="cc_number" size="15" /></div>
-                        <div class="clear"></div>
-                    </div>
-                <div class="shipping_info">
-                	<div class="group first">
-	                    <label><strong>Credit Card CVV2: </strong></label>
-                        <div class="input_field"><input class="text" type="text" name="cc_cvv2" size="4"/></div>
-                        <div class="clear"></div>
-                    </div>
-                <div class="shipping_info">
-                	<div class="group first">
+                            <div class="input_field"><input class="text" type="text" name="cc_number" size="15" /></div>
+                            <div class="clear"></div>
+                        </div>
+
+                	<div class="group">
+	                    <label><strong>Credit Card CID/CVV2: </strong></label>
+                            <div class="input_field"><input class="text" type="text" name="cc_cvv2" size="4"/></div>
+                            <div class="clear"></div>
+                        </div>
+                	
+			<div class="group">
 	                    <label><strong>Credit Card Expiry: </strong></label>
-                        <div class="input_field">
+                            <div class="input_field">
 				<select name="cc_exp_mon">
+					<option value="00">(select)</option>
 					<option value="01">01</option>
 					<option value="02">02</option>
 					<option value="03">03</option>
@@ -299,6 +316,7 @@
 					<option value="12">12</option>
 				</select>
 				<select name="cc_exp_yr">
+					<option value="0000">(select)</option>
 					<option value="2007">2007</option>
 					<option value="2008">2008</option>
 					<option value="2009">2009</option>
@@ -306,32 +324,33 @@
 					<option value="2011">2011</option>
 					<option value="2012">2012</option>
 				</select>
-			</div>
-                        <div class="clear"></div>
-                    </div>
+			    </div>
+                            <div class="clear"></div>
+                        </div>
 		</div>
 </TMPL_IF>
 <TMPL_IF NAME=payment_wire>
 		<div class="shipping_info">
                 	<div class="group first">
 	                    <label><strong>Payment via international wire transfer / SWIFT</strong></label>
-                        <div class="input_field">FIXME: FIC account details</div>
-                        <div class="clear"></div>
-                    </div>
+                            <div class="input_field">FIXME: FIC account details</div>
+                            <div class="clear"></div>
+                        </div>
 	        </div>
 </TMPL_IF>
 <TMPL_IF NAME=payment_cod>
 		<div class="shipping_info">
                 	<div class="group first">
 	                    <label><strong>Payment via cash on delivery (COD)</strong></label>
-                        <div class="input_field">FIXME: details</div>
-                        <div class="clear"></div>
-                </div>               
+                            <div class="input_field">FIXME: details</div>
+                            <div class="clear"></div>
 			</div>
+                </div>               
 </TMPL_IF>
             
             <div class="button_bar">
-                <a href="/cgi-bin/order.cgi"><img src="images/button_proceed_to_checkout.gif" alt="proceed to checkout" /></a>
+		<input type="submit" text="Submit Data"\>
+                <a href="javascript:document.order_form.submit();"><img src="/images/button_proceed_to_checkout.gif" alt="proceed to checkout" /></a>
             </div>
             
             <a href="#" class="top_link"><span>top</span></a>

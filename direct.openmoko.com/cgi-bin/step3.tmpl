@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>openmoko.com: Shop</title>
+    
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    
+    <!--[if gt IE 6]>
+            <link rel="stylesheet" type="text/css" href="./ie7fix.css" media="screen" />
+            <meta http-equiv="imagetoolbar" content="no" />
+    <![endif]-->
+    <!--[if lte IE 6]>
+            <link rel="stylesheet" type="text/css" href="./ie6fix.css" media="screen" />
+            <meta http-equiv="imagetoolbar" content="no" />
+    <![endif]-->
+    
+    <link href="/print.css" rel="stylesheet" type="text/css" media="print" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="header" class="header_press ">
+		<a href="#" id="site_logo"><img src="/images/openmoko_logo.png" alt="openmoko.com" /></a>
+		
+		<div id="main_navigation">
+			<ul>
+				<li><a href="http://www.openmoko.com/index.html" class="nav_home"><span>Home</span></a></li>
+				<li><a href="http://www.openmoko.com/products-index.html" class="nav_products"><span>Products</span></a></li>
+				<li><a href="https://direct.www.openmoko.com" class="nav_shop selected"><span>Shop</span></a></li>
+				<li><a href="http://www.openmoko.com/about-index.html" class="nav_about"><span>About</span></a></li>
+				<li><a href="http://www.openmoko.com/press-index.html" class="nav_press"><span>Press</span></a></li>
+				<li><a href="http://www.openmoko.com/careers-index.html" class="nav_careers"><span>Careers</span></a></li>
+				<li><a href="http://www.openmoko.com/contact-index.html" class="nav_contact"><span>Contact</span></a></li>
+			</ul>
+
+		</div>
+	</div>
+		
+	<div class="right_container">
+    	<form name="order_form" id="order_form" action="/cgi-bin/order.cgi" method="post">
+	<input name="quantity_basic" class="text" type="hidden" value="<TMPL_VAR NAME=quantity_basic ESCAPE=1>" />
+	<input name="quantity_advanced" class="text" type="hidden" value="<TMPL_VAR NAME=quantity_advanced ESCAPE=1>" />
+	<input name="shipping_name" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_name ESCAPE=1>" />
+	<input name="shipping_company" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_company ESCAPE=1>" />
+	<input name="shipping_address1" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_address1 ESCAPE=1>" />
+	<input name="shipping_address2" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_address2 ESCAPE=1>" />
+	<input name="shipping_zip" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_zip ESCAPE=1>" />
+	<input name="shipping_city" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_city ESCAPE=1>" />
+	<input name="shipping_state" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_state ESCAPE=1>" />
+	<input name="shipping_country" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_country ESCAPE=1>" />
+	<input name="shipping_phone" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_phone ESCAPE=1>" />
+	<input name="shipping_email" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_email ESCAPE=1>" />
+	<input name="billing_name" class="text" type="hidden" value="<TMPL_VAR NAME=billing_name ESCAPE=1>" />
+	<input name="billing_company" class="text" type="hidden" value="<TMPL_VAR NAME=billing_company ESCAPE=1>" />
+	<input name="billing_address1" class="text" type="hidden" value="<TMPL_VAR NAME=billing_address1 ESCAPE=1>" />
+	<input name="billing_address2" class="text" type="hidden" value="<TMPL_VAR NAME=billing_address2 ESCAPE=1>" />
+	<input name="billing_zip" class="text" type="hidden" value="<TMPL_VAR NAME=billing_zip ESCAPE=1>" />
+	<input name="billing_city" class="text" type="hidden" value="<TMPL_VAR NAME=billing_city ESCAPE=1>" />
+	<input name="billing_state" class="text" type="hidden" value="<TMPL_VAR NAME=billing_state ESCAPE=1>" />
+	<input name="billing_country" class="text" type="hidden" value="<TMPL_VAR NAME=billing_country ESCAPE=1>" />
+	<input name="billing_email" class="text" type="hidden" value="<TMPL_VAR NAME=billing_email ESCAPE=1>" />
+	<input name="comments" class="text" type="hidden" value="<TMPL_VAR NAME=comments ESCAPE=1>" />
+	<input name="step" class="text" type="hidden" value="3" />
+
+			<div class="content" id="site_content">
+				<h2 class="shop">Openmoko Online Shop - Step 3/3 (complete)</h2>
+                <h3 class="shop">Your Order request has been processed. </h3>
+                <h3 class="shop">You will receive a confirmation email within 24 hours.</h3>
+
+                          
+            <a href="#" class="top_link"><span>top</span></a>
+		</form>
+	</div>
+	
+	<div class="clear" style="height:20px;"></div>
+
+		<div id="footer">
+		<ul id="secundary_navigation">
+			<li><a href="http://www.openmoko.com/index.html">Home</a></li>
+			<li><a href="http://www.openmoko.com/products-index.html">Products</a></li>
+			<li><a href="https://direct.openmoko.com/" class="selected">Shop</a></li>
+			<li><a href="http://www.openmoko.com/about-index.html">About</a></li>
+			<li><a href="http://www.openmoko.com/press-index.html">Press</a></li>
+			<li><a href="http://www.openmoko.com/careers-index.html">Careers</a></li>
+			<li><a href="http://www.openmoko.com/contact-index.html">Contact</a></li>
+		</ul>
+		Copyright &copy; 2006-2007 Openmoko, Inc. All Rights Reserved
+	</div>
+	
+</div>
+
+</body>
+
+</html>
