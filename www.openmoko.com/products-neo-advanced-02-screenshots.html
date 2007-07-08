@@ -76,26 +76,35 @@
 	</div>
 
 	<script>var images_gallery = false;var png_fix = false;
-		var images_dir = 'uploaded_images/';screenshots_data[0] = {'description':'','title':'','filename':'55.png','width':'289','height':'385'};screenshots_data[1] = {'description':'','title':'','filename':'56.png','width':'289','height':'385'};
+		var images_dir = 'uploaded_images/';
+		screenshots_data[0] = {'description':'This is what you see first after turning on your Neo.','title':'Bootsplash','filename':'25.png','width':'289','height':'385'};
+		screenshots_data[1] = {'description':"I'm hungry!",'title':'Battery Warning','filename':'26.png','width':'289','height':'385'};
+		screenshots_data[2] = {'description':'Reset all configuration data back to default values.','title':'Delete All','filename':'27.png','width':'289','height':'385'};
+		screenshots_data[3] = {'description':'Search a contact in the phonebook.','title':'Contact Search','filename':'28.png','width':'289','height':'385'};
+		screenshots_data[4] = {'description':'Display a selected phonebook entry.','title':'Display Contact Detail','filename':'29.png','width':'289','height':'385'};
 	</script>
 	<div class="screenshots_page">
 		<div class="title_container">
 			<h2>Screenshots</h2>
 		</div>
 		<div id="screenshot_caption">
-			<h3></h3>
+			<h3>Bootsplash</h3>
+			This is what you see first after turning on your Neo.
 		</div>
 
 		<div class="screenshots_right">
 			<div class="screenshot_image">
-				<img src="uploaded_images/55.png" alt="" id="screenshot_image" />
+				<img src="uploaded_images/25.png"  alt="Screenshot 2" id="screenshot_image" />
 			</div>
 
-			<div class="screenshot_thumbs">
-				<div class="screenshot_thumb" onclick="setScreenshot(0); return false;"><img src="uploaded_images/55t.png" alt="" /></div>
-				<div class="screenshot_thumb" onclick="setScreenshot(1); return false;"><img src="uploaded_images/56t.png" alt="" /></div>
-			</div>
-			<div class="clear"></div>
+		<div class="screenshot_thumbs">
+			<div class="screenshot_thumb" onclick="setScreenshot(0); return false;"><img src="uploaded_images/25t.png" alt="Screenshot 2" /></div>
+			<div class="screenshot_thumb" onclick="setScreenshot(1); return false;"><img src="uploaded_images/26t.png" alt="Screenshot 3" /></div>
+			<div class="screenshot_thumb" onclick="setScreenshot(2); return false;"><img src="uploaded_images/27t.png" alt="Screenshot 4" /></div>
+			<div class="screenshot_thumb" onclick="setScreenshot(3); return false;"><img src="uploaded_images/28t.png" alt="Screenshot 5" /></div>
+			<div class="screenshot_thumb" onclick="setScreenshot(4); return false;"><img src="uploaded_images/29t.png" alt="Screenshot 6" /></div>
+		</div>
+		<div class="clear"></div>
 		</div>
 		<div class="clear" style="height: 10px;"></div>
 	</div>
