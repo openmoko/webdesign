@@ -43,8 +43,10 @@
 		
 	<div class="right_container">
     	<form name="order_form" id="order_form" action="/cgi-bin/order.cgi" method="post">
-	<input name="quantity_basic" class="text" type="hidden" value="<TMPL_VAR NAME=quantity_basic ESCAPE=1>" />
-	<input name="quantity_advanced" class="text" type="hidden" value="<TMPL_VAR NAME=quantity_advanced ESCAPE=1>" />
+	<input name="quantity_basic_black" class="text" type="hidden" value="<TMPL_VAR NAME=quantity_basic_black ESCAPE=1>" />
+	<input name="quantity_basic_orange" class="text" type="hidden" value="<TMPL_VAR NAME=quantity_basic_orange ESCAPE=1>" />
+	<input name="quantity_advanced_black" class="text" type="hidden" value="<TMPL_VAR NAME=quantity_advanced_black ESCAPE=1>" />
+	<input name="quantity_advanced_orange" class="text" type="hidden" value="<TMPL_VAR NAME=quantity_advanced_orange ESCAPE=1>" />
 	<input name="shipping_name" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_name ESCAPE=1>" />
 	<input name="shipping_company" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_company ESCAPE=1>" />
 	<input name="shipping_address1" class="text" type="hidden" value="<TMPL_VAR NAME=shipping_address1 ESCAPE=1>" />
@@ -75,13 +77,13 @@
                     <tr>
 			<td class="quantity_column">
 				<ul class="product">
-					<li class="quantity"><strong>Quantity: <TMPL_VAR NAME=quantity_basic></strong></li>
+					<li class="quantity"><strong>Quantity: <TMPL_VAR NAME=quantity_basic_black></strong></li>
 				</ul>
 			</td>
                         <td class="image_column"><img src="/images/_sample_product_2.jpg" alt="Neo Basic" /></td>
                         <td class="description_column">
                         	<ul class="product">
-                            	<li class="name"><h2>Neo Base - Developer preview</h2></li>
+                            	<li class="name"><h2>Neo Base (black/silver) - Developer preview</h2></li>
                                 <li class="description">The Neo Base kit contains everything the mobile application developer needs to enjoy the benefits of the first freed phone, the Neo 1973.</li>
                                 <li class="price"><strong>Price:</strong> <strong class="orange">$300 USD</strong></li>
                             </ul>
@@ -90,13 +92,43 @@
                     <tr>
 			<td class="quantity_column">
 				<ul class="product">
-					<li class="quantity"><strong>Quantity: <TMPL_VAR NAME=quantity_advanced></strong></li>
+					<li class="quantity"><strong>Quantity: <TMPL_VAR NAME=quantity_basic_orange></strong></li>
+				</ul>
+			</td>
+                        <td class="image_column"><img src="/images/_sample_product_2.jpg" alt="Neo Basic" /></td>
+                        <td class="description_column">
+                        	<ul class="product">
+                            	<li class="name"><h2>Neo Base (white/orange) - Developer preview</h2></li>
+                                <li class="description">The Neo Base kit contains everything the mobile application developer needs to enjoy the benefits of the first freed phone, the Neo 1973.</li>
+                                <li class="price"><strong>Price:</strong> <strong class="orange">$300 USD</strong></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+			<td class="quantity_column">
+				<ul class="product">
+					<li class="quantity"><strong>Quantity: <TMPL_VAR NAME=quantity_advanced_black></strong></li>
 				</ul>
 			</td>
                         <td class="image_column"><img src="/images/_sample_product_1.jpg" alt="Neo Advanced" /></td>
                         <td class="description_column">
                         	<ul class="product">
-                            	<li class="name"><h2>Neo Advanced - Developer preview</h2></li>
+                            	<li class="name"><h2>Neo Advanced (black/silver) - Developer preview</h2></li>
+                                <li class="description">The Neo Advanced Kit everything the mobile device hacker wants to get down and dirty with the first freed phone, the Neo 1973.</li>
+                                <li class="price"><strong>Price:</strong> <strong class="orange">$450 USD</strong></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+			<td class="quantity_column">
+				<ul class="product">
+					<li class="quantity"><strong>Quantity: <TMPL_VAR NAME=quantity_advanced_orange></strong></li>
+				</ul>
+			</td>
+                        <td class="image_column"><img src="/images/_sample_product_1.jpg" alt="Neo Advanced" /></td>
+                        <td class="description_column">
+                        	<ul class="product">
+                            	<li class="name"><h2>Neo Advanced (white/orange) - Developer preview</h2></li>
                                 <li class="description">The Neo Advanced Kit everything the mobile device hacker wants to get down and dirty with the first freed phone, the Neo 1973.</li>
                                 <li class="price"><strong>Price:</strong> <strong class="orange">$450 USD</strong></li>
                             </ul>
