@@ -1,0 +1,315 @@
+<?php
+
+require_once('www/include/Layout.class');
+
+class Theme extends Layout {
+
+    function Theme() {
+        // Parent constructor
+        $this->Layout();
+	$this->COLOR_BACK= '#FFFFFF';
+//	$this->FONTCOLOR_CONTENT = '#202020';
+	}
+
+	/**
+	 *	header() - "steel theme" top of page
+	 *
+	 * @param	array	Header parameters array
+	 */
+	function header($params) {
+		global $Language;
+
+		if (!$params['title']) {
+			$params['title'] =  $GLOBALS['sys_name'];
+		} else {
+			$params['title'] =  $GLOBALS['sys_name'] . ': ' . $params['title'];
+		}
+		print '<?xml version="1.0" encoding="' . $Language->getEncoding(). '"?>';
+		?>
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="<?php echo $Language->getLanguageCode(); ?>">
+
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $Language->getEncoding(); ?>" />
+	<title><?php echo $params['title']; ?></title>
+	<link rel="alternate" title="<?php echo $GLOBALS['sys_name']; ?> - Project News Highlights RSS" href="/export/rss_sfnews.php" type="application/rss+xml"/>
+	<link rel="alternate" title="<?php echo $GLOBALS['sys_name']; ?> - Project News Highlights RSS" href="/export/rss20_news.php" type="application/rss+xml"/>
+	<link rel="alternate" title="<?php echo $GLOBALS['sys_name']; ?> - New Projects RSS" href="/export/rss_sfprojects.php" type="application/rss+xml"/>
+
+	<script language="JavaScript" type="text/javascript">
+	<!--
+
+	function admin_window(adminurl) {
+		AdminWin = window.open( adminurl, 'AdminWindow','scrollbars=yes,resizable=yes, toolbar=yes, height=400, width=400, top=2, left=2');
+		AdminWin.focus();
+	}
+	function help_window(helpurl) {
+		HelpWin = window.open( helpurl,'HelpWindow','scrollbars=yes,resizable=yes,toolbar=no,height=400,width=400');
+	}
+	// -->
+	<?php plugin_hook ("javascript",false) ; ?>
+	</script>
+<?php
+/*
+
+
+
+	WARNING - changing this font call can affect
+	INTERNATIONALIZATION
+
+
+*/
+
+
+		//gets font from Language Object
+		$site_fonts=$GLOBALS['Language']->getFont();
+
+	?>
+
+<style type="text/css">
+	<!--
+	BODY {
+		margin-top: 3;
+		margin-left: 3;
+		margin-right: 3;
+		margin-bottom: 3;
+	}
+	ol,ul,p,body,td,tr,th,form { font-family: <?php echo $site_fonts; ?>; font-size:<?php echo $this->FONTSIZE; ?>;
+		color: <?php echo $this->FONTCOLOR_CONTENT ?>; }
+
+	h1 { font-size: x-large; font-family: <?php echo $site_fonts; ?>; }
+	h2 { font-size: large; font-family: <?php echo $site_fonts; ?>; }
+	h3 { font-size: medium; font-family: <?php echo $site_fonts; ?>; }
+	h4 { font-size: small; font-family: <?php echo $site_fonts; ?>; }
+	h5 { font-size: x-small; font-family: <?php echo $site_fonts; ?>; }
+	h6 { font-size: xx-small; font-family: <?php echo $site_fonts; ?>; }
+
+	pre,tt { font-family: courier,sans-serif }
+
+	a:link { text-decoration:none; color: #0000be }
+	a:visited { text-decoration:none; color: #0000be }
+	a:active { text-decoration:none }
+	a:hover { text-decoration:underline; color:red }
+
+	.titlebar { color: black; text-decoration: none; font-weight: bold; }
+	a.tablink { color: black; text-decoration: none; font-weight: bold; font-size: <?php echo $this->FONTSIZE_SMALLER; ?>; }
+	a.tablink:visited { color: black; text-decoration: none; font-weight: bold; font-size: <?php echo $this->FONTSIZE_SMALLER; ?>; }
+	a.tablink:hover { text-decoration: none; color: black; font-weight: bold; font-size: <?php echo $this->FONTSIZE_SMALLER; ?>; }
+	a.tabsellink { color: #0000be; text-decoration: none; font-weight: bold; font-size: <?php echo $this->FONTSIZE_SMALLER; ?>; }
+	a.tabsellink:visited { color: #0000be; text-decoration: none; font-weight: bold; font-size: <?php echo $this->FONTSIZE_SMALLER; ?>; }
+	a.tabsellink:hover { text-decoration: none; color: #0000be; font-weight: bold; font-size: <?php echo $this->FONTSIZE_SMALLER; ?>; }
+
+	#restfnord {
+		background-image: url("<?php echo $this->imgroot; ?>theme-top-blue.png");
+		padding: 0px 0px 0px 0px;
+		margin: 0px auto;
+	}
+
+	#logintabs a { color: #FFFFFF }
+
+	img { border: none; }
+
+	#header {
+        	height: 90px;
+        	position: relative;
+	}
+
+	#site_logo {
+        	position: absolute;
+        	top: 29px;
+        	left: 10px;
+	}
+
+	#main_navigation {
+	        float: right;
+		position: absolute;
+		top: 38px;
+		right: 5px;
+	}
+
+	#main_navigation ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	#main_navigation ul li {
+		display: inline;
+		margin: 0;
+		padding: 0;
+		background: none;
+	}
+
+	
+	#main_navigation a {
+		float: left;
+		display: block;
+		height: 11px;
+		background-position: 50% 0%;
+		background-repeat:no-repeat;
+	}
+
+	#main_navigation a:hover {
+		background-position: 50% 100%;
+	}
+
+	#main_navigation a span{
+		display: none;
+	}
+
+	#main_navigation .selected {
+		background-position: 50% 100%;
+	}
+	
+	.nav_home {
+	        background-image:url(/themes/openmoko/images/navigation/home.png);
+		width: 58px;
+	}
+
+	.nav_wiki {
+		background-image:url(/themes/openmoko/images/navigation/wiki.png);
+		width: 50px;
+	}
+
+	.nav_bugzilla {
+		background-image:url(/themes/openmoko/images/navigation/bugzilla.png);
+		width: 79px;
+	}
+
+	.nav_planet {
+	        background-image:url(/themes/openmoko/images/navigation/planet.png);
+	        width: 68px;
+	}
+
+	.nav_projects {
+		background-image:url(/themes/openmoko/images/navigation/projects.png);
+		width: 81px;
+	}
+
+	.nav_lists {
+		background-image:url(/themes/openmoko/images/navigation/lists.png);
+		width: 53px;
+	}
+
+
+	<?php plugin_hook ("cssstyle",$this) ; ?>
+	-->
+</style>
+<?php plugin_hook ('cssfile',$this); ?>
+</head>
+
+<body>
+
+		<div id="header">
+			<a href="/" id="site_logo"><img src="/themes/openmoko/images/openmoko_logo.png" alt="projects.openmoko.org" /></a>
+
+			<div id="main_navigation">
+				<ul>
+					<li><a href="http://www.openmoko.org/" class="nav_home"><span>Home</span></a></li>
+					<li><a href="http://wiki.openmoko.org/" class="nav_wiki"><span>Wiki</span></a></li>
+					<li><a href="http://bugzilla.openmoko.org/" class="nav_bugzilla"><span>Bugzilla</span></a></li>
+					<li><a href="http://planet.openmoko.org/" class="nav_planet"><span>Planet</span></a></li>
+					<li><a href="http://projects.openmoko.org/" class="nav_projects selected"><span>Projects</span></a></li>
+					<li><a href="http://lists.openmoko.org/" class="nav_lists"><span>Lists</span></a></li>
+				</ul>
+			</div>
+		</div>
+<div id="restfnord">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+
+	<tr>
+		<td><a href="/"><?php echo html_image('logo.png',198,52,array('border'=>'0')); ?></a></td>
+		<td><?php echo $this->searchBox(); ?></td>
+		<td align="right"><?php
+			if (session_loggedin()) {
+				?><div id="logintabs">
+				<b><a href="/account/logout.php"><?php echo $Language->getText('common','logout'); ?></a></b><br />
+				<b><a href="/account/"><?php echo $Language->getText('common','myaccount'); ?></a></b></div>
+				<?php
+			} else {
+				?><div id="logintabs">
+				<b><a href="/account/login.php"><?php echo $Language->getText('common','login'); ?></a></b><br />
+				<b><a href="/account/register.php"><?php echo $Language->getText('common','newaccount'); ?></a></b></div>
+				<?php
+			}
+			echo $this->quickNav();
+
+		?></td>
+		<td>&nbsp;&nbsp;</td>
+	</tr>
+
+</table>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+
+	<tr>
+		<td>&nbsp;</td>
+		<td colspan="3">
+
+<?php echo $this->outerTabs($params); ?>
+
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td align="left" bgcolor="#E0E0E0" width="9"><img src="<?php echo $this->imgroot; ?>tabs/topleft.png" height="9" width="9" alt="" /></td>
+		<td bgcolor="#E0E0E0" width="30"><img src="<?php echo $this->imgroot; ?>clear.png" width="30" height="1" alt="" /></td>
+		<td bgcolor="#E0E0E0"><img src="<?php echo $this->imgroot; ?>clear.png" width="1" height="1" alt="" /></td>
+		<td bgcolor="#E0E0E0" width="30"><img src="<?php echo $this->imgroot; ?>clear.png" width="30" height="1" alt="" /></td>
+		<td align="right" bgcolor="#E0E0E0" width="9"><img src="<?php echo $this->imgroot; ?>tabs/topright.png" height="9" width="9" alt="" /></td>
+	</tr>
+
+	<tr>
+
+		<!-- Outer body row -->
+
+		<td bgcolor="#E0E0E0"><img src="<?php echo $this->imgroot; ?>clear.png" width="10" height="1" alt="" /></td>
+		<td valign="top" width="99%" bgcolor="#E0E0E0" colspan="3">
+
+			<!-- Inner Tabs / Shell -->
+
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<?php
+
+
+if (isset($params['group']) && $params['group']) {
+
+			?>
+			<tr>
+				<td>&nbsp;</td>
+				<td>
+				<?php
+
+				echo $this->projectTabs($params['toptab'],$params['group']);
+
+				?>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			<?php
+
+}
+
+?>
+			<tr>
+				<td align="left" bgcolor="#ffffff" width="9"><img src="<?php echo $this->imgroot; ?>tabs/topleft-inner.png" height="9" width="9" alt="" /></td>
+				<td bgcolor="#ffffff"><img src="<?php echo $this->imgroot; ?>clear.png" width="1" height="1" alt="" /></td>
+				<td align="right" bgcolor="#ffffff" width="9"><img src="<?php echo $this->imgroot; ?>tabs/topright-inner.png" height="9" width="9" alt="" /></td>
+			</tr>
+
+			<tr>
+				<td bgcolor="#ffffff"><img src="<?php echo $this->imgroot; ?>clear.png" width="10" height="1" alt="" /></td>
+				<td valign="top" width="99%" bgcolor="white">
+</div>
+	<?php
+
+	}
+
+}
+
+?>
