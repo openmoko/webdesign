@@ -148,6 +148,7 @@
                 <div class="shipping_info">
 			<div class="group">
 	                    <label><strong>Available shipping options:</strong></label>
+			    <div class="content"><b>NOTE:</b> Please do not select STANDARD method for Canada. The agent would charge extra 100$ in delivery.</div>
                             <div class="input_field">
 			    	<table>
 				<tr><th>Name</th><th>Shipping cost</th><th><strong>Total cost</strong></th></tr>
@@ -305,6 +306,10 @@
 
            	<h3 class="shop">Payment Details:</h3>
 <TMPL_IF NAME=payment_cc>
+		<div class="content">
+		<b>NOTE:</b> Your CC will be charged in NTD(New Taiwan Dollar), so please do not wonder about 'foreign card use' on your CC bill.<a href="http://wiki.openmoko.org/wiki/SH1_FAQ#Why_does_the_charge_show_as_a_.27foreign_card_use.27.3F" target="_blank"> more details</a><br>
+		<b>NOTE:</b> For Sales in California we have to collect 'sales tax' (7.25~8.5%) which will be added to the CC charge, but not listed in the total.
+		</div>
 		<div class="shipping_info">
                 	<div class="group first">
 	                    <label><strong>Credit Card Holder: </strong></label>
