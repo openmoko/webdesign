@@ -1,0 +1,115 @@
+/* 6.0 - only fixes */
+/* content area */ 
+/* workaround for various ie float bugs */
+#column-content { 
+	float: none; 
+	margin-left: 0;
+	height: 1%;
+}
+#column-content #content {
+	margin-left: 14.2em;
+	margin-top: 1.1em;
+	height: 1%;
+}
+#column-one {
+	position: absolute;
+	top: 0;
+	left: 1.4em;
+	z-index: 4;
+	padding-top: 160px;
+}
+#footer {
+	margin-left: 15.7em;
+/*	border-left: 1px solid #fabd23;*/
+}
+
+/* the tabs */
+
+#p-cactions {
+	z-index: 3;
+}
+
+#p-cactions li {
+	padding-bottom: 0 !important;
+	border: none;
+	background-color: transparent;
+	cursor: default;
+	float: none !important;
+}
+#p-cactions li a {
+	display: inline-block !important;
+	vertical-align: top;
+	padding-bottom: 0.17em;
+/*	border: solid #aaa;*/
+/*	border-width: 1px 1px 0;*/
+}
+#p-cactions li.selected a {
+	border-color: #fabd23;
+	padding-bottom: 0.17em;
+	top: 1px;
+}
+#p-cactions li a:hover {
+	padding-bottom: 0.17em;
+}
+
+#p-navigation a {
+	display: inline-block;
+	width: 100%;
+}
+#portal-personaltools {
+	padding-bottom: 0.1em;
+}
+#bodyContent a.external {
+	background: url(external.png) center right no-repeat;
+	padding-right: 13px;
+}
+
+/* show the hand */
+#p-logo a,
+#p-logo a:hover {
+	cursor: pointer;
+}
+div.visualClear {
+	width:100%;
+	line-height: 0;
+}
+textarea {
+	width: 96%;
+}
+
+div.editsection,
+#catlinks,
+div.tright,
+div.tleft {
+	position: relative;
+}
+/*{ border:1px solid Red !important;}*/
+
+#p-logo {
+/*	top: 1.4em;*/
+	left: 0em;
+	display: none;
+}
+
+#p-logo a {
+}
+
+.portlet ul {
+	margin-left: 2em;
+}
+
+.portlet a {
+	margin-left: -5px;
+}
+
+
+#p-navigation  {
+	margin-top: 0;
+}
+
+#p-navigation,
+#p-search,
+#p-tb {
+	position: relative;
+	top: -4.85em;
+}
