@@ -42,7 +42,6 @@ ul {
 }
 
 ul li {
-	background: url(images/list_bullet.png) no-repeat 0 0.5em;
 	padding-left: 0.7em;
 	margin-bottom: 0.4em;
 }
@@ -111,32 +110,26 @@ ul li {
 
 
 .nav_home {
-	background-image:url(images/navigation/home.png);
 	width: 58px;
 }
 
 .nav_wiki {
-	background-image:url(images/navigation/wiki.png);
 	width: 50px;
 }
 
 .nav_bugzilla {
-	background-image:url(images/navigation/bugzilla.png);
 	width: 79px;
 }
 
 .nav_planet {
-	background-image:url(images/navigation/planet.png);
 	width: 68px;
 }
 
 .nav_projects {
-	background-image:url(images/navigation/projects.png);
 	width: 81px;
 }
 
 .nav_lists {
-	background-image:url(images/navigation/lists.png);
 	width: 53px;
 }
 
@@ -177,7 +170,6 @@ ul li {
 
 #home_banner {
 	height: 400px;
-	background: url(images/home_banner.png) no-repeat left bottom;
 	position: relative;
 }
 
@@ -211,7 +203,6 @@ ul li {
 	height: 93px;
 	margin: 0px 0px 0px 0px;
 	padding: 0px;
-	background: url(images/home_title.png) no-repeat;
 }
 
 #home_container h3 span {
@@ -219,7 +210,6 @@ ul li {
 }
 
 #home_container .column_container {
-	background: url(images/home_background.png) repeat-y top left;
 }
 
 #home_container .column_container .column {
@@ -248,23 +238,18 @@ ul li {
 }
 
 .section_wiki {
-	background-image:url(images/sections/openmoko_wiki.png);
 }
 
 .section_projects {
-	background-image:url(images/sections/openmoko_projects.png);
 }
 
 .section_lists {
-	background-image:url(images/sections/openmoko_lists.png);
 }
 
 .section_bugzilla {
-	background-image:url(images/sections/openmoko_bugzilla.png);
 }
 
 .section_planet {
-	background-image:url(images/sections/openmoko_planet.png);
 }
 
 .img_button {
