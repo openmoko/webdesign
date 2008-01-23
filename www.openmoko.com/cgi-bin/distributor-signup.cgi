@@ -44,7 +44,7 @@ sub query_to_tmpl()
 # send mail about order to RT
 sub send_mail()
 {
-	my $from = "webserver\@openmoko.com";
+	my $from = "distributor\@openmoko.com";
 
 	my @data;
 	push(@data, "From: $from\n");
