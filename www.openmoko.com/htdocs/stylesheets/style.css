@@ -11,6 +11,11 @@ body {
 	color: #333;
 }
 
+form {
+	margin: 0px;
+	padding: 0px;
+}
+
 h1 {
 	font-size: 1.9em;
 }
@@ -357,6 +362,22 @@ input,textarea {
 	padding: 0 0 1em 0;
 }
 
+.content h2.inputform {
+	color: #FF6600;
+	border-bottom: 1px solid #CCCCCC;
+	margin-bottom: 24px !important;
+}
+
+.content h3.inputform {
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.content h3.inputform .note {
+	font-weight: normal;
+	margin-left: 37px;
+}
+
 .content .title_container {
 	border-bottom: 1px solid #CCCCCC;
 	margin: 0 0 0.7em 0;
@@ -688,6 +709,20 @@ input,textarea {
 .sidebox .inner_2 {
 	background:url(../images/sidebox_bottom.png) no-repeat 0 100%;
 	padding: 7px;
+}
+
+.sidebox h3 {
+	font-size: 1em;
+	margin: 0px 0px 15px 0px!important;
+	padding: 0px !important;
+}
+
+.sidebox div.group {
+	padding-bottom: 15px;
+}
+
+.sidebox input.text {
+	width: 168px;
 }
 
 #searchform {
@@ -1629,48 +1664,6 @@ span.via {
 .header_accessories { background-image: url(../images/navigation_accessories.jpg) !important;}
 #product_neo1973 #header { background-image: url(../images/navigation_neo.png) !important; background: #1F1F1F !important;}
 
-/*.header_default { background-image: url(../images/navigation_default.jpg) !important;}
-.header_default .nav_home { background-image:url(../images/navigation/default/home.png) !important; }
-.header_default .nav_about { background-image:url(../images/navigation/default/about.png) !important; }
-.header_default .nav_products { background-image:url(../images/navigation/default/products.png) !important; }
-.header_default .nav_developers { background-image:url(../images/navigation/default/developers.png) !important; }
-.header_default .nav_press { background-image:url(../images/navigation/default/press.png) !important; }
-.header_default .nav_careers { background-image:url(../images/navigation/default/careers.png) !important; }
-.header_default .nav_contact { background-image:url(../images/navigation/default/contact.png) !important; }
-.header_default .nav_shop { background-image:url(../images/navigation/default/shop.png) !important;}
-
-.header_products { background-image: url(../images/navigation_products.jpg) !important;}
-.header_products .nav_home { background-image:url(../images/navigation/products/home.png) !important; }
-.header_products .nav_about { background-image:url(../images/navigation/products/about.png) !important; }
-.header_products .nav_products { background-image:url(../images/navigation/products/products.png) !important; }
-.header_products .nav_developers { background-image:url(../images/navigation/products/developers.png) !important; }
-.header_products .nav_press { background-image:url(../images/navigation/products/press.png) !important; }
-.header_products .nav_careers { background-image:url(../images/navigation/products/careers.png) !important; }
-.header_products .nav_contact { background-image:url(../images/navigation/products/contact.png) !important; }
-.header_products .nav_shop { background-image:url(../images/navigation/products/shop.png) !important;padding-left: 5px;}
-
-.header_accessories { background-image: url(../images/navigation_accessories.jpg) !important;}
-.header_accessories .nav_home { background-image:url(../images/navigation/accessories/home.png) !important; }
-.header_accessories .nav_about { background-image:url(../images/navigation/accessories/about.png) !important; }
-.header_accessories .nav_products { background-image:url(../images/navigation/accessories/products.png) !important; }
-.header_accessories .nav_developers { background-image:url(../images/navigation/accessories/developers.png) !important; }
-.header_accessories .nav_press { background-image:url(../images/navigation/accessories/press.png) !important; }
-.header_accessories .nav_careers { background-image:url(../images/navigation/accessories/careers.png) !important; }
-.header_accessories .nav_contact { background-image:url(../images/navigation/accessories/contact.png) !important; }
-.header_accessories .nav_shop { background-image:url(../images/navigation/accessories/shop.png) !important;}
-
-
-#product_neo1973 #header { background-image: url(../images/navigation_neo.png) !important; background: #1F1F1F !important;}
-#product_neo1973 .nav_home { background-image:url(../images/navigation/phone/home.png) !important; }
-#product_neo1973 .nav_about { background-image:url(../images/navigation/phone/about.png) !important; }
-#product_neo1973 .nav_products { background-image:url(../images/navigation/phone/products.png) !important; }
-#product_neo1973 .nav_developers { background-image:url(../images/navigation/phone/developers.png) !important; }
-#product_neo1973 .nav_press { background-image:url(../images/navigation/phone/press.png) !important; }
-#product_neo1973 .nav_careers { background-image:url(../images/navigation/phone/careers.png) !important; }
-#product_neo1973 .nav_contact { background-image:url(../images/navigation/phone/contact.png) !important; }
-#product_neo1973 .nav_shop { background-image:url(../images/navigation/phone/shop.png) !important;}
-#product_neo1973 .toptab { background: #424242 url(../images/phone_toptab_left.png) no-repeat 0 100%;}
-#product_neo1973 .toptab .inner { background:url(../images/phone_toptab_right.png) no-repeat 100% 100%; padding: 2px 15px; position: relative; }*/
 
 .home_quote {
 	width: 248px;
@@ -2061,4 +2054,87 @@ div.collumn_view h4 {
 * html #popup_image {
 	position: absolute;
 	top:expression((documentElement.scrollTop ? documentElement.scrollTop : body.scrollTop) + 20 + "px");
+}
+
+span.note {
+	color: #666;
+	font-size: 0.85em;
+}
+
+.form_info {
+	font-size: 0.9em;
+	margin-top: -10px;
+}
+
+.form_instructions {
+	color: #666;
+	display: block !important;
+	margin-left: 20px;
+}
+
+.button_bar {
+	margin-top: -10px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 20px 0px;
+	text-align: center;
+}
+
+.button_bar a {
+	margin: 0px 7px;
+}
+
+.center {
+	text-align: center;
+}
+
+#input_form .group {
+	padding-bottom: 22px;
+}
+
+#input_form .group.first {
+	padding-top: 16px;
+}
+
+#input_form .group label {
+	display: block;
+	width: 160px;
+	padding: 0px 5px;
+	float: left;
+}
+
+#input_form .group .radio_block {
+	display: block;
+	width: 100px;
+	padding: 0px 5px;
+	float: left;
+}
+
+#input_form .group .input_field {
+	float: left;
+}
+
+#input_form .group .input_field label {
+	width: auto;
+	padding: 0px;
+	float: none;
+	display: inline;
+}
+
+#input_form .group input.text {
+	width: 170px;
+}
+
+#input_form .group input.text.address {
+	width: 350px;
+}
+
+
+#input_form .group select {
+	width: 170px;
+}
+
+#input_form .group textarea {
+	width: 350px;
+	height: 100px;
 }
