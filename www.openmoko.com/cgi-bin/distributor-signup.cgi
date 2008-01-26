@@ -73,7 +73,7 @@ sub send_mail()
 	push(@data, "CF.{distrib_billaddr_state}: $params{'billing_state'}\n");
 	push(@data, "CF.{distrib_billaddr_country}: $params{'billing_country'}\n");
 	push(@data, "CF.{distrib_billaddr_phone}: $params{'billing_phone'}\n");
-        push(@data, "CF.{distrib_billaddr_fax}: $params{'billing_fax'}\n");
+	push(@data, "CF.{distrib_billaddr_fax}: $params{'billing_fax'}\n");
 	push(@data, "CF.{distrib_contact_name}: $params{'contact_name'}\n");
 	push(@data, "CF.{distrib_contact_email}: $params{'contact_email'}\n");
 	push(@data, "CF.{distrib_contact_phone}: $params{'contact_phone'}\n");
