@@ -57,7 +57,6 @@ sub send_mail()
 	push(@data, "CF.{distrib_co_name}: $params{'company_name'}\n");
 	push(@data, "CF.{distrib_co_region}: $params{'company_regions'}\n");
 	push(@data, "CF.{distrib_co_url}: $params{'company_url'}\n");
-	push(@data, "CF.{distrib_co_descr}: $params{'company_description'}\n");
 	push(@data, "CF.{distrib_addr}: $params{'shipping_address1'}\n");
 	push(@data, "CF.{distrib_addr2}: $params{'shipping_address2'}\n");
 	push(@data, "CF.{distrib_addr_zip}: $params{'shipping_zip'}\n");
@@ -78,6 +77,7 @@ sub send_mail()
 	push(@data, "CF.{distrib_contact_email}: $params{'contact_email'}\n");
 	push(@data, "CF.{distrib_contact_phone}: $params{'contact_phone'}\n");
 	push(@data, "CF.{distrib_contact_fax}: $params{'contact_fax'}\n");
+	push(@data, "CF.{distrib_co_descr}: $params{'company_description'}\n");
 	push(@data, "\n");
 
 	push(@data, "Corporate Information:\n");
