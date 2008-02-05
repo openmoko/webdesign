@@ -86,7 +86,7 @@ input,textarea {
 	float: right;
 	position: absolute;
 	top: 42px;
-	right: 15px;
+	right: 25px;
 }
 
 #main_navigation ul {
@@ -107,68 +107,20 @@ input,textarea {
 #main_navigation a {
 	float: left;
 	display: block;
-	height: 11px;
-	background-position: 50% 0%;
-	background-repeat:no-repeat;
-	margin-left: 10px;
+	margin-left: 30px;
+	color: #FFFFFF;
+	text-transform: uppercase;
 }
 
 #main_navigation a:hover {
-	background-position: 50% 100%;
+	text-decoration:none;
+	color: #FF6600;
 }
 
-#main_navigation a span{
-	display: none;
-}
+#main_navigation a span {}
 
 #main_navigation .selected {
-	background-position: 50% 100%;
-}
-
-
-.nav_home {
-	background-image:url(images/navigation/home.png);
-	width: 58px;
-}
-
-.nav_about {
-	background-image:url(images/navigation/about.png);
-	width: 64px;
-}
-
-.nav_products {
-	background-image:url(images/navigation/products.png);
-	width: 86px;
-}
-
-.nav_developers {
-	background-image:url(images/navigation/developers.png);
-	width: 98px;
-}
-
-.nav_network {
-	background-image:url(images/navigation/network.png);
-	width: 83px;
-}
-
-.nav_press {
-	background-image:url(images/navigation/press.png);
-	width: 58px;
-}
-
-.nav_careers {
-	background-image:url(images/navigation/careers.png);
-	width: 76px;
-}
-
-.nav_contact {
-	background-image:url(images/navigation/contact.png);
-	width: 79px;
-}
-
-.nav_shop {
-	background-image:url(images/navigation/shop.png);
-	width: 55px;
+	color: #FF6600;
 }
 
 /****************/
@@ -1011,4 +963,8 @@ span.note {
 #order_form .group textarea {
 	width: 350px;
 	height: 100px;
+}
+.hide,
+hr.hide {
+	display:none;
 }
