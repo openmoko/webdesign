@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/" py:strip="">
+  <head py:match="head" py:attrs="select('@*')">
+    ${select('*')}
+    <link rel="stylesheet" type="text/css"
+          href="${href.chrome('site/style.css')}" />
+  </head>
+
+  <body py:match="body" py:attrs="select('@*')">
+    <!--! Add site-specific header -->
+ <!--   <div id="siteheader">-->
+      <!--! Place your header content here... -->
+<!--    </div> -->
+
+    ${select('*|text()')}
+
+    <!--! Add site-specific footer -->
+<!--    <div id="sitefooter">-->
+      <!--! Place your footer content here... -->
+<!--    </div>-->
+  </body>
+</html>

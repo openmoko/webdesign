@@ -1,0 +1,14 @@
+:link, :visited {
+ text-decoration: none;
+ color: #F87F00;
+ border-bottom: 1px dotted #bbb;
+}
+
+dt em {
+ border-bottom: 1px dotted #bbb;
+ color: #F87F00;
+ font-style: normal;
+ text-decoration: none;
+}
+
+.milestone .info h2 em { color: #F87F00; font-style: normal }
