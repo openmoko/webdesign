@@ -28,7 +28,7 @@
   <form py:match="div[@id='content' and @class='ticket']/form" py:attrs="select('@*')">
     <py:if test="req.environ['PATH_INFO'] == '/newticket' and (not 'preview' in req.args)">
       <p>Please make sure to search for existing tickets before reporting a new one!</p>
-      <p>Bugs/Problems with out infrastructure (server, mailinglists, trac, wiki, etc.) should be reported in the <a href="http://admin-trac.openmoko.org/">admin-trac</a>
+      <p>Problems with our Infrastructure (server, mailinglists, trac, etc.) should be reported to the <a href="http://admin-trac.openmoko.org/trac/newticket">admin-trac</a></p>
     </py:if>
     ${select('*')} 
   </form>
