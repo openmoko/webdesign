@@ -55,15 +55,10 @@
                 width: 50px;
         }
 
-	.nav_docs {
-        	background-image:url(navigation/docs.png);
-	        width: 50px;
-	}
-
-        .nav_bugzilla {
-                background-image:url(navigation/bugzilla.png);
-                width: 79px;
-        }
+		.nav_docs {
+    	    	background-image:url(navigation/docs.png);
+		        width: 50px;
+		}
 
         .nav_planet {
                 background-image:url(navigation/planet.png);
