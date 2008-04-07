@@ -1,3 +1,85 @@
+	#restfnord {
+		padding: 0px 0px 0px 0px;
+		margin: 0px auto;
+	}
+
+
+	#main_navigation {
+                float: right;
+                position: absolute;
+                top: 38px;
+                right: 5px;
+        }
+
+        #main_navigation ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+        }
+
+        #main_navigation ul li {
+                display: inline;
+                margin: 0;
+                padding: 0;
+                background: none;
+        }
+
+
+        #main_navigation a {
+                float: left;
+                display: block;
+                height: 11px;
+                background-position: 50% 0%;
+                background-repeat:no-repeat;
+        }
+
+        #main_navigation a:hover {
+                background-position: 50% 100%;
+        }
+
+        #main_navigation a span{
+                display: none;
+        }
+
+        #main_navigation .selected {
+                background-position: 50% 100%;
+        }
+
+        .nav_home {
+                background-image:url(navigation/home.png);
+                width: 58px;
+        }
+
+        .nav_wiki {
+                background-image:url(navigation/wiki.png);
+                width: 50px;
+        }
+
+	.nav_docs {
+        	background-image:url(navigation/docs.png);
+	        width: 50px;
+	}
+
+        .nav_bugzilla {
+                background-image:url(navigation/bugzilla.png);
+                width: 79px;
+        }
+
+        .nav_planet {
+                background-image:url(navigation/planet.png);
+                width: 68px;
+        }
+
+        .nav_projects {
+                background-image:url(navigation/projects.png);
+                width: 81px;
+        }
+
+        .nav_lists {
+                background-image:url(navigation/lists.png);
+                width: 53px;
+        }
+
 :link, :visited {
  text-decoration: none;
  color: #F87F00;

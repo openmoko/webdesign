@@ -1,6 +1,5 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:py="http://genshi.edgewall.org/" py:strip="">
-  <!-- Custom match templates go here -->
   <head py:match="head" py:attrs="select('@*')">
     ${select('*')}
     <link rel="stylesheet" type="text/css"
@@ -17,8 +16,7 @@
                                 <ul>
                                         <li><a href="http://www.openmoko.org/" class="nav_home"><span>Home</span></a></li>
                                         <li><a href="http://wiki.openmoko.org/" class="nav_wiki"><span>Wiki</span></a></li>
-					<li><a href="http://docs.openmoko.org/" class="nav_docs selected"><span>Docs</span></a></li>
-                                        <li><a href="http://bugzilla.openmoko.org/" class="nav_bugzilla"><span>Bugzilla</span></a></li>
+										<li><a href="http://docs.openmoko.org/" class="nav_docs selected"><span>Docs</span></a></li>
                                         <li><a href="http://planet.openmoko.org/" class="nav_planet"><span>Planet</span></a></li>
                                         <li><a href="http://projects.openmoko.org/" class="nav_projects"><span>Projects</span></a></li>
                                         <li><a href="http://lists.openmoko.org/" class="nav_lists"><span>Lists</span></a></li>
@@ -28,10 +26,10 @@
     </div>
 <div id="restfnord">
     ${select('*|text()')}
-</div> 
+</div>
     <!--! Add site-specific footer -->
     <div id="sitefooter">
       <!--! Place your footer content here... -->
     </div>
-  </body> 
+  </body>
 </html>
