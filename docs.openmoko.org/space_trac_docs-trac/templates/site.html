@@ -7,28 +7,29 @@
   </head>
 
   <body py:match="body" py:attrs="select('@*')">
-    <!--! Add site-specific header -->
     <div id="siteheader">
-      <!--! Place your header content here... -->
-
-                        <div id="main_navigation">
-                                <ul>
-                                        <li><a href="http://www.openmoko.org/" class="nav_home"><span>Home</span></a></li>
-                                        <li><a href="http://wiki.openmoko.org/" class="nav_wiki"><span>Wiki</span></a></li>
-										<li><a href="http://docs.openmoko.org/" class="nav_docs selected"><span>Docs</span></a></li>
-                                        <li><a href="http://planet.openmoko.org/" class="nav_planet"><span>Planet</span></a></li>
-                                        <li><a href="http://projects.openmoko.org/" class="nav_projects"><span>Projects</span></a></li>
-                                        <li><a href="http://lists.openmoko.org/" class="nav_lists"><span>Lists</span></a></li>
-                                </ul>
-                        </div>
-
+      <div id="main_navigation">
+        <ul>
+          <li><a href="http://www.openmoko.org/" class="nav_home"><span>Home</span></a></li>
+          <li><a href="http://wiki.openmoko.org/" class="nav_wiki"><span>Wiki</span></a></li>
+          <li><a href="http://docs.openmoko.org/" class="nav_docs selected"><span>Docs</span></a></li>
+          <li><a href="http://planet.openmoko.org/" class="nav_planet"><span>Planet</span></a></li>
+          <li><a href="http://projects.openmoko.org/" class="nav_projects"><span>Projects</span></a></li>
+          <li><a href="http://lists.openmoko.org/" class="nav_lists"><span>Lists</span></a></li>
+        </ul>
+      </div>
     </div>
-<div id="restfnord">
-    ${select('*|text()')}
-</div>
-    <!--! Add site-specific footer -->
+    <div id="restfnord">
+      ${select('*|text()')}
+    </div>
     <div id="sitefooter">
-      <!--! Place your footer content here... -->
     </div>
   </body>
+  <form py:match="div[@id='content' and @class='ticket']/form" py:attrs="select('@*')">
+    <py:if test="req.environ['PATH_INFO'] == '/newticket' and (not 'preview' in req.args)">
+      <p>Please make sure to search for existing tickets before reporting a new one!</p>
+      <p>Bugs/Problems with out infrastructure (server, mailinglists, trac, wiki, etc.) should be reported in the <a href="http://admin-trac.openmoko.org/">admin-trac</a>
+    </py:if>
+    ${select('*')} 
+  </form>
 </html>
