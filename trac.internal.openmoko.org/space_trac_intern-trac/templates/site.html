@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/" py:strip="">
+  <head py:match="head" py:attrs="select('@*')">
+    ${select('*')}
+    <link rel="stylesheet" type="text/css"
+          href="${href.chrome('site/style.css')}" />
+  </head>
+
+  <body py:match="body" py:attrs="select('@*')">
+    <div id="siteheader">
+      <div id="main_navigation">
+        <ul>
+          <li><a href="http://www.openmoko.org/" class="nav_home"><span>Home</span></a></li>
+          <li><a href="http://wiki.openmoko.org/" class="nav_wiki"><span>Wiki</span></a></li>
+          <li><a href="http://docs.openmoko.org/" class="nav_docs"><span>Docs</span></a></li>
+          <li><a href="http://planet.openmoko.org/" class="nav_planet"><span>Planet</span></a></li>
+          <li><a href="http://projects.openmoko.org/" class="nav_projects"><span>Projects</span></a></li>
+          <li><a href="http://lists.openmoko.org/" class="nav_lists"><span>Lists</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="restfnord">
+      ${select('*|text()')}
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+  <form py:match="div[@id='content' and @class='ticket']/form" py:attrs="select('@*')">
+    <py:if test="req.environ['PATH_INFO'] == '/newticket' and (not 'preview' in req.args)">
+      <p>Please make sure to search for existing tickets before reporting a new one!</p>
+    </py:if>
+    ${select('*')} 
+  </form>
+</html>
