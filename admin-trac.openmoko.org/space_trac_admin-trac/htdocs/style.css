@@ -89,3 +89,17 @@ dt em {
 }
 
 .milestone .info h2 em { color: #F87F00; font-style: normal }
+
+
+.onlinestate {
+  list-style: none;
+  text-decoration: none;
+}
+
+.onlinestate.ok{
+  color: #00FF00;
+}
+
+.onlinestate.fail{
+  color: #FF0000;
+}
