@@ -31,4 +31,13 @@
     </py:if>
     ${select('*')} 
   </form>
+  <py:if test="req.environ['PATH_INFO'] == '/prefs'">
+    <form py:match="div[@id='tabcontent']/form" py:attrs="select('@*')">
+      <p>This entries are changeable in here <a href="https://docs.openmoko.org/trac/prefs">docs.openmoko.org - preferences</a></p>  
+      ${select('*')}
+    </form>
+    <input py:match="//table/tr/td/input[@id='name' or @id='email']" py:attrs="select('@*')" disabled="disabled">
+      ${select('*|text()')}
+    </input>
+  </py:if>
 </html>
