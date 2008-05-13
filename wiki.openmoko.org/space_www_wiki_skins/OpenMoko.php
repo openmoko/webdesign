@@ -287,7 +287,7 @@ class OpenMokoTemplate extends QuickTemplate {
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>
 <script type="text/javascript">
-_uacct = "UA-XXXXX-X";
+_uacct = "UA-3856829-1";
 urchinTracker();
 </script>
 
