@@ -692,7 +692,7 @@ special external link styling */
 	padding: 0;
 	float: none;
 	width: 12.6em;
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 .portlet h4 {
 	font-size: 95%;
@@ -927,7 +927,7 @@ input.searchButton {
 	#p-cactions {
 		position: absolute;
 		top: 6.2em;
-		left: 15.5em;
+		left: 16.5em;
 		margin: 0;
 		white-space: nowrap;
 		width: 76%;
