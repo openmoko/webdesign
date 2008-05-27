@@ -157,20 +157,21 @@ class OpenMokoTemplate extends QuickTemplate {
 			?>title="<?php $this->msg('mainpage') ?>"></a>
 	</div>
 	<script type="<?php $this->text('jsmimetype') ?>"> if (window.isMSIE55) fixalpha(); </script>
-	<?php foreach ($this->data['sidebar'] as $bar => $cont) { ?>
-	<div class='portlet' id='p-<?php echo htmlspecialchars($bar) ?>'>
-		<h5><?php $out = wfMsg( $bar ); if (wfEmptyMsg($bar, $out)) echo $bar; else echo $out; ?></h5>
-		<div class='pBody'>
-			<ul>
-<?php 			foreach($cont as $key => $val) { ?>
-				<li id="<?php echo htmlspecialchars($val['id']) ?>"<?php
-					if ( $val['active'] ) { ?> class="active" <?php }
-				?>><a href="<?php echo htmlspecialchars($val['href']) ?>"><?php echo htmlspecialchars($val['text']) ?></a></li>
-<?php			} ?>
-			</ul>
-		</div>
-	</div>
-	<?php } ?>
+
+	<?php
+	global $wgUser,$wgTitle,$wgParser;
+	$side = new Article(Title::newFromText('Sidebar',NS_MEDIAWIKI));
+	if (is_object($wgParser)) { $psr = $wgParser; $opt = $wgParser->mOptions; }
+	else { $psr = new Parser; $opt = NULL; }
+	if (!is_object($opt)) $opt = ParserOptions::newFromUser($wgUser);
+	$wikitext = "__NOEDITSECTION____NOTOC__\n";
+	$wikitext .= "<div class=\"portlet\">\n";
+	$wikitext .= $side->fetchContent();
+	$wikitext .= "\n</div>";
+	$html = $psr->parse($wikitext,$wgTitle,$opt,true,true)->getText();
+	echo preg_replace("/<li>\\s*<\\/li>/",'',$html);
+	?>
+
 	<div id="p-search" class="portlet">
 		<h5><label for="searchInput"><?php $this->msg('search') ?></label></h5>
 		<div id="searchBody" class="pBody">
