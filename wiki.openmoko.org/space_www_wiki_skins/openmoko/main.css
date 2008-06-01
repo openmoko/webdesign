@@ -678,8 +678,8 @@ special external link styling */
 	margin: 0 0 1.1em;
 	padding: 0;
 	float: none;
-	width: 12.6em;
-/*	overflow: hidden;*/
+	width: 11em;
+	overflow: hidden;
 }
 .portlet h4 {
 	font-size: 95%;
