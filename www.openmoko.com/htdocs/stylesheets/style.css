@@ -68,7 +68,8 @@ input,textarea {
 #header {
 	height: 121px;
 	position: relative;
-	background:url(../images/navigation_background.png) no-repeat 0 0;
+	background-color: #000;
+	/* background:url(../images/navigation_background.png) no-repeat 0 0; */
 }
 
 #site_logo {
@@ -348,9 +349,10 @@ input,textarea {
 	height: 461px;
 	width: 950px;
 	position: relative;
-	background-image: url(../images/home_banner_2.jpg);
+	/* background-image: url(../images/home_banner_3.jpg);
 	background-repeat: no-repeat;
-	background-position: 0px 0px;
+	background-position: 0px 0px	 */
+  background-color: #000;
 
 }
 
@@ -363,7 +365,7 @@ input,textarea {
 }
 
 #home_content {
-	background:url(../images/home_background_2.png) no-repeat 0 0em;
+	background:url(../images/home_background_3.jpg) no-repeat 0 0em;
 	padding: 1px 0px 1px 0px;
 }
 
@@ -1655,9 +1657,9 @@ span.via {
 }
 
 .header_default {
-	background-image: url(../images/navigation_default_2.jpg) !important;
+	/* background-image: url(../images/navigation_default_2.jpg) !important;
 	background-repeat: repeat-x!important;
-	background-position: 0px 0px!important;
+	background-position: 0px 0px!important; */
 }
 .header_products { background-image: url(../images/navigation_products.jpg) !important;}
 .header_accessories { background-image: url(../images/navigation_accessories.jpg) !important;}
