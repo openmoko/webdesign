@@ -1,0 +1,46 @@
+ul li a {
+	height:1%;
+}
+.product-footer ul.sub-nav {
+	width:200px;
+}
+
+/* sets min-height for IE6 */
+#container {
+	height: expression( this.scrollHeight < 350 ? "351px" : "auto" ); 
+}
+.product-footer {
+	height: expression( this.scrollHeight < 110 ? "111px" : "auto" ); 
+}
+.product-footer .qa .box {
+	height: expression( this.scrollHeight < 140 ? "141px" : "auto" ); 
+}
+.store-home,
+.contact,
+.press,
+.about,
+.product-dboard .product-img,
+.product-neo .product-img,
+.product-neo,
+.product-dboard {
+	height: expression( this.scrollHeight < 403 ? "404px" : "auto" ); 
+}
+.product-neo-footer {
+	height: expression( this.scrollHeight < 210 ? "211px" : "auto" ); 
+}
+.opp-dist,
+.opp-dist-index,
+.opportunities-uni,
+.opportunities-uni-index,
+.opportunities-ve,
+.opportunities-ve-index,
+.opportunities-ca-inner,
+.opportunities-ca,
+.opportunities,
+.download {
+	height: expression( this.scrollHeight < 354 ? "355px" : "auto" ); 
+}
+.dist,
+.contribute {
+	height: expression( this.scrollHeight < 390 ? "391px" : "auto" ); 
+}
