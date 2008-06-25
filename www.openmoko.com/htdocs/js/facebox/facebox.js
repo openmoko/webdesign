@@ -58,7 +58,7 @@
             <td class="tl"/> \
 			<td class="b"> \
 				<a href="#" class="close"> \
-                  <img src="js/facebox/closelabel.gif" title="close" class="close_image" /> \
+                  <img src="js/facebox/closelabel.png" title="close" class="close_image" /> \
                 </a> \
 			</td> \
 			<td class="tr"/> \
