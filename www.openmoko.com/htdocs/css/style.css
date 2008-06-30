@@ -72,7 +72,7 @@ blockquote {
 	float: right;
 	height: 31px; 
 	width: 114px; 
-	background: url(../images/logo2.png) no-repeat 0px 0px;
+	background: url(/images/logo2.png) no-repeat 0px 0px;
 }
 #logo a {
 	display:block;
@@ -139,7 +139,7 @@ ul.lev2 li a {
 ul.lev1 li a:hover,
 ul.lev2 li a:hover {
 	color: #EBEBEB;
-	background: url(../images/arrow3.png) no-repeat 0px 3px;
+	background: url(/images/arrow3.png) no-repeat 0px 3px;
 }
 ul.lev1 li.selected a,
 ul.lev2 li.selected a {
@@ -155,7 +155,7 @@ ul.lev2 li.selected a {
 */
 
 .home {
-	background: #000000 url(../images/sections/home2.jpg) no-repeat center center;
+	background: #000000 url(/images/sections/home2.jpg) no-repeat center center;
 	width: 960px;
 	height: 400px;
 	margin: 0px 0px 0px;
@@ -177,7 +177,7 @@ ul.lev2 li.selected a {
 .home-download {
 	width: 960px;
 	height:403px;
-	background: #D0CEC2 url(../images/sections/home-downloads.jpg) no-repeat 0px 0px;
+	background: #D0CEC2 url(/images/sections/home-downloads.jpg) no-repeat 0px 0px;
 }
 .home-download .desc {
 	width: 600px;
@@ -195,7 +195,7 @@ ul.lev2 li.selected a {
 .home-universities {
 	width: 960px;
 	height:403px;
-	background: #FFFFFF url(../images/sections/home-universities.jpg) no-repeat right top;
+	background: #FFFFFF url(/images/sections/home-universities.jpg) no-repeat right top;
 }
 .home-universities .desc {
 	width: 600px;
@@ -249,7 +249,7 @@ ul.lev2 li.selected a {
 	position:absolute;
 	top:20px;
 	left:250px;
-	background: url(../images/products/featured_product.jpg) no-repeat 0px 0px;
+	background: url(/images/products/featured_product.jpg) no-repeat 0px 0px;
 }
 .featured-txt {
 	width:180px;
@@ -277,7 +277,7 @@ ul.lev2 li.selected a {
 .featured-txt ul li,
 .featured-txt ul li {
 	margin: 0px 0px 5px;
-	background: url(../images/list_icon.png) no-repeat 0px 4px;
+	background: url(/images/list_icon.png) no-repeat 0px 4px;
 	padding: 0px 0px 0px 13px;
 	color: #999999;
 }
@@ -294,7 +294,7 @@ ul.lev2 li.selected a {
 	width:124px;
 	height:30px;
 	text-indent:-9999999px;
-	background: url(../images/buttons/button_buy.jpg) no-repeat 0px 0px;
+	background: url(/images/buttons/button_buy.jpg) no-repeat 0px 0px;
 }
 .product-footer {
 	width: 950px;
@@ -317,12 +317,12 @@ ul.lev2 li.selected a {
 }
 .product-footer ul.sub-nav li a:hover {
 	color: #EBEBEB;
-	background: url(../images/arrow3.png) no-repeat 10px 4px;
+	background: url(/images/arrow3.png) no-repeat 10px 4px;
 }
 .product-footer ul.sub-nav li.selected a {
 	font-weight: bold;
 	color: #EBEBEB;
-	background: url(../images/arrow3.png) no-repeat 10px 4px;
+	background: url(/images/arrow3.png) no-repeat 10px 4px;
 	padding: 0px 0px 0px 25px;
 }
 .product-footer .wrap {
@@ -365,7 +365,7 @@ ul.lev2 li.selected a {
 }
 .product-footer .nfr-box ul li {
 	margin: 0px 0px 5px;
-	background: url(../images/list_icon.png) no-repeat 0px 5px;
+	background: url(/images/list_icon.png) no-repeat 0px 5px;
 	padding: 0px 0px 0px 13px;
 	color: #999999;
 }
@@ -438,7 +438,7 @@ ul.lev2 li.selected a {
 .product-neo .product-img {
 	float:left;
 	width:650px;
-	background: #000000 url(../images/products/neo.jpg) no-repeat center center;
+	background: #000000 url(/images/products/neo.jpg) no-repeat center center;
 	min-height: 403px;
 }
 .product-neo-footer {
@@ -463,7 +463,7 @@ ul.lev2 li.selected a {
 .product-dboard .product-img {
 	float:left;
 	width:650px;
-	background: #000000 url(../images/products/dboard.png) no-repeat center center;
+	background: #000000 url(/images/products/dboard.png) no-repeat center center;
 	min-height: 403px;
 }
 .product-neo .desc,
@@ -487,7 +487,7 @@ ul.lev2 li.selected a {
 .product-dboard .pictures p a {
 	border-bottom: 1px solid #626262;
 	color: #EBEBEB;
-	background: url(../images/arrow_back.png) no-repeat left center;
+	background: url(/images/arrow_back.png) no-repeat left center;
 	padding: 0px 0px 0px 16px;
 }
 .product-dboard .pictures p a:hover {
@@ -538,7 +538,7 @@ ul.lev2 li.selected a {
 	text-indent:-99999999px;
 	height: 18px;
 	width: 115px;
-	background: url(../images/buttons/button_download.png) no-repeat 0px 0px;
+	background: url(/images/buttons/button_download.png) no-repeat 0px 0px;
 	border:none!important;
 }
 
@@ -553,7 +553,7 @@ ul.lev2 li.selected a {
 .download .desc ul li a {
 	font-weight: bold;
 	color: #EBEBEB;
-	background: url(../images/green_arrow.jpg) no-repeat 0px 0px;
+	background: url(/images/green_arrow.jpg) no-repeat 0px 0px;
 	padding: 3px 0px 3px 28px;
 	display:block;
 	border:none!important;
@@ -651,7 +651,7 @@ ul.lev2 li.selected a {
 	width: 960px;
 	min-height:363px;
 	padding: 15px 0px 25px 0px;
-	background: #1B1B1B url(../images/sections/careers_bg.jpg) no-repeat right top;
+	background: #1B1B1B url(/images/sections/careers_bg.jpg) no-repeat right top;
 }
 .opportunities-ca-inner {
 	width: 960px;
@@ -667,7 +667,7 @@ ul.lev2 li.selected a {
 .opportunities-ca-inner .opp-careers-job ul {}
 .opportunities-ca-inner .opp-careers-job ul li {
 	margin: 0px 0px 5px;
-	background: url(../images/list_icon.png) no-repeat 0px 5px;
+	background: url(/images/list_icon.png) no-repeat 0px 5px;
 	padding: 0px 0px 0px 12px;
 	line-height:17px;
 	color: #999999;
@@ -690,7 +690,7 @@ ul.lev2 li.selected a {
 	width: 960px;
 	min-height:363px;
 	padding: 15px 0px 25px 0px;
-	background: #1B1B1B url(../images/sections/verticals_index_bg.png) no-repeat right 0px;
+	background: #1B1B1B url(/images/sections/verticals_index_bg.png) no-repeat right 0px;
 }
 .opportunities-ve .wrap,
 .opportunities-ve-index .wrap {
@@ -723,7 +723,7 @@ ul.lev2 li.selected a {
 	width: 960px;
 	min-height:363px;
 	padding: 15px 0px 25px 0px;
-	background: #1B1B1B url(../images/sections/verticals_bg.png) no-repeat 620px 0px;
+	background: #1B1B1B url(/images/sections/verticals_bg.png) no-repeat 620px 0px;
 }
 .opp-verticals {
 	width:540px;
@@ -814,12 +814,12 @@ ul.lev2 li.selected a {
 }
 .opp-careers-menu ul li.selected a {
 	color: #EBEBEB;
-	background: url(../images/arrow3.png) no-repeat 0px 4px;
+	background: url(/images/arrow3.png) no-repeat 0px 4px;
 	font-weight: bold;
 }
 .opp-careers-menu ul li a:hover {
 	color: #EBEBEB;
-	background: url(../images/arrow3.png) no-repeat 0px 4px;
+	background: url(/images/arrow3.png) no-repeat 0px 4px;
 }
 
 /*		
@@ -870,7 +870,7 @@ ul.lev2 li.selected a {
 .opportunities-uni-index .wrap ul li,
 .opportunities-uni-tc .wrap ul li {
 	margin: 0px 0px 8px;
-	background: url(../images/list_icon.png) no-repeat 0px 4px;
+	background: url(/images/list_icon.png) no-repeat 0px 4px;
 	padding: 0px 0px 0px 13px;
 	color: #999999;
 }
@@ -909,7 +909,7 @@ ul.lev2 li.selected a {
 	width: 960px;
 	min-height:363px;
 	padding: 15px 0px 25px 0px;
-	background: #1B1B1B url(../images/sections/universities_bg.jpg) no-repeat right top;
+	background: #1B1B1B url(/images/sections/universities_bg.jpg) no-repeat right top;
 }
 
 .opp-universities {
@@ -1030,7 +1030,7 @@ ul.lev2 li.selected a {
 	width: 960px;
 	min-height:363px;
 	background-color: #1B1B1B;
-	background-image: url(../images/sections/dist_map.jpg);
+	background-image: url(/images/sections/dist_map.jpg);
 	background-repeat: no-repeat;
 	background-position: right top;
 	height: 403px;
@@ -1066,7 +1066,7 @@ ul.lev2 li.selected a {
 }
 .opp-dist-index .wrap ul li {
 	margin: 0px 0px 8px;
-	background: url(../images/list_icon.png) no-repeat 0px 4px;
+	background: url(/images/list_icon.png) no-repeat 0px 4px;
 	padding: 0px 0px 0px 13px;
 	color: #999999;
 }
@@ -1092,7 +1092,7 @@ ul.sub-menu li a {
 }
 ul.sub-menu li a:hover {
 	color: #EBEBEB;
-	background: url(../images/arrow3.png) no-repeat 15px 4px;
+	background: url(/images/arrow3.png) no-repeat 15px 4px;
 }
 ul.sub-menu li.selected a {
 	font-weight: bold;
@@ -1131,7 +1131,7 @@ ul.sub-menu li.selected ul li a:hover {
 ul.sub-menu li ul li a:hover {
 	font-weight: normal;
 	color: #EBEBEB;
-	background: url(../images/arrow3.png) no-repeat 16px 4px!important;
+	background: url(/images/arrow3.png) no-repeat 16px 4px!important;
 }
 ul.sub-menu li ul li.selected {
 	padding-left: 20px;
@@ -1223,7 +1223,7 @@ ul.sub-menu li.expanded ul li.selected a {
 	width: 960px;
 	min-height:390px;
 	padding: 15px 0px 0px 0px;
-	background: #1B1B1B url(../images/sections/map.jpg) no-repeat 0px 0px;
+	background: #1B1B1B url(/images/sections/map.jpg) no-repeat 0px 0px;
 }
 .distributor {
 	width:720px;
@@ -1262,7 +1262,7 @@ ul.sub-menu li.expanded ul li.selected a {
 
 #footer {
 	clear: both;
-	background: url(../images/footer_bg.png) no-repeat 0px 23px;
+	background: url(/images/footer_bg.png) no-repeat 0px 23px;
 	padding: 21px 0px 20px;
 	width: 960px;
 }
@@ -1293,14 +1293,14 @@ ul.sub-menu li.expanded ul li.selected a {
 	color: #626262;
 	text-transform: uppercase;
 	font-weight: bold;
-	background: url(../images/top.png) no-repeat 0px 0px;
+	background: url(/images/top.png) no-repeat 0px 0px;
 	height: 18px;
 	width: 55px;
 	text-indent:-9999999PX;
 }
 #footer #top a:hover {
 	color: #000000;
-	background: url(../images/top.png) no-repeat 0px -18px;
+	background: url(/images/top.png) no-repeat 0px -18px;
 	height: 18px;
 	width: 55px;
 }
@@ -1314,7 +1314,7 @@ ul.sub-menu li.expanded ul li.selected a {
 .about {
 	width: 960px;
 	min-height:403px;
-	background: #1B1B1B url(../images/sections/about_bg.png) no-repeat right top;
+	background: #1B1B1B url(/images/sections/about_bg.png) no-repeat right top;
 }
 .about ul.sub-menu {
 	float: left;
@@ -1417,7 +1417,7 @@ ul.sub-menu li.expanded ul li.selected a {
 }
 .press .wrap .box p.date {
 	color: #999999;
-	background: url(../images/list_icon.png) no-repeat 0px 4px;
+	background: url(/images/list_icon.png) no-repeat 0px 4px;
 	padding: 0px 0px 0px 12px;
 }
 .press .wrap .box-press {
@@ -1449,7 +1449,7 @@ ul.sub-menu li.expanded ul li.selected a {
 .contact {
 	width: 960px;
 	min-height:403px;
-	background: #000000 url(../images/sections/contact_bg.jpg) no-repeat right top;
+	background: #000000 url(/images/sections/contact_bg.jpg) no-repeat right top;
 	color: #EBEBEB;
 }
 .contact .desc {
@@ -1547,7 +1547,7 @@ ul.sub-menu li.expanded ul li.selected a {
 	width: 945px;
 	min-height:403px;
 	padding: 0px 0px 0px 15px;
-	background: #1B1B1B url(../images/sections/map.jpg) no-repeat 0px 0px;
+	background: #1B1B1B url(/images/sections/map.jpg) no-repeat 0px 0px;
 	
 }
 .store-home .block_left {
@@ -1576,7 +1576,7 @@ ul.sub-menu li.expanded ul li.selected a {
 }
 .store-home .block_right ul li a:hover {
 	color: #EBEBEB;
-	background: url(../images/arrow3.png) no-repeat 0px 4px;
+	background: url(/images/arrow3.png) no-repeat 0px 4px;
 }
 .store-home a {}
 .store-index {
@@ -1607,6 +1607,7 @@ ul.sub-menu li.expanded ul li.selected a {
 }
 .store-index .product-box p {
 	line-height: 17px;
+	color: #999999;
 }
 .product-more {
 	margin: 10px 0px;
@@ -1617,7 +1618,7 @@ ul.sub-menu li.expanded ul li.selected a {
 	color: #EBEBEB;
 	font-weight: bold;
 	display: block;
-	background: url(../images/shop_more.png) no-repeat left top;
+	background: url(/images/shop_more.png) no-repeat left top;
 	padding: 0px 0px 0px 25px;
 	height: 18px;
 	width: 125px;
@@ -1667,7 +1668,7 @@ ul.sub-menu li.expanded ul li.selected a {
 }
 .shop-cart p {
 	padding: 0px 0px 0px 25px;
-	background: url(../images/cart_icon.png) no-repeat left center;
+	background: url(/images/cart_icon.png) no-repeat left center;
 	height: 21px;
 }
 .shop-cart p strong {
@@ -1687,7 +1688,7 @@ ul.sub-menu li.expanded ul li.selected a {
 }
 .shop-cart ul li a:hover {
 	color: #999999;
-	background: url(../images/arrow2.png) no-repeat 10px 4px;
+	background: url(/images/arrow2.png) no-repeat 10px 4px;
 	padding: 0px 0px 0px 25px;
 }
 .shop-cart ul li {
