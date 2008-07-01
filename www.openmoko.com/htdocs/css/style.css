@@ -1033,7 +1033,7 @@ ul.lev2 li.selected a {
 	background-image: url(/images/sections/dist_map.jpg);
 	background-repeat: no-repeat;
 	background-position: right top;
-	height: 403px;
+	//height: 403px;
 	padding-top: 15px;
 	padding-right: 0px;
 	padding-bottom: 25px;
@@ -1594,7 +1594,7 @@ ul.sub-menu li.expanded ul li.selected a {
 .store-index .product-box img {
 	display:block;
 	float:left;
-	margin-left:15px;
+	margin-left:0px;
 }
 .store-index .product-info {
 	float:right;
