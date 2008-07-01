@@ -1580,7 +1580,7 @@ ul.sub-menu li.expanded ul li.selected a {
 }
 .store-home a {}
 .store-index {
-	width: 950px;
+	width: 945px;
 	min-height:300px;
 	padding: 15px 0px 25px 15px;
 	background: #1B1B1B;
@@ -1618,7 +1618,7 @@ ul.sub-menu li.expanded ul li.selected a {
 	color: #EBEBEB;
 	font-weight: bold;
 	display: block;
-	background: url(/images/shop_more.png) no-repeat left top;
+	background: url(/images/button_details.png) no-repeat left top;
 	padding: 0px 0px 0px 25px;
 	height: 18px;
 	width: 125px;
@@ -1631,12 +1631,13 @@ ul.sub-menu li.expanded ul li.selected a {
 	color: #EBEBEB;
 }
 .store-footer {
-	width: 935px;
+	width: 930px;
 	min-height:100px;
 	padding: 10px 0px 25px 30px;
 	background: #1B1B1B;
 	margin: 0px 0px 0px;
 }
+
 .shop-search {
 	float:left;
 	width:240px;
@@ -1703,7 +1704,7 @@ ul.sub-menu li.expanded ul li.selected a {
 //////////////////////////////////////////////////////
 */
 .store-inner {
-	width: 950px;
+	width: 945px;
 	min-height:100px;
 	padding: 10px 0px 25px 15px;
 	background: #1B1B1B;
@@ -1762,7 +1763,7 @@ ul.sub-menu li.expanded ul li.selected a {
 	float: left;
 }
 .store-options {
-	width: 965px;
+	width: 960px;
 	min-height:100px;
 	padding: 10px 0px 25px;
 	background: #1B1B1B;
@@ -1858,7 +1859,7 @@ ul.sub-menu li.expanded ul li.selected a {
 */
 
 .store-cart {
-	width: 950px;
+	width: 945px;
 	min-height:100px;
 	padding: 10px 0px 25px 15px;
 	background: #1B1B1B;
@@ -2011,6 +2012,21 @@ table#cart tbody tr td.total {
 #pagination {
 	text-align:center;
 }
+
+
+/*		
+//////////////////////////////////////////////////////
+		Shop - search results
+//////////////////////////////////////////////////////
+*/
+.searchresults {
+	width: 945px;
+	min-height:100px;
+	padding: 10px 0px 25px 15px;
+	background: #1B1B1B;
+	margin: 10px 0px 0px;
+}
+
 
 /*		
 //////////////////////////////////////////////////////
