@@ -1033,7 +1033,6 @@ ul.lev2 li.selected a {
 	background-image: url(/images/sections/dist_map.jpg);
 	background-repeat: no-repeat;
 	background-position: right top;
-	//height: 403px;
 	padding-top: 15px;
 	padding-right: 0px;
 	padding-bottom: 25px;
@@ -1580,13 +1579,13 @@ ul.sub-menu li.expanded ul li.selected a {
 }
 .store-home a {}
 .store-index {
-	width: 945px;
+	width: 930px;
 	min-height:300px;
-	padding: 15px 0px 25px 15px;
+	padding: 15px 0px 25px 30px;
 	background: #1B1B1B;
 }
 .store-index .product-box {
-	width:460px;
+	width:450px;
 	margin-right:10px;
 	margin-bottom:10px;
 	float:left;
@@ -1597,8 +1596,10 @@ ul.sub-menu li.expanded ul li.selected a {
 	margin-left:0px;
 }
 .store-index .product-info {
-	float:right;
-	width:230px;
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+	width:190px;
 }
 .store-index .product-box h2 {
 	color: #EBEBEB;
@@ -1706,9 +1707,8 @@ ul.sub-menu li.expanded ul li.selected a {
 .store-inner {
 	width: 945px;
 	min-height:100px;
-	padding: 10px 0px 25px 15px;
+	padding: 20px 0px 25px 15px;
 	background: #1B1B1B;
-	margin: 10px 0px 0px;
 }
 .store-inner .product-img {
 	width:460px;
@@ -1861,9 +1861,8 @@ ul.sub-menu li.expanded ul li.selected a {
 .store-cart {
 	width: 945px;
 	min-height:100px;
-	padding: 10px 0px 25px 15px;
+	padding: 20px 0px 25px 15px;
 	background: #1B1B1B;
-	margin: 10px 0px 0px;
 }
 .store-cart h2 {
 	font-size: 20px;
