@@ -33,10 +33,10 @@
     </py:if>
     ${select('*')} 
   </form>
-  <div py:match="div[@id='content' and @class='roadmap']" py:attrs="select('@*')">
+  <ul py:match="ul[@class='milestones']" py:attrs="select('@*')">
     <py:if test="req.environ['PATH_INFO'] == '/roadmap'">
       <p>For a more detailed view about available images please see <a href="http://wiki.openmoko.org/wiki/Latest_Images">Latest Images</a></p>
     </py:if>
     ${select('*')}
-  </div>
+  </ul>
 </html>
