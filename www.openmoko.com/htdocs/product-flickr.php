@@ -1,11 +1,15 @@
+
+<?php
+
+    // require file that contains functions
+    require 'functions.php';
+
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Publisher" content="Openmoko, Inc" />
-<meta name="Keywords" content="open, mobile, free, communication, freedom, Free Your Phone, reactive, Free Software, Open Source, Neo, Neo 1973, Neo FreeRunner" />
-<meta name="Description" content="Openmoko | Open. Mobile. Free: We remix open technologies to create reactive mobile products that enrich your everyday life." />
-<meta name="Copyright" content="All contents copyright Openmoko, Inc." />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="images/favicon.ico" />
 
@@ -45,6 +49,7 @@
 </head>
 
 <body>
+
 	<div id="wrapper">
     
     	<div id="header">
@@ -55,11 +60,12 @@
         	<div id="navigation">
             	<ul>
                     <li class="selected"><a href="product.html"><span>Products</span></a> / 
-                    <a href="#">Neo FreeRunner</a></li>
+                    <a href="product.html">Neo FreeRunner</a> / 
+                    <a href="#">Flickr</a></li>
                     <li><a href="download.html"><span>Download</span></a></li>
                     <li><a href="opportunities.html"><span>Opportunities</span></a></li>
                     <li><a href="contribute.html"><span>Contribute</span></a></li>
-                    <li><a href="store.html"><span>Store</span></a></li>
+                    <li><a href="distributors.html"><span>Store</span></a></li>
                 </ul>
             </div><!-- end #navigation -->
             
@@ -82,14 +88,14 @@
                   
                    <ul>
                     	<li>Free and Open Source Code</li>
-                        <li>Free and Open WiFi</li>
+                        <li>Free and Open Wifi</li>
                         <li>Unleash Your Creativity</li>
                     </ul>
 
               </div><!-- end .featured-txt --> 
                 
                 <div class="featured-button">
-                <a href="store.html">Buy it now</a>
+                <a href="http://us.direct.openmoko.com/products/neo-freerunner">Buy it now</a>
                 </div><!-- end .featured-button -->
                 
             </div><!-- end .featured-product -->
@@ -101,56 +107,27 @@
                 <ul class="sub-nav">
                     <li><a href="product.html">Technical Specifications</a></li>
                     <li><a href="product-include.html">What’s Included?</a></li>
-                    <li class="selected"><a href="product-gallery.html">Gallery</a></li>
                     <li><a href="product-dboard.html">DBoard</a></li>
-                    <li><a href="product-qa.html">Questons &amp; Answers</a></li>
+                    <li class="selected"><a href="product-flickr.php">Flickr</a></li>
+                    <li><a href="product-YouTube.php">YouTube</a></li>
+                    <li><a href="product-qa.html">Questions &amp; Answers</a></li>
                 </ul><!-- end .sub-nav -->
             
             
             <div class="wrap">
             
-            <h2 class="title">Pictures</h2>
+                <h2 class="title">Top 45 Community Pictures Tagged: <i>"Openmoko + FreeRunner"</i></h2>
             
             	<div class="gallery">
-            
-                <a href="images/products/neo/neo-001.jpg" rel="facebox">
-                <img src="images/products/neo/neo_thumb001.png" alt="" /></a>
-                
-                <a href="images/products/neo/neo-002.jpg" rel="facebox">
-                <img src="images/products/neo/neo_thumb002.png" alt="" /></a>
-                
-                <a href="images/products/neo/neo-003.jpg" rel="facebox">
-                <img src="images/products/neo/neo_thumb003.png" alt="" /></a>
-                
-                <a href="images/products/neo/neo-004.jpg" rel="facebox">
-                <img src="images/products/neo/neo_thumb004.png" alt="" /></a>
-                
-                <a href="images/products/neo/neo-005.jpg" rel="facebox">
-                <img src="images/products/neo/neo_thumb005.png" alt="" /></a>
-                
-                </div><!-- end .gallery -->
-            
-            
-            <h2 class="title">Screenshots</h2>
-            
-            	<div class="gallery">
-                
-            <a href="images/products/screenshots/screen_01.jpg" rel="facebox">
-            <img src="images/products/screenshots/screen_thumb_01.jpg" alt="" /></a>
-            
-            <a href="images/products/screenshots/screen_02.jpg" rel="facebox">
-            <img src="images/products/screenshots/screen_thumb_02.jpg" alt="" /></a>
-            
-            <a href="images/products/screenshots/screen_03.jpg" rel="facebox">
-            <img src="images/products/screenshots/screen_thumb_03.jpg" alt="" /></a>
-            
-            <a href="images/products/screenshots/screen_04.jpg" rel="facebox">
-            <img src="images/products/screenshots/screen_thumb_04.jpg" alt="" /></a>
-            
-            	</div><!-- end .gallery -->
+					<?php disp_flickrthumbs(); ?>
+                </div>
     
                     
-                    <div class="clear"></div>
+                    <div class="clear">
+                      <p>&nbsp;</p>
+                      <p>&nbsp;</p>
+                      <p>&nbsp;</p>
+                    </div>
                 
                 </div><!-- end .wrap -->
 
@@ -164,9 +141,9 @@
         
         <div id="footer">
         	<ul>
-                <li><a href="about-index.html">ABOUT</a></li>
-                <li><a href="press.html">PRESS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about-index.html">About</a></li>
+                <li><a href="press.html">Press</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             
             <div id="top"><a href="#logo">Top</a></div><!-- end #top -->
@@ -185,3 +162,5 @@
     </script>
 </body>
 </html>
+
+
