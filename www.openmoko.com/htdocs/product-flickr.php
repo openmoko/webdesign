@@ -109,7 +109,7 @@
                     <li><a href="product-include.html">What’s Included?</a></li>
                     <li><a href="product-dboard.html">DBoard</a></li>
                     <li class="selected"><a href="product-flickr.php">Flickr</a></li>
-                    <li><a href="product-YouTube.php">YouTube</a></li>
+                    <li><a href="product-youtube.php">YouTube</a></li>
                     <li><a href="product-qa.html">Questions &amp; Answers</a></li>
                 </ul><!-- end .sub-nav -->
             
