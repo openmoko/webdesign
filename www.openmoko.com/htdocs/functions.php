@@ -13,9 +13,11 @@
 	
     	$params = array('api_key'      => '64f4c3b799d290afad40008551c4a550',
                         'method'       => 'flickr.photos.search',
-                        'text'         => 'openmoko freerunner',
-                        'content_type' => '1',
+                        'text'         => 'openmoko, freerunner',
                         'format'       => 'php_serial',
+						'per_page'     => $max_num,
+						'page'         => '1',
+						'sort'         => 'relevance',
                        );
 
 		$encoded_params = array();
