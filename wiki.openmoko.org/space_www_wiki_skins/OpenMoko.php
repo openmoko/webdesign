@@ -100,7 +100,6 @@ class OpenMokoTemplate extends QuickTemplate {
 		
 		<div id="main_navigation">
 			<ul>
-				<li><a href="http://www.openmoko.org/" class="nav_home"><span>Home</span></a></li>
 				<li><a href="http://wiki.openmoko.org/" class="nav_wiki selected"><span>Wiki</span></a></li>
 				<li><a href="http://docs.openmoko.org/" class="nav_docs"><span>Docs</span></a></li>
 				<li><a href="http://planet.openmoko.org/" class="nav_planet"><span>Planet</span></a></li>
