@@ -16,7 +16,9 @@ h3.nobottom {
 
 div.logo { 
   background-image: url(logo.png);
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
+  height:40px;
+  width:235px;
 } 
 
 div.lighttext { 
