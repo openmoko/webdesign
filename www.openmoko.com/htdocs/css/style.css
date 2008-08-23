@@ -1242,6 +1242,24 @@ ul.sub-menu li.expanded ul li.selected a {
 	border-bottom: 1px solid #EBEBEB;
 }
 
+.contribute .box .box-contrib {
+	width:305px;
+	margin: 0px 10px 15px 0px;
+}
+
+.contribute .box .box-contrib p {
+	color: #999999;
+	line-height: 16px;
+}
+
+.contribute .box .box-contrib a {
+	border:none!important;
+}
+
+.contribute .box label {
+    color: #999999;
+}
+
 /*		
 //////////////////////////////////////////////////////
 		openmoko -> distributors

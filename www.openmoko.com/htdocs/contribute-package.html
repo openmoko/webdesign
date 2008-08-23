@@ -32,7 +32,7 @@
                     <li><a href="product.html"><span>Products</span></a></li>
                     <li><a href="download.html"><span>Download</span></a></li>
                     <li><a href="opportunities.html"><span>Opportunities</span></a></li>
-                    <li class="selected"><a href="contribute.html"><span>Contribute</span></a></li>
+                    <li class="selected"><a href="contribute.html"><span>Contribute</span></a> / <a href="contribute-package.html">Submit Package</a></li>
                     <li><a href="distributors.html"><span>Store</span></a></li>
                 </ul>
             </div><!-- end #navigation -->
@@ -45,26 +45,31 @@
         
         	<div class="contribute">
             
-            <h2 class="title">Contribute</h2>
+            <h2 class="title">Submit a Package</h2>
             
             	
                 
             	<div class="box">
-                  <p align="justify">Om 2008 is built entirely from FOSS and as such we depend on community contributions. We need your help to  Free the Phone. Please join us by creating packages or organizing packages into repositories for the world to share. </p>
-                  <p align="justify">&nbsp;</p>
-                  <p>&nbsp;</p>
-                  
-                  <div class="box-contrib">
-                    <a href="contribute-package.html"><img src="images/buttons/button_package.png" alt="" /></a>
-                    <p>Submit a package to be reviewed for inclusion in the Openmoko Multiverse</p>
-                  </div><!-- end .box-download -->
-                  
-                  <div class="box-contrib">
-                    <a href="contribute-repository.html"><img src="images/buttons/button_repository.png" alt="" /></a>
-                    <p>Submit a repository to be reviewed for inclusion in the Openmoko Multiverse</p>
-                  </div><!-- end .box-download -->
-             
-           	  </div><!-- end .box -->
+      <p>Please see our <a href="http://wiki.openmoko.org/wiki/CommunityRepository#How_to_release_packages" target="_blank">wiki</a> for instructions on how to create a package for Openmoko.</p>
+      <p>&nbsp;</p>
+        <form accept-charset="utf-8" action="" method="post" name="package_form">          
+          <label>Choose a package to upload:</label>
+          <br />
+          <input name="package" type="file" />
+          <br />
+          <br />
+          <label>Your email:</label>
+          <br />
+          <input name="your_email" type="text" size="35" maxlength="48" value="" />
+          <br />
+          <br />
+          <br />
+          <input type="image" src="images/buttons/button_submit.png" value="Submit" alt="Submit" />
+        </form>
+      </div><!-- end .box -->
+              
+              <div class="fields">
+              </div><!-- end .fields -->
               
                 
                 
