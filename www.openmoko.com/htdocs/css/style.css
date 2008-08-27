@@ -110,6 +110,7 @@ blockquote {
 }
 
 
+
 /*		
 //////////////////////////////////////////////////////
 	MAIN
@@ -162,6 +163,23 @@ ul.lev2 li.selected a {
     margin: 0px 1px 1px 1px;
 	float: left;
 }
+
+.legal {
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+	font-size:10px;
+}
+
+
+.legal a {
+	color: #626262;
+
+}
+.legal a:hover {
+	color: #000000;
+}
+
 
 
 /*		
@@ -2080,6 +2098,69 @@ table#cart tbody tr td.total {
 	padding: 10px 0px 25px 15px;
 	background: #000000;
 	margin: 10px 0px 0px;
+}
+
+
+
+/*		
+//////////////////////////////////////////////////////
+		Shop - Terms
+//////////////////////////////////////////////////////
+*/
+
+.terms-logo {
+	float: right;
+	height: 31px; 
+	width: 114px; 
+	padding-right: 5%;
+	background: url(../images/logo2.png) no-repeat 0px 0px;
+}
+
+.terms-content {
+	width: 92%;
+	padding: 10px 0px 25px 15px;
+	margin: 10px 0px 0px;
+}
+
+.terms-content h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #000000;
+	margin: 25px 0px 15px;
+}
+
+.terms-content h3 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #000000;
+	margin: 20px 0px 10px;
+}
+
+.terms-content p {
+	color: #333333;
+	text-align: justify;
+	line-height: 19px;
+	font-size: 12px;
+}
+
+.terms-content blockquote {
+	color: #333333;
+}
+
+.terms-content a {
+	color: #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.terms-content ul{
+	margin: 10px 0px 10px 20px;
+}
+
+.terms-content ul li {
+	margin: 0px 0px 3px;
+	list-style: disc;
 }
 
 
