@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/" py:strip="">
+  <head py:match="head" py:attrs="select('@*')">
+    ${select('*')}
+    <link rel="stylesheet" type="text/css"
+          href="${href.chrome('site/style.css')}" />
+  </head>
+
+  <body py:match="body" py:attrs="select('@*')">
+    <div id="siteheader">
+      <div id="main_navigation">
+        <ul>
+          <li><a href="http://wiki.openmoko.org/" class="nav_wiki"><span>Wiki</span></a></li>
+          <li><a href="http://docs.openmoko.org/" class="nav_docs"><span>Docs</span></a></li>
+          <li><a href="http://planet.openmoko.org/" class="nav_planet"><span>Planet</span></a></li>
+          <li><a href="http://projects.openmoko.org/" class="nav_projects"><span>Projects</span></a></li>
+          <li><a href="http://lists.openmoko.org/" class="nav_lists"><span>Lists</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="restfnord">
+      ${select('*|text()')}
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+  <py:if test="req.environ['PATH_INFO'] == '/prefs'">
+    <form py:match="div[@id='tabcontent']/form" py:attrs="select('@*')">
+      <p>This entries are changeable in here <a href="https://docs.openmoko.org/trac/prefs">docs.openmoko.org - preferences</a></p>  
+      ${select('*')}
+    </form>
+    <input py:match="//table/tr/td/input[@id='name' or @id='email']" py:attrs="select('@*')" disabled="disabled">
+      ${select('*|text()')}
+    </input>
+  </py:if>
+</html>

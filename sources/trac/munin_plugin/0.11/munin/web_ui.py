@@ -61,7 +61,7 @@ class MuninModule(Component):
             raise TracError('You must configure a URL in trac.ini')
         
         # Grab the page
-        urlf = urllib2.urlopen(self.munin_url+'?'+req.environ['QUERY_STRING'])
+        urlf = urllib2.urlopen(self.munin_url+'/'+req.environ['QUERY_STRING'])
         page = urlf.read()
         
         # Check if this is a raw format send
