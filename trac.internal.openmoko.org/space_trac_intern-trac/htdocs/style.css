@@ -89,3 +89,30 @@ dt em {
 }
 
 .milestone .info h2 em { color: #F87F00; font-style: normal }
+/*
+.blog #content  :link, :visited {
+    color: grey;
+}
+*/
+.blog #sidebar {
+    border-left: 1px dotted #ccc;
+    background-color: #FFFFFF;
+}
+
+
+.blog .metainfo_top {
+    color: gray;
+    font-size: smaller;
+    text-align: left;
+}
+
+.blog ul.metainfo_top {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.blog ul.metainfo_top li{
+    display : inline;
+}
+
