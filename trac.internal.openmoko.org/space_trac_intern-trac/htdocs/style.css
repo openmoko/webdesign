@@ -31,6 +31,8 @@
                 height: 11px;
                 background-position: 50% 0%;
                 background-repeat:no-repeat;
+		background-color: white;
+		border-bottom: medium none;
         }
 
         #main_navigation a:hover {
