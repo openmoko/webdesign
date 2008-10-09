@@ -1,0 +1,14 @@
+2008-10-08	Daniel Willmann <daniel@openmoko.org>
+
+	* (r931) gllin version 1.1
+	* gllin is now installed in /usr/share/gllin instead of /home/root
+	* An initscript is provided to start/stop gllin
+	* Changed MACHINE from fic-gta01 to om-gta01
+
+2007-11-29	Michael Lauer <mickey@openmoko.org>
+
+	* (r350) move EULA to docs directory
+
+2007-11-27	Michael Lauer <mickey@openmoko.org>
+
+	* (r337) check in wrapper using the OABI-gllin on EABI
