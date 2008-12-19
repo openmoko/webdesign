@@ -218,7 +218,6 @@ class Theme extends Layout {
 					<li><a href="http://lists.openmoko.org/" class="nav_lists"><span>Lists</span></a></li>
 				</ul>
 			</div>
-				<center><b>IMPORTANT! projects.openmoko.org will receive a redesign. - Registration is disabled at the moment. Please refer to the ongoing discussion on devel mailinglist at lists.openmoko.org</b></center>
 		</div>
 <div id="restfnord">
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
