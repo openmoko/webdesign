@@ -1587,10 +1587,19 @@ ul.sub-menu li.expanded ul li.selected a {
 }
 .contact-footer .map {
 	display:block;
-	margin:15px auto 40px;
+	margin:10px auto 50px;
 	width:602px;
-	height:376px;
+	height:400px;
 }
+
+.contact-footer .map a {
+	border-bottom: 1px solid #626262;
+	color: #EBEBEB;
+}
+.contact-footer .map a:hover {
+	border-bottom: 1px solid #EBEBEB;
+}
+
 .contact-footer h3 {
 	color: #EBEBEB;
 	font-weight: bold;
